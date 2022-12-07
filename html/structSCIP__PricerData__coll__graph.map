@@ -1,0 +1,8 @@
+<map id="SCIP_PricerData" name="SCIP_PricerData">
+<area shape="rect" id="node1" title="Variable pricer data used in the pricer." alt="" coords="190,303,317,329"/>
+<area shape="rect" id="node2" href="$classBasePricing.html" title=" " alt="" coords="204,213,303,240"/>
+<area shape="rect" id="node3" href="$classProblemData.html" title=" " alt="" coords="80,124,187,151"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,5,213,32"/>
+<area shape="rect" id="node5" title=" " alt="" coords="243,5,301,32"/>
+<area shape="rect" id="node6" href="$classParams.html" title=" " alt="" coords="243,124,314,151"/>
+</map>

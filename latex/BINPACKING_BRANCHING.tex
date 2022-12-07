@@ -1,0 +1,14 @@
+Ryan/\+Foster branching is a very useful branching rule for the integer program model in use. A standard variable branching has the disadvantage that the zero branch is more or less useless because we only forbid one packing out of exponential many. On the other hand, the branch fixing a packing reduces the problem since certain items are packed. This leads to a very unbalanced search tree.
+
+The branching rule of Ryan/\+Foster was itroduced in~\newline
+D. M. Ryan and B. A. Foster\+: An Integer Programming Approach to Scheduling, In Computer scheduling of public transport\+: Urban passenger vehicle and crew scheduling, A. Wren editor, North-\/\+Holland 1981, 269-\/280.
+
+The idea is to select a pair of items which is either a) forced to be packed together or b) not allowed to be packed together. Note that in both cases, it is allowed to use packings which contain none of the two items.
+
+There are two issues to be taken care off\+:
+\begin{DoxyEnumerate}
+\item How do we select the pair of items?
+\item How do we realize such a branching within \textbackslash{}\+S\+C\+IP?
+\end{DoxyEnumerate}\hypertarget{BINPACKING_BRANCHING_BINPACKING_SELECTION}{}\doxysection{How do we select the pair of items?}\label{BINPACKING_BRANCHING_BINPACKING_SELECTION}
+To select a pair of items, we have to know for each packing the items which are contained. Since every packing is a variable and each item is a set covering constraint, we have to know for each variable in which set covering constraints it appears (this means, has a coefficient of 1.\+0). Since \textbackslash{}\+S\+C\+IP is constraint based, it is in general not possible to get this information directly. To overcome this issue, we use the functionality to add variable data to every variable. This variable data contains the constraints in which this variable appears (see vardata\+\_\+binpacking.\+c for more details). With the help of the variable data, it is now possible to get the information which items belong to which packing. Therefore, we can use the Ryan/\+Foster idea to select a pair of items.\hypertarget{BINPACKING_BRANCHING_BINPACKING_SAMEDIFFBRANCHING}{}\doxysection{How do we realize such a branching within S\+C\+I\+P?}\label{BINPACKING_BRANCHING_BINPACKING_SAMEDIFFBRANCHING}
+After having selected a pair of items to branch on, the question now is how to realize such a branching with \textbackslash{}\+S\+C\+IP. Since \textbackslash{}\+S\+C\+IP is constraint based, it is really easy to do that. We implement a constraint handler which handles the information, see cons\+\_\+samediff.\+c. This constraint handler does not only store the branching decisions. Furthermore, it also ensures that all packing which are not feasible at a particular node are locally fixed to zero. For more details, we refer to the source code of the constraint handler. 

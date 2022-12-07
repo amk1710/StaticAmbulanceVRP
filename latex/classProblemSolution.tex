@@ -1,0 +1,191 @@
+\hypertarget{classProblemSolution}{}\doxysection{Problem\+Solution Class Reference}
+\label{classProblemSolution}\index{ProblemSolution@{ProblemSolution}}
+
+
+{\ttfamily \#include $<$Problem\+Solution.\+h$>$}
+
+
+
+Collaboration diagram for Problem\+Solution\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classProblemSolution__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProblemSolution_a157b99f3a2eb99fc30b9c2d518830b85}{Problem\+Solution}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$data)
+\item 
+void \mbox{\hyperlink{classProblemSolution_a2f07a98288480e64768c066e9460bd18}{Any\+Solution}} ()
+\item 
+void \mbox{\hyperlink{classProblemSolution_af00753b9b845f99514d45e458e30352f}{Set\+To\+Initial\+Solution}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}, \mbox{\hyperlink{classParams}{Params}} $\ast$params, bool output\+To\+File=false, int heuristic=2)
+\item 
+\mbox{\hyperlink{structResponseSummary}{Response\+Summary}} \mbox{\hyperlink{classProblemSolution_a9f0a568f33cce8b09d22cfa140bcc908}{Get\+Response\+Summary}} ()
+\item 
+void \mbox{\hyperlink{classProblemSolution_ae3c7c86dfe6b6ddae6ae64507425422f}{Update\+Cost}} ()
+\item 
+void \mbox{\hyperlink{classProblemSolution_a62a134c724e415296ef1b3c484960e2e}{Print\+Solution}} ()
+\item 
+void \mbox{\hyperlink{classProblemSolution_af0cb993413c9b12cb9f96592642ab73a}{Write\+Solution}} (std\+::string path)
+\item 
+void \mbox{\hyperlink{classProblemSolution_a56f9de730bb8c1e6c6e4bb1cc9546d46}{Write\+Requests\+Output}} (std\+::string path)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \mbox{\hyperlink{classProblemSolution_aa89493bc049f6e328ca44aa5cc1799d9}{Closest\+Available\+Vehicle\+Solution}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}, \mbox{\hyperlink{classParams}{Params}} $\ast$params)
+\item 
+static vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \mbox{\hyperlink{classProblemSolution_a92d791b9c8f6398a110bf55eddd9c8ea}{Fastest\+Arriving\+Vehicle\+Solution}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}, \mbox{\hyperlink{classParams}{Params}} $\ast$params)
+\item 
+static vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \mbox{\hyperlink{classProblemSolution_a4ed1a4268023cbf13d2ee35022c6bb9c}{All\+One\+Sized\+Routes\+Solution}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}, \mbox{\hyperlink{classParams}{Params}} $\ast$params)
+\item 
+static void \mbox{\hyperlink{classProblemSolution_a4198ee3489d78b18a0e36257c17d1ff0}{Random\+Routes}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}, \mbox{\hyperlink{classParams}{Params}} $\ast$params, int n\+\_\+routes, uint32\+\_\+t seed, vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&out\+\_\+routes)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$ \mbox{\hyperlink{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}{problem\+Data}}
+\item 
+vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \mbox{\hyperlink{classProblemSolution_a3c05919e24fc6e64454f4dae5abb8137}{routes}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classProblemSolution_a10ac28bce82f0ce4d1d287ca753650e2}{coeffs}}
+\item 
+bool \mbox{\hyperlink{classProblemSolution_ad866aba5c8e2db3b00b718231e716294}{relaxed}}
+\item 
+double \mbox{\hyperlink{classProblemSolution_a318d2228381d7d467b1094c25d274714}{cost}}
+\item 
+double \mbox{\hyperlink{classProblemSolution_a24f14b4b5b936a0772ce1a50012b537b}{route\+\_\+cost}}
+\item 
+double \mbox{\hyperlink{classProblemSolution_ab1413e5d1499b8839493a03b1cd16d10}{penalty\+\_\+cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProblemSolution_a157b99f3a2eb99fc30b9c2d518830b85}\label{classProblemSolution_a157b99f3a2eb99fc30b9c2d518830b85}} 
+\index{ProblemSolution@{ProblemSolution}!ProblemSolution@{ProblemSolution}}
+\index{ProblemSolution@{ProblemSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{ProblemSolution()}{ProblemSolution()}}
+{\footnotesize\ttfamily Problem\+Solution\+::\+Problem\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProblemSolution_a4ed1a4268023cbf13d2ee35022c6bb9c}\label{classProblemSolution_a4ed1a4268023cbf13d2ee35022c6bb9c}} 
+\index{ProblemSolution@{ProblemSolution}!AllOneSizedRoutesSolution@{AllOneSizedRoutesSolution}}
+\index{AllOneSizedRoutesSolution@{AllOneSizedRoutesSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{AllOneSizedRoutesSolution()}{AllOneSizedRoutesSolution()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ Problem\+Solution\+::\+All\+One\+Sized\+Routes\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemSolution_a2f07a98288480e64768c066e9460bd18}\label{classProblemSolution_a2f07a98288480e64768c066e9460bd18}} 
+\index{ProblemSolution@{ProblemSolution}!AnySolution@{AnySolution}}
+\index{AnySolution@{AnySolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{AnySolution()}{AnySolution()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Any\+Solution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_aa89493bc049f6e328ca44aa5cc1799d9}\label{classProblemSolution_aa89493bc049f6e328ca44aa5cc1799d9}} 
+\index{ProblemSolution@{ProblemSolution}!ClosestAvailableVehicleSolution@{ClosestAvailableVehicleSolution}}
+\index{ClosestAvailableVehicleSolution@{ClosestAvailableVehicleSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{ClosestAvailableVehicleSolution()}{ClosestAvailableVehicleSolution()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ Problem\+Solution\+::\+Closest\+Available\+Vehicle\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemSolution_a92d791b9c8f6398a110bf55eddd9c8ea}\label{classProblemSolution_a92d791b9c8f6398a110bf55eddd9c8ea}} 
+\index{ProblemSolution@{ProblemSolution}!FastestArrivingVehicleSolution@{FastestArrivingVehicleSolution}}
+\index{FastestArrivingVehicleSolution@{FastestArrivingVehicleSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{FastestArrivingVehicleSolution()}{FastestArrivingVehicleSolution()}}
+{\footnotesize\ttfamily vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ Problem\+Solution\+::\+Fastest\+Arriving\+Vehicle\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemSolution_a9f0a568f33cce8b09d22cfa140bcc908}\label{classProblemSolution_a9f0a568f33cce8b09d22cfa140bcc908}} 
+\index{ProblemSolution@{ProblemSolution}!GetResponseSummary@{GetResponseSummary}}
+\index{GetResponseSummary@{GetResponseSummary}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{GetResponseSummary()}{GetResponseSummary()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structResponseSummary}{Response\+Summary}} Problem\+Solution\+::\+Get\+Response\+Summary (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_a62a134c724e415296ef1b3c484960e2e}\label{classProblemSolution_a62a134c724e415296ef1b3c484960e2e}} 
+\index{ProblemSolution@{ProblemSolution}!PrintSolution@{PrintSolution}}
+\index{PrintSolution@{PrintSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{PrintSolution()}{PrintSolution()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Print\+Solution (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_a4198ee3489d78b18a0e36257c17d1ff0}\label{classProblemSolution_a4198ee3489d78b18a0e36257c17d1ff0}} 
+\index{ProblemSolution@{ProblemSolution}!RandomRoutes@{RandomRoutes}}
+\index{RandomRoutes@{RandomRoutes}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{RandomRoutes()}{RandomRoutes()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Random\+Routes (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{int}]{n\+\_\+routes,  }\item[{uint32\+\_\+t}]{seed,  }\item[{vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&}]{out\+\_\+routes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemSolution_af00753b9b845f99514d45e458e30352f}\label{classProblemSolution_af00753b9b845f99514d45e458e30352f}} 
+\index{ProblemSolution@{ProblemSolution}!SetToInitialSolution@{SetToInitialSolution}}
+\index{SetToInitialSolution@{SetToInitialSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{SetToInitialSolution()}{SetToInitialSolution()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Set\+To\+Initial\+Solution (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{bool}]{output\+To\+File = {\ttfamily false},  }\item[{int}]{heuristic = {\ttfamily 2} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_ae3c7c86dfe6b6ddae6ae64507425422f}\label{classProblemSolution_ae3c7c86dfe6b6ddae6ae64507425422f}} 
+\index{ProblemSolution@{ProblemSolution}!UpdateCost@{UpdateCost}}
+\index{UpdateCost@{UpdateCost}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{UpdateCost()}{UpdateCost()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Update\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_a56f9de730bb8c1e6c6e4bb1cc9546d46}\label{classProblemSolution_a56f9de730bb8c1e6c6e4bb1cc9546d46}} 
+\index{ProblemSolution@{ProblemSolution}!WriteRequestsOutput@{WriteRequestsOutput}}
+\index{WriteRequestsOutput@{WriteRequestsOutput}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{WriteRequestsOutput()}{WriteRequestsOutput()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Write\+Requests\+Output (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemSolution_af0cb993413c9b12cb9f96592642ab73a}\label{classProblemSolution_af0cb993413c9b12cb9f96592642ab73a}} 
+\index{ProblemSolution@{ProblemSolution}!WriteSolution@{WriteSolution}}
+\index{WriteSolution@{WriteSolution}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{WriteSolution()}{WriteSolution()}}
+{\footnotesize\ttfamily void Problem\+Solution\+::\+Write\+Solution (\begin{DoxyParamCaption}\item[{std\+::string}]{path }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classProblemSolution_a10ac28bce82f0ce4d1d287ca753650e2}\label{classProblemSolution_a10ac28bce82f0ce4d1d287ca753650e2}} 
+\index{ProblemSolution@{ProblemSolution}!coeffs@{coeffs}}
+\index{coeffs@{coeffs}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{coeffs}{coeffs}}
+{\footnotesize\ttfamily vector$<$double$>$ Problem\+Solution\+::coeffs}
+
+\mbox{\Hypertarget{classProblemSolution_a318d2228381d7d467b1094c25d274714}\label{classProblemSolution_a318d2228381d7d467b1094c25d274714}} 
+\index{ProblemSolution@{ProblemSolution}!cost@{cost}}
+\index{cost@{cost}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{cost}{cost}}
+{\footnotesize\ttfamily double Problem\+Solution\+::cost}
+
+\mbox{\Hypertarget{classProblemSolution_ab1413e5d1499b8839493a03b1cd16d10}\label{classProblemSolution_ab1413e5d1499b8839493a03b1cd16d10}} 
+\index{ProblemSolution@{ProblemSolution}!penalty\_cost@{penalty\_cost}}
+\index{penalty\_cost@{penalty\_cost}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{penalty\_cost}{penalty\_cost}}
+{\footnotesize\ttfamily double Problem\+Solution\+::penalty\+\_\+cost}
+
+\mbox{\Hypertarget{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}\label{classProblemSolution_a8685685d296f7a13b92fd0fe726b3d77}} 
+\index{ProblemSolution@{ProblemSolution}!problemData@{problemData}}
+\index{problemData@{problemData}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{problemData}{problemData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProblemData}{Problem\+Data}}$\ast$ Problem\+Solution\+::problem\+Data}
+
+\mbox{\Hypertarget{classProblemSolution_ad866aba5c8e2db3b00b718231e716294}\label{classProblemSolution_ad866aba5c8e2db3b00b718231e716294}} 
+\index{ProblemSolution@{ProblemSolution}!relaxed@{relaxed}}
+\index{relaxed@{relaxed}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{relaxed}{relaxed}}
+{\footnotesize\ttfamily bool Problem\+Solution\+::relaxed}
+
+\mbox{\Hypertarget{classProblemSolution_a24f14b4b5b936a0772ce1a50012b537b}\label{classProblemSolution_a24f14b4b5b936a0772ce1a50012b537b}} 
+\index{ProblemSolution@{ProblemSolution}!route\_cost@{route\_cost}}
+\index{route\_cost@{route\_cost}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{route\_cost}{route\_cost}}
+{\footnotesize\ttfamily double Problem\+Solution\+::route\+\_\+cost}
+
+\mbox{\Hypertarget{classProblemSolution_a3c05919e24fc6e64454f4dae5abb8137}\label{classProblemSolution_a3c05919e24fc6e64454f4dae5abb8137}} 
+\index{ProblemSolution@{ProblemSolution}!routes@{routes}}
+\index{routes@{routes}!ProblemSolution@{ProblemSolution}}
+\doxysubsubsection{\texorpdfstring{routes}{routes}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classRoute}{Route}}$>$ Problem\+Solution\+::routes}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ProblemSolution_8h}{Problem\+Solution.\+h}}\item 
+src/\mbox{\hyperlink{ProblemSolution_8cpp}{Problem\+Solution.\+cpp}}\end{DoxyCompactItemize}

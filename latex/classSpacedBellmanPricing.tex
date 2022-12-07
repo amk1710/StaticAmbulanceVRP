@@ -1,0 +1,292 @@
+\hypertarget{classSpacedBellmanPricing}{}\doxysection{Spaced\+Bellman\+Pricing Class Reference}
+\label{classSpacedBellmanPricing}\index{SpacedBellmanPricing@{SpacedBellmanPricing}}
+
+
+{\ttfamily \#include $<$Spaced\+Bellman\+Pricing.\+h$>$}
+
+
+
+Inheritance diagram for Spaced\+Bellman\+Pricing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classSpacedBellmanPricing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Spaced\+Bellman\+Pricing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSpacedBellmanPricing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classSpacedBellmanPricing_ae3e7de87388222b1cc1902fbe3ba3010}{Set\+Heuristic\+Pricing}} (bool value)
+\item 
+\mbox{\hyperlink{classSpacedBellmanPricing_ac8455cdeb953932438d70c7b15e56552}{Spaced\+Bellman\+Pricing}} (\mbox{\hyperlink{classParams}{Params}} $\ast$\mbox{\hyperlink{classBasePricing_ac7154a91fca92b36c7648855e449f029}{params}}, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$\mbox{\hyperlink{classBasePricing_aacb80de56958a14cb85f062fa372b28d}{problem\+Data}})
+\item 
+\mbox{\hyperlink{classSpacedBellmanPricing_a19af515989d1a65378d755e04e2fbc9d}{$\sim$\+Spaced\+Bellman\+Pricing}} ()
+\item 
+\mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} \mbox{\hyperlink{classSpacedBellmanPricing_a93b3a878ca5f62bbc48f664afd3977c6}{Price}} (int vehicle\+\_\+id, int n\+\_\+routes, vector$<$ double $>$ \&alpha\+\_\+duals, vector$<$ double $>$ \&beta\+\_\+duals, vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&out\+Routes, vector$<$ int $>$ considered\+Requests, std\+::set$<$ pair$<$ int, int $>$$>$ forbidden\+Edges, map$<$ pair$<$ int, int $>$, double $>$ edge\+Duals)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_a26aff3818b9d6ee7306d57a0b3e9af8a}{limit\+Nb\+Labels}}
+\item 
+int \mbox{\hyperlink{classSpacedBellmanPricing_a7e1e6692693aeefd5277a32f70b56804}{max\+Labels}}
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_a110dccb26b52aaada6ba46307033dd1e}{use\+Repeated\+Set\+Verification}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_ae34e8aedf9a3f2a72b44cc43e584441c}{Try\+Add\+Label}} (\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&new\+Label, int j, bool initial)
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_a31ba9e1dcd80f0efd67a523a79d54dac}{comp3}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&lhs, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&rhs)
+\item 
+void \mbox{\hyperlink{classSpacedBellmanPricing_aee234ad655a0b9a098aa44f69ae9b9ed}{Filter\+Labels}} (int index, \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&just\+\_\+added, std\+::multiset$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$, decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}}) $\ast$ $>$\+::iterator just\+\_\+added\+\_\+itr)
+\item 
+void \mbox{\hyperlink{classSpacedBellmanPricing_abb1c2efdee7972614c8a2756ff30cd98}{Cleanup}} ()
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_a3ca254ba1f529ad3529087f796e8cf48}{Try\+Add\+To\+Best\+Labels\+Heap}} (\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&label)
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_af0f0a1868c7770683f7d626bf0467691}{comp\+G\+Time}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l1, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_a175ddefb1392b0c6ff705db88c6cc95c}{comp\+L\+RC}} (const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&l1, const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}} (const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&l1, const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_a018e636543376b992630ef0cf544ade3}{comp\+L\+R\+C\+Ref}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l1, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_a35c06895e4928b839a7a90dcb89f7aa0}{comp\+L\+Time\+Ref}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l1, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_a6e44f5d5710384548220c33115b8d18f}{comp\+G\+RC}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l1, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&l2)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_ab7425b80418006d1b52bfbf0eb715d99}{comp}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&lhs, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&rhs)
+\item 
+static bool \mbox{\hyperlink{classSpacedBellmanPricing_ab0b285d08aaaf697ee0afee035ab415a}{comp2}} (const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $\ast$lhs, const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $\ast$rhs)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} \mbox{\hyperlink{classSpacedBellmanPricing_ae0cf3a66bd5b6a09555089e00f2ba5c0}{pricing\+\_\+ret}}
+\item 
+vector$<$ std\+::multiset$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$, decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}}) $\ast$ $>$ $>$ \mbox{\hyperlink{classSpacedBellmanPricing_a35240ff78ffd909932abc1282f70098e}{labels}}
+\item 
+bool \mbox{\hyperlink{classSpacedBellmanPricing_a76db22e3e2b1b854bef14b40787fd3f4}{heuristic\+Pricing}}
+\item 
+vector$<$ std\+::multiset$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$, decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}}) $\ast$ $>$\+::iterator $>$ \mbox{\hyperlink{classSpacedBellmanPricing_a077f537fff052e3193573ab98faef6f8}{Itr\+Next\+Expansion}}
+\item 
+vector$<$ bool $>$ \mbox{\hyperlink{classSpacedBellmanPricing_a00e4bf72c0a128ddac690d406f2e1f11}{Itr\+Next\+Expansion\+\_\+\+Is\+Valid}}
+\item 
+vector$<$ \mbox{\hyperlink{structIntermediateVertex}{Intermediate\+Vertex}} $\ast$ $>$ \mbox{\hyperlink{classSpacedBellmanPricing_a8f53f5f158d448fb4281576dc15cf6fa}{intermediate\+Positions}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classSpacedBellmanPricing_a51753251d9b21dc6d80d0a98256abf88}{total\+\_\+labels}}
+\item 
+size\+\_\+t \mbox{\hyperlink{classSpacedBellmanPricing_a3ff678acc82a61535bc5900e3e6b5bfe}{n\+\_\+desired\+\_\+routes}}
+\item 
+vector$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \mbox{\hyperlink{classSpacedBellmanPricing_a56bafb19b8ce04c7d1943ea79bd82449}{best\+Labels\+Heap}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSpacedBellmanPricing_ac8455cdeb953932438d70c7b15e56552}\label{classSpacedBellmanPricing_ac8455cdeb953932438d70c7b15e56552}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{SpacedBellmanPricing()}{SpacedBellmanPricing()}}
+{\footnotesize\ttfamily Spaced\+Bellman\+Pricing\+::\+Spaced\+Bellman\+Pricing (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a19af515989d1a65378d755e04e2fbc9d}\label{classSpacedBellmanPricing_a19af515989d1a65378d755e04e2fbc9d}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!````~SpacedBellmanPricing@{$\sim$SpacedBellmanPricing}}
+\index{````~SpacedBellmanPricing@{$\sim$SpacedBellmanPricing}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{$\sim$SpacedBellmanPricing()}{~SpacedBellmanPricing()}}
+{\footnotesize\ttfamily Spaced\+Bellman\+Pricing\+::$\sim$\+Spaced\+Bellman\+Pricing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSpacedBellmanPricing_abb1c2efdee7972614c8a2756ff30cd98}\label{classSpacedBellmanPricing_abb1c2efdee7972614c8a2756ff30cd98}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!Cleanup@{Cleanup}}
+\index{Cleanup@{Cleanup}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{Cleanup()}{Cleanup()}}
+{\footnotesize\ttfamily void Spaced\+Bellman\+Pricing\+::\+Cleanup (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ab7425b80418006d1b52bfbf0eb715d99}\label{classSpacedBellmanPricing_ab7425b80418006d1b52bfbf0eb715d99}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!comp@{comp}}
+\index{comp@{comp}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{comp()}{comp()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ab0b285d08aaaf697ee0afee035ab415a}\label{classSpacedBellmanPricing_ab0b285d08aaaf697ee0afee035ab415a}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!comp2@{comp2}}
+\index{comp2@{comp2}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{comp2()}{comp2()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp2 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $\ast$}]{lhs,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $\ast$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a31ba9e1dcd80f0efd67a523a79d54dac}\label{classSpacedBellmanPricing_a31ba9e1dcd80f0efd67a523a79d54dac}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!comp3@{comp3}}
+\index{comp3@{comp3}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{comp3()}{comp3()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp3 (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{lhs,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a6e44f5d5710384548220c33115b8d18f}\label{classSpacedBellmanPricing_a6e44f5d5710384548220c33115b8d18f}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compGRC@{compGRC}}
+\index{compGRC@{compGRC}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compGRC()}{compGRC()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+G\+RC (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l1,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_af0f0a1868c7770683f7d626bf0467691}\label{classSpacedBellmanPricing_af0f0a1868c7770683f7d626bf0467691}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compGTime@{compGTime}}
+\index{compGTime@{compGTime}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compGTime()}{compGTime()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+G\+Time (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l1,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a175ddefb1392b0c6ff705db88c6cc95c}\label{classSpacedBellmanPricing_a175ddefb1392b0c6ff705db88c6cc95c}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compLRC@{compLRC}}
+\index{compLRC@{compLRC}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compLRC()}{compLRC()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+L\+RC (\begin{DoxyParamCaption}\item[{const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&}]{l1,  }\item[{const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a018e636543376b992630ef0cf544ade3}\label{classSpacedBellmanPricing_a018e636543376b992630ef0cf544ade3}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compLRCRef@{compLRCRef}}
+\index{compLRCRef@{compLRCRef}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compLRCRef()}{compLRCRef()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+L\+R\+C\+Ref (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l1,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}\label{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compLTime@{compLTime}}
+\index{compLTime@{compLTime}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compLTime()}{compLTime()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+L\+Time (\begin{DoxyParamCaption}\item[{const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&}]{l1,  }\item[{const unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$ \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a35c06895e4928b839a7a90dcb89f7aa0}\label{classSpacedBellmanPricing_a35c06895e4928b839a7a90dcb89f7aa0}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!compLTimeRef@{compLTimeRef}}
+\index{compLTimeRef@{compLTimeRef}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{compLTimeRef()}{compLTimeRef()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::comp\+L\+Time\+Ref (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l1,  }\item[{const \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{l2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_aee234ad655a0b9a098aa44f69ae9b9ed}\label{classSpacedBellmanPricing_aee234ad655a0b9a098aa44f69ae9b9ed}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!FilterLabels@{FilterLabels}}
+\index{FilterLabels@{FilterLabels}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{FilterLabels()}{FilterLabels()}}
+{\footnotesize\ttfamily void Spaced\+Bellman\+Pricing\+::\+Filter\+Labels (\begin{DoxyParamCaption}\item[{int}]{index,  }\item[{\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{just\+\_\+added,  }\item[{std\+::multiset$<$ unique\+\_\+ptr$<$ \mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} $>$, decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}}) $\ast$ $>$\+::iterator}]{just\+\_\+added\+\_\+itr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a93b3a878ca5f62bbc48f664afd3977c6}\label{classSpacedBellmanPricing_a93b3a878ca5f62bbc48f664afd3977c6}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!Price@{Price}}
+\index{Price@{Price}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{Price()}{Price()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} Spaced\+Bellman\+Pricing\+::\+Price (\begin{DoxyParamCaption}\item[{int}]{vehicle\+\_\+id,  }\item[{int}]{n\+\_\+routes,  }\item[{vector$<$ double $>$ \&}]{alpha\+\_\+duals,  }\item[{vector$<$ double $>$ \&}]{beta\+\_\+duals,  }\item[{vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&}]{out\+Routes,  }\item[{vector$<$ int $>$}]{considered\+Requests,  }\item[{std\+::set$<$ pair$<$ int, int $>$$>$}]{forbidden\+Edges,  }\item[{map$<$ pair$<$ int, int $>$, double $>$}]{edge\+Duals }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ae3e7de87388222b1cc1902fbe3ba3010}\label{classSpacedBellmanPricing_ae3e7de87388222b1cc1902fbe3ba3010}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!SetHeuristicPricing@{SetHeuristicPricing}}
+\index{SetHeuristicPricing@{SetHeuristicPricing}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{SetHeuristicPricing()}{SetHeuristicPricing()}}
+{\footnotesize\ttfamily void Spaced\+Bellman\+Pricing\+::\+Set\+Heuristic\+Pricing (\begin{DoxyParamCaption}\item[{bool}]{value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ae34e8aedf9a3f2a72b44cc43e584441c}\label{classSpacedBellmanPricing_ae34e8aedf9a3f2a72b44cc43e584441c}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!TryAddLabel@{TryAddLabel}}
+\index{TryAddLabel@{TryAddLabel}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{TryAddLabel()}{TryAddLabel()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::\+Try\+Add\+Label (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{new\+Label,  }\item[{int}]{j,  }\item[{bool}]{initial = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a3ca254ba1f529ad3529087f796e8cf48}\label{classSpacedBellmanPricing_a3ca254ba1f529ad3529087f796e8cf48}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!TryAddToBestLabelsHeap@{TryAddToBestLabelsHeap}}
+\index{TryAddToBestLabelsHeap@{TryAddToBestLabelsHeap}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{TryAddToBestLabelsHeap()}{TryAddToBestLabelsHeap()}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::\+Try\+Add\+To\+Best\+Labels\+Heap (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}} \&}]{label }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSpacedBellmanPricing_a56bafb19b8ce04c7d1943ea79bd82449}\label{classSpacedBellmanPricing_a56bafb19b8ce04c7d1943ea79bd82449}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!bestLabelsHeap@{bestLabelsHeap}}
+\index{bestLabelsHeap@{bestLabelsHeap}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{bestLabelsHeap}{bestLabelsHeap}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}}$>$ Spaced\+Bellman\+Pricing\+::best\+Labels\+Heap\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a76db22e3e2b1b854bef14b40787fd3f4}\label{classSpacedBellmanPricing_a76db22e3e2b1b854bef14b40787fd3f4}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!heuristicPricing@{heuristicPricing}}
+\index{heuristicPricing@{heuristicPricing}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{heuristicPricing}{heuristicPricing}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::heuristic\+Pricing\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a8f53f5f158d448fb4281576dc15cf6fa}\label{classSpacedBellmanPricing_a8f53f5f158d448fb4281576dc15cf6fa}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!intermediatePositions@{intermediatePositions}}
+\index{intermediatePositions@{intermediatePositions}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{intermediatePositions}{intermediatePositions}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structIntermediateVertex}{Intermediate\+Vertex}}$\ast$$>$ Spaced\+Bellman\+Pricing\+::intermediate\+Positions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a077f537fff052e3193573ab98faef6f8}\label{classSpacedBellmanPricing_a077f537fff052e3193573ab98faef6f8}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!ItrNextExpansion@{ItrNextExpansion}}
+\index{ItrNextExpansion@{ItrNextExpansion}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{ItrNextExpansion}{ItrNextExpansion}}
+{\footnotesize\ttfamily vector$<$std\+::multiset $<$std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}}$>$, decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}})$\ast$ $>$\+::iterator$>$ Spaced\+Bellman\+Pricing\+::\+Itr\+Next\+Expansion\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a00e4bf72c0a128ddac690d406f2e1f11}\label{classSpacedBellmanPricing_a00e4bf72c0a128ddac690d406f2e1f11}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!ItrNextExpansion\_IsValid@{ItrNextExpansion\_IsValid}}
+\index{ItrNextExpansion\_IsValid@{ItrNextExpansion\_IsValid}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{ItrNextExpansion\_IsValid}{ItrNextExpansion\_IsValid}}
+{\footnotesize\ttfamily vector$<$bool$>$ Spaced\+Bellman\+Pricing\+::\+Itr\+Next\+Expansion\+\_\+\+Is\+Valid\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a35240ff78ffd909932abc1282f70098e}\label{classSpacedBellmanPricing_a35240ff78ffd909932abc1282f70098e}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!labels@{labels}}
+\index{labels@{labels}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{labels}{labels}}
+{\footnotesize\ttfamily vector$<$ std\+::multiset $<$ std\+::unique\+\_\+ptr$<$\mbox{\hyperlink{classSpacedBellmanPricing_1_1PricingLabel}{Pricing\+Label}}$>$ , decltype(\mbox{\hyperlink{classSpacedBellmanPricing_ad084bf9e85f7e726b5cd398d0bdeddb7}{comp\+L\+Time}})$\ast$ $>$ $>$ Spaced\+Bellman\+Pricing\+::labels\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a26aff3818b9d6ee7306d57a0b3e9af8a}\label{classSpacedBellmanPricing_a26aff3818b9d6ee7306d57a0b3e9af8a}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!limitNbLabels@{limitNbLabels}}
+\index{limitNbLabels@{limitNbLabels}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{limitNbLabels}{limitNbLabels}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::limit\+Nb\+Labels}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a7e1e6692693aeefd5277a32f70b56804}\label{classSpacedBellmanPricing_a7e1e6692693aeefd5277a32f70b56804}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!maxLabels@{maxLabels}}
+\index{maxLabels@{maxLabels}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{maxLabels}{maxLabels}}
+{\footnotesize\ttfamily int Spaced\+Bellman\+Pricing\+::max\+Labels}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a3ff678acc82a61535bc5900e3e6b5bfe}\label{classSpacedBellmanPricing_a3ff678acc82a61535bc5900e3e6b5bfe}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!n\_desired\_routes@{n\_desired\_routes}}
+\index{n\_desired\_routes@{n\_desired\_routes}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{n\_desired\_routes}{n\_desired\_routes}}
+{\footnotesize\ttfamily size\+\_\+t Spaced\+Bellman\+Pricing\+::n\+\_\+desired\+\_\+routes\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_ae0cf3a66bd5b6a09555089e00f2ba5c0}\label{classSpacedBellmanPricing_ae0cf3a66bd5b6a09555089e00f2ba5c0}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!pricing\_ret@{pricing\_ret}}
+\index{pricing\_ret@{pricing\_ret}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{pricing\_ret}{pricing\_ret}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} Spaced\+Bellman\+Pricing\+::pricing\+\_\+ret\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a51753251d9b21dc6d80d0a98256abf88}\label{classSpacedBellmanPricing_a51753251d9b21dc6d80d0a98256abf88}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!total\_labels@{total\_labels}}
+\index{total\_labels@{total\_labels}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{total\_labels}{total\_labels}}
+{\footnotesize\ttfamily size\+\_\+t Spaced\+Bellman\+Pricing\+::total\+\_\+labels\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classSpacedBellmanPricing_a110dccb26b52aaada6ba46307033dd1e}\label{classSpacedBellmanPricing_a110dccb26b52aaada6ba46307033dd1e}} 
+\index{SpacedBellmanPricing@{SpacedBellmanPricing}!useRepeatedSetVerification@{useRepeatedSetVerification}}
+\index{useRepeatedSetVerification@{useRepeatedSetVerification}!SpacedBellmanPricing@{SpacedBellmanPricing}}
+\doxysubsubsection{\texorpdfstring{useRepeatedSetVerification}{useRepeatedSetVerification}}
+{\footnotesize\ttfamily bool Spaced\+Bellman\+Pricing\+::use\+Repeated\+Set\+Verification}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{SpacedBellmanPricing_8h}{Spaced\+Bellman\+Pricing.\+h}}\item 
+src/\mbox{\hyperlink{SpacedBellmanPricing_8cpp}{Spaced\+Bellman\+Pricing.\+cpp}}\end{DoxyCompactItemize}

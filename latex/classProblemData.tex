@@ -1,0 +1,592 @@
+\hypertarget{classProblemData}{}\doxysection{Problem\+Data Class Reference}
+\label{classProblemData}\index{ProblemData@{ProblemData}}
+
+
+{\ttfamily \#include $<$Problem\+Data.\+h$>$}
+
+
+
+Collaboration diagram for Problem\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=298pt]{classProblemData__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classProblemData_ac9d499575ba2cb2932af5a15fce941fc}{Nb\+Vertices}} () const
+\item 
+int \mbox{\hyperlink{classProblemData_a70f3a69ba18824459b7ba65c10b622c7}{Nb\+Requests}} () const
+\item 
+int \mbox{\hyperlink{classProblemData_a9175afcaa48704ebfea1e38504753200}{Nb\+Vehicles}} () const
+\item 
+int \mbox{\hyperlink{classProblemData_a9f26b121a39da27ba2cc70dc120ce933}{Nb\+Waiting\+Stations}} () const
+\item 
+int \mbox{\hyperlink{classProblemData_a16ca38242520b3e17a5fa441e82c546a}{Get\+Closest\+Destination}} (int vertex\+Id) const
+\item 
+double \mbox{\hyperlink{classProblemData_aa01310680cdc5bf3aa29c8857c9adba2}{calculate\+Distance}} (const \mbox{\hyperlink{structPosition}{Position}} \&pos1, const \mbox{\hyperlink{structPosition}{Position}} \&pos2)
+\item 
+void \mbox{\hyperlink{classProblemData_ac10cb075c969c79368256208e40f646f}{example\+Instance}} ()
+\item 
+void \mbox{\hyperlink{classProblemData_abd06e3cfc48a9c014ec5f9a005bd5642}{read\+P\+D\+P\+T\+W\+Instance}} (string path)
+\item 
+void \mbox{\hyperlink{classProblemData_a7858cfac756e1010ae909a1f7ee7a726}{read\+S\+D\+V\+R\+P\+T\+W\+Instance}} (string path)
+\item 
+const \mbox{\hyperlink{structInitialPosition}{Initial\+Position}} $\ast$ \mbox{\hyperlink{classProblemData_ae7173864876f30a6231db1210db51306}{Get\+Initial\+Position}} (int id) const
+\item 
+const \mbox{\hyperlink{structInitialPosition}{Initial\+Position}} $\ast$ \mbox{\hyperlink{classProblemData_a176182e3678868df864d438cacf7729e}{Get\+Initial\+Position\+By\+Index}} (int index) const
+\item 
+const \mbox{\hyperlink{structRequest}{Request}} $\ast$ \mbox{\hyperlink{classProblemData_abb9fa9aa5f236243aa0787f2835eb4e5}{Get\+Request}} (int id) const
+\item 
+const \mbox{\hyperlink{structRequest}{Request}} $\ast$ \mbox{\hyperlink{classProblemData_a4615d0c6ec3a709c5a659f5e0b50c7e8}{Get\+Request\+By\+Index}} (int index) const
+\item 
+const \mbox{\hyperlink{structDestination}{Destination}} $\ast$ \mbox{\hyperlink{classProblemData_a4ac601bdd8704f3f703ca825ebb04ac3}{Get\+Destination}} (int id) const
+\item 
+const \mbox{\hyperlink{structDestination}{Destination}} $\ast$ \mbox{\hyperlink{classProblemData_ae1277c14ccbb14ea51a3c9cd0b15705b}{Get\+Destination\+By\+Index}} (int index) const
+\item 
+const \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}} $\ast$ \mbox{\hyperlink{classProblemData_a8d94d838b2b84b4f2db51f5437615c51}{Get\+Waiting\+Station}} (int id) const
+\item 
+const \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}} $\ast$ \mbox{\hyperlink{classProblemData_a1eb1374c1b46595464f5892d0217f175}{Get\+Waiting\+Station\+By\+Index}} (int id) const
+\item 
+const \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ \mbox{\hyperlink{classProblemData_a5975d8b4a04b8670998de0920258bad3}{Get\+Vertex}} (int id) const
+\item 
+int \mbox{\hyperlink{classProblemData_ae6bb9fe55f12dc3d1852262ed02b43dc}{Request\+Id\+To\+Index}} (int id) const
+\item 
+int \mbox{\hyperlink{classProblemData_aabc01d74455e82726b59b35f5ace8571}{Index\+To\+Request\+Id}} (int index) const
+\item 
+void \mbox{\hyperlink{classProblemData_a6d597c6784a49adf1a15260dab7c3102}{Reset\+Number\+Of\+Vehicles}} (int new\+Nb\+Vehicles)
+\item 
+bool \mbox{\hyperlink{classProblemData_ab5ce953771e8d9502dc4ea6eb655ea1d}{Is\+Request}} (int id) const
+\item 
+bool \mbox{\hyperlink{classProblemData_a67a7b4452ccd3daad77192b1275d6816}{Is\+Destination}} (int id) const
+\item 
+bool \mbox{\hyperlink{classProblemData_ad5104efb04ff2ad41821175720769e75}{Is\+Initial\+Position}} (int id) const
+\item 
+bool \mbox{\hyperlink{classProblemData_a654434a9bf0b21a839622135e162f73d}{Is\+Waiting\+Station}} (int id) const
+\item 
+bool \mbox{\hyperlink{classProblemData_ae4ca281bf3960bedada8abeaec76ed3f}{Is\+Intermediate\+Vertex}} (int id) const
+\item 
+bool \mbox{\hyperlink{classProblemData_a08faaedfd888f7b15c33e0a7e557adff}{Is\+Compatible}} (const \mbox{\hyperlink{structRequest}{Request}} $\ast$request, int vehicle\+\_\+index)
+\item 
+double \mbox{\hyperlink{classProblemData_a5544fdf6d6e8abe281ae12c45289654e}{Ommited\+Distance}} (int i, int j)
+\item 
+double \mbox{\hyperlink{classProblemData_afda719325558d482dc534e4ec85d4ffc}{Distance}} (int i, int j)
+\item 
+const \mbox{\hyperlink{structVehicle}{Vehicle}} $\ast$ \mbox{\hyperlink{classProblemData_af1669abc307d14b2715f38c9dfa97259}{get\+Vehicle}} (int id)
+\item 
+double \mbox{\hyperlink{classProblemData_a5dccce4e4274117cd39237a538d96afb}{weighted\+\_\+lateness}} (int req\+\_\+id, double time)
+\item 
+double \mbox{\hyperlink{classProblemData_a815d7f79d94997bab1e9139d4a4f8307}{weighted\+\_\+lateness}} (const \mbox{\hyperlink{structRequest}{Request}} $\ast$request, double time)
+\item 
+void \mbox{\hyperlink{classProblemData_a6f48ae16eca60f07c789e6b67011785e}{Set\+Vehicle\+Availability}} (vector$<$ double $>$ vehicle\+Availability)
+\item 
+void \mbox{\hyperlink{classProblemData_a031ed263ba62a0c96a760da92cf5d8c3}{Set\+Vehicle\+Positions}} (vector$<$ \mbox{\hyperlink{structPosition}{Position}} $>$ vehicle\+Positions)
+\item 
+\mbox{\hyperlink{classProblemData_a4a0fa3a8b52687799d18bb2d151e29c9}{Problem\+Data}} ()
+\item 
+\mbox{\hyperlink{classProblemData_aa92f1abb5be76930fe4cc894b5da0855}{Problem\+Data}} (string path\+To\+Instance, string instance\+Type=\char`\"{}pdptw\char`\"{})
+\item 
+\mbox{\hyperlink{classProblemData_a23e7964ff64b798866da46bbafb9cb1e}{$\sim$\+Problem\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static double \mbox{\hyperlink{classProblemData_aff32acf53595d0fab094d204aaea464d}{calculate\+Distance}} (const \mbox{\hyperlink{structPosition}{Position}} \&pos1, const \mbox{\hyperlink{structPosition}{Position}} \&pos2, \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}} \mbox{\hyperlink{classProblemData_a6714a84d4221b94a69d4d7dc770d806b}{distance\+Type}})
+\item 
+static double \mbox{\hyperlink{classProblemData_af8eba01dcfb6839073d518d1fb6589da}{euclidian\+Distance}} (const \mbox{\hyperlink{structPosition}{Position}} \&pos1, const \mbox{\hyperlink{structPosition}{Position}} \&pos2)
+\item 
+static double \mbox{\hyperlink{classProblemData_afefda1f4dc3f2ff191c0dca52f8b9043}{geodesic\+Distance}} (const \mbox{\hyperlink{structPosition}{Position}} \&pos1, const \mbox{\hyperlink{structPosition}{Position}} \&pos2)
+\item 
+static \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{classProblemData_a331bf9642ed2e85f7baa2f42d8b64714}{Get\+Intermediate\+Position2}} (\mbox{\hyperlink{structPosition}{Position}} p1, \mbox{\hyperlink{structPosition}{Position}} p2, double time\+From\+Start)
+\item 
+static double \mbox{\hyperlink{classProblemData_a7407f06111fe4af53e7cdb1bb486ce63}{Vehicle\+Speed}} ()
+\item 
+static bool \mbox{\hyperlink{classProblemData_af2543fee06b189a3e1c713e5906a1c4f}{read\+Vincent\+Instance}} (string requests\+\_\+path, string hospitals\+\_\+path, string waiting\+\_\+stations\+\_\+path, string cleaning\+\_\+stations\+\_\+path, int instance\+\_\+index, \mbox{\hyperlink{classProblemData}{Problem\+Data}} \&out\+Instance, bool ten\+Columns, std\+::string osm\+Path, bool use\+Time\+Horizon=false, double \mbox{\hyperlink{classProblemData_aa9106e57ccbea6463bf9e82bfb66b4d1}{time\+Horizon}}=0.\+0, int overwrite\+Nb\+Vehicles=-\/1)
+\item 
+static \mbox{\hyperlink{structPosition}{Position}} \mbox{\hyperlink{classProblemData_af29eace415e2bf7f7c257d3a19512724}{Get\+Intermediate\+Position}} (\mbox{\hyperlink{structPosition}{Position}} source, \mbox{\hyperlink{structPosition}{Position}} destination, double t0, double t)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classProblemData_a0575dfcb5074568ceb7ebc0c8ec45ec4}{name}}
+\item 
+double \mbox{\hyperlink{classProblemData_aa9106e57ccbea6463bf9e82bfb66b4d1}{time\+Horizon}}
+\item 
+bool \mbox{\hyperlink{classProblemData_ae86fc554b983615ee10f32b544ed23c9}{compute\+Time\+Horizon}} = false
+\item 
+bool \mbox{\hyperlink{classProblemData_a93348a14be9eca378f5885d15d5cc085}{allow\+Rerouting}} = false
+\item 
+\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}} \mbox{\hyperlink{classProblemData_a15aa38fec6da8ced8d296b0696e6c205}{waiting\+Station\+Policy}} = \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2da7d877dfa2d36e1a8b8f7be06ac48f398}{Waiting\+Station\+Policy\+::optional\+Stop\+In\+Closest\+Waiting\+Station}}
+\item 
+bool \mbox{\hyperlink{classProblemData_adcd8668e73d797ef3e32ce1400292343}{use\+Target\+Wait\+Time\+Objective}} = false
+\item 
+std\+::map$<$ double, double $>$ \mbox{\hyperlink{classProblemData_a90e425ec3145a19fd3a67a9eeefab782}{target\+\_\+times\+\_\+per\+\_\+weight}} = \{\{1, 30$\ast$60\}, \{2, 15$\ast$60\}, \{4, 10$\ast$60\}\}
+\item 
+\mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}} \mbox{\hyperlink{classProblemData_a6714a84d4221b94a69d4d7dc770d806b}{distance\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classProblemData_a2cdca204dd6abd38641123620e521327}{Initial\+Position\+Id\+To\+Index}} (int id) const
+\item 
+int \mbox{\hyperlink{classProblemData_a03f0a882e906a25990d38e384abb805f}{Initial\+Position\+Index\+To\+Id}} (int index) const
+\item 
+int \mbox{\hyperlink{classProblemData_ac0779e4db8e55a67ecbb7312c5828dd7}{Destination\+Id\+To\+Index}} (int id) const
+\item 
+int \mbox{\hyperlink{classProblemData_a110877be32f967f9701dd335a5e8778a}{Index\+To\+Destination\+Id}} (int index) const
+\item 
+int \mbox{\hyperlink{classProblemData_ac0b86bfb1b2eafda407b24a5b264faab}{Waiting\+Station\+Id\+To\+Index}} (int id) const
+\item 
+int \mbox{\hyperlink{classProblemData_a920a18f7ac61b64f255dc8151ec027de}{Index\+To\+Waiting\+Station\+Id}} (int index) const
+\item 
+void \mbox{\hyperlink{classProblemData_a6ff0d95b68b6fb989f75b840b98b0918}{Precompute\+Closest\+W\+Ss}} ()
+\item 
+int \mbox{\hyperlink{classProblemData_a6f68add6f7ee62852bd12c3b643f4831}{Get\+Closest\+Waiting\+Station}} (int vertex\+Id) const
+\item 
+void \mbox{\hyperlink{classProblemData_aa93ba921de3a5fceccdd5961513eb83a}{Validate}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classProblemData_aa9a74c2d425d2d8f3a911bc9abaab79e}{Calculate\+Distance\+Matrix}} (vector$<$ \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ $>$ \&vertices, vector$<$ vector$<$ double $>$$>$ \&out\+Matrix, \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}} \mbox{\hyperlink{classProblemData_a6714a84d4221b94a69d4d7dc770d806b}{distance\+Type}})
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structVehicle}{Vehicle}} $>$ \mbox{\hyperlink{classProblemData_a7c5acfea02a010b11f5facf0987fad1e}{vehicles}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structInitialPosition}{Initial\+Position}} $>$ \mbox{\hyperlink{classProblemData_a8c73ced1b76fbbdda329ad42a74e78b6}{initial\+Positions}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structRequest}{Request}} $>$ \mbox{\hyperlink{classProblemData_aa83015007807629df943eda503c642be}{requests}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structDestination}{Destination}} $>$ \mbox{\hyperlink{classProblemData_a10119065974f0a6738a0310f07270ca5}{destinations}}
+\item 
+std\+::vector$<$ \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}} $>$ \mbox{\hyperlink{classProblemData_a36e416cb4cad7e710b0a94fee4a0426c}{waiting\+Stations}}
+\item 
+vector$<$ vector$<$ double $>$ $>$ \mbox{\hyperlink{classProblemData_a438fda05cff8d35bcad1fb647dc3157b}{distances}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classProblemData_a4a0fa3a8b52687799d18bb2d151e29c9}\label{classProblemData_a4a0fa3a8b52687799d18bb2d151e29c9}} 
+\index{ProblemData@{ProblemData}!ProblemData@{ProblemData}}
+\index{ProblemData@{ProblemData}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{ProblemData()}{ProblemData()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Problem\+Data\+::\+Problem\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_aa92f1abb5be76930fe4cc894b5da0855}\label{classProblemData_aa92f1abb5be76930fe4cc894b5da0855}} 
+\index{ProblemData@{ProblemData}!ProblemData@{ProblemData}}
+\index{ProblemData@{ProblemData}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{ProblemData()}{ProblemData()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Problem\+Data\+::\+Problem\+Data (\begin{DoxyParamCaption}\item[{string}]{path\+To\+Instance,  }\item[{string}]{instance\+Type = {\ttfamily \char`\"{}pdptw\char`\"{}} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a23e7964ff64b798866da46bbafb9cb1e}\label{classProblemData_a23e7964ff64b798866da46bbafb9cb1e}} 
+\index{ProblemData@{ProblemData}!````~ProblemData@{$\sim$ProblemData}}
+\index{````~ProblemData@{$\sim$ProblemData}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{$\sim$ProblemData()}{~ProblemData()}}
+{\footnotesize\ttfamily Problem\+Data\+::$\sim$\+Problem\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classProblemData_aa01310680cdc5bf3aa29c8857c9adba2}\label{classProblemData_aa01310680cdc5bf3aa29c8857c9adba2}} 
+\index{ProblemData@{ProblemData}!calculateDistance@{calculateDistance}}
+\index{calculateDistance@{calculateDistance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{calculateDistance()}{calculateDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Problem\+Data\+::calculate\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_aff32acf53595d0fab094d204aaea464d}\label{classProblemData_aff32acf53595d0fab094d204aaea464d}} 
+\index{ProblemData@{ProblemData}!calculateDistance@{calculateDistance}}
+\index{calculateDistance@{calculateDistance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{calculateDistance()}{calculateDistance()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Problem\+Data\+::calculate\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos2,  }\item[{\mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}}}]{distance\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_aa9a74c2d425d2d8f3a911bc9abaab79e}\label{classProblemData_aa9a74c2d425d2d8f3a911bc9abaab79e}} 
+\index{ProblemData@{ProblemData}!CalculateDistanceMatrix@{CalculateDistanceMatrix}}
+\index{CalculateDistanceMatrix@{CalculateDistanceMatrix}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{CalculateDistanceMatrix()}{CalculateDistanceMatrix()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Calculate\+Distance\+Matrix (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ $>$ \&}]{vertices,  }\item[{vector$<$ vector$<$ double $>$$>$ \&}]{out\+Matrix,  }\item[{\mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}}}]{distance\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}, {\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_ac0779e4db8e55a67ecbb7312c5828dd7}\label{classProblemData_ac0779e4db8e55a67ecbb7312c5828dd7}} 
+\index{ProblemData@{ProblemData}!DestinationIdToIndex@{DestinationIdToIndex}}
+\index{DestinationIdToIndex@{DestinationIdToIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{DestinationIdToIndex()}{DestinationIdToIndex()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Destination\+Id\+To\+Index (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_afda719325558d482dc534e4ec85d4ffc}\label{classProblemData_afda719325558d482dc534e4ec85d4ffc}} 
+\index{ProblemData@{ProblemData}!Distance@{Distance}}
+\index{Distance@{Distance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily double Problem\+Data\+::\+Distance (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_af8eba01dcfb6839073d518d1fb6589da}\label{classProblemData_af8eba01dcfb6839073d518d1fb6589da}} 
+\index{ProblemData@{ProblemData}!euclidianDistance@{euclidianDistance}}
+\index{euclidianDistance@{euclidianDistance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{euclidianDistance()}{euclidianDistance()}}
+{\footnotesize\ttfamily double Problem\+Data\+::euclidian\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_ac10cb075c969c79368256208e40f646f}\label{classProblemData_ac10cb075c969c79368256208e40f646f}} 
+\index{ProblemData@{ProblemData}!exampleInstance@{exampleInstance}}
+\index{exampleInstance@{exampleInstance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{exampleInstance()}{exampleInstance()}}
+{\footnotesize\ttfamily void Problem\+Data\+::example\+Instance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_afefda1f4dc3f2ff191c0dca52f8b9043}\label{classProblemData_afefda1f4dc3f2ff191c0dca52f8b9043}} 
+\index{ProblemData@{ProblemData}!geodesicDistance@{geodesicDistance}}
+\index{geodesicDistance@{geodesicDistance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{geodesicDistance()}{geodesicDistance()}}
+{\footnotesize\ttfamily double Problem\+Data\+::geodesic\+Distance (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos1,  }\item[{const \mbox{\hyperlink{structPosition}{Position}} \&}]{pos2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_a16ca38242520b3e17a5fa441e82c546a}\label{classProblemData_a16ca38242520b3e17a5fa441e82c546a}} 
+\index{ProblemData@{ProblemData}!GetClosestDestination@{GetClosestDestination}}
+\index{GetClosestDestination@{GetClosestDestination}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetClosestDestination()}{GetClosestDestination()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Get\+Closest\+Destination (\begin{DoxyParamCaption}\item[{int}]{vertex\+Id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a6f68add6f7ee62852bd12c3b643f4831}\label{classProblemData_a6f68add6f7ee62852bd12c3b643f4831}} 
+\index{ProblemData@{ProblemData}!GetClosestWaitingStation@{GetClosestWaitingStation}}
+\index{GetClosestWaitingStation@{GetClosestWaitingStation}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetClosestWaitingStation()}{GetClosestWaitingStation()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Get\+Closest\+Waiting\+Station (\begin{DoxyParamCaption}\item[{int}]{vertex\+Id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a4ac601bdd8704f3f703ca825ebb04ac3}\label{classProblemData_a4ac601bdd8704f3f703ca825ebb04ac3}} 
+\index{ProblemData@{ProblemData}!GetDestination@{GetDestination}}
+\index{GetDestination@{GetDestination}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetDestination()}{GetDestination()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structDestination}{Destination}} $\ast$ Problem\+Data\+::\+Get\+Destination (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_ae1277c14ccbb14ea51a3c9cd0b15705b}\label{classProblemData_ae1277c14ccbb14ea51a3c9cd0b15705b}} 
+\index{ProblemData@{ProblemData}!GetDestinationByIndex@{GetDestinationByIndex}}
+\index{GetDestinationByIndex@{GetDestinationByIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetDestinationByIndex()}{GetDestinationByIndex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structDestination}{Destination}} $\ast$ Problem\+Data\+::\+Get\+Destination\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_ae7173864876f30a6231db1210db51306}\label{classProblemData_ae7173864876f30a6231db1210db51306}} 
+\index{ProblemData@{ProblemData}!GetInitialPosition@{GetInitialPosition}}
+\index{GetInitialPosition@{GetInitialPosition}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetInitialPosition()}{GetInitialPosition()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structInitialPosition}{Initial\+Position}} $\ast$ Problem\+Data\+::\+Get\+Initial\+Position (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a176182e3678868df864d438cacf7729e}\label{classProblemData_a176182e3678868df864d438cacf7729e}} 
+\index{ProblemData@{ProblemData}!GetInitialPositionByIndex@{GetInitialPositionByIndex}}
+\index{GetInitialPositionByIndex@{GetInitialPositionByIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetInitialPositionByIndex()}{GetInitialPositionByIndex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structInitialPosition}{Initial\+Position}} $\ast$ Problem\+Data\+::\+Get\+Initial\+Position\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_af29eace415e2bf7f7c257d3a19512724}\label{classProblemData_af29eace415e2bf7f7c257d3a19512724}} 
+\index{ProblemData@{ProblemData}!GetIntermediatePosition@{GetIntermediatePosition}}
+\index{GetIntermediatePosition@{GetIntermediatePosition}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetIntermediatePosition()}{GetIntermediatePosition()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPosition}{Position}} Problem\+Data\+::\+Get\+Intermediate\+Position (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{source,  }\item[{\mbox{\hyperlink{structPosition}{Position}}}]{destination,  }\item[{double}]{t0,  }\item[{double}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_a331bf9642ed2e85f7baa2f42d8b64714}\label{classProblemData_a331bf9642ed2e85f7baa2f42d8b64714}} 
+\index{ProblemData@{ProblemData}!GetIntermediatePosition2@{GetIntermediatePosition2}}
+\index{GetIntermediatePosition2@{GetIntermediatePosition2}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetIntermediatePosition2()}{GetIntermediatePosition2()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPosition}{Position}} Problem\+Data\+::\+Get\+Intermediate\+Position2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structPosition}{Position}}}]{p1,  }\item[{\mbox{\hyperlink{structPosition}{Position}}}]{p2,  }\item[{double}]{time\+From\+Start }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_abb9fa9aa5f236243aa0787f2835eb4e5}\label{classProblemData_abb9fa9aa5f236243aa0787f2835eb4e5}} 
+\index{ProblemData@{ProblemData}!GetRequest@{GetRequest}}
+\index{GetRequest@{GetRequest}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetRequest()}{GetRequest()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structRequest}{Request}} $\ast$ Problem\+Data\+::\+Get\+Request (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a4615d0c6ec3a709c5a659f5e0b50c7e8}\label{classProblemData_a4615d0c6ec3a709c5a659f5e0b50c7e8}} 
+\index{ProblemData@{ProblemData}!GetRequestByIndex@{GetRequestByIndex}}
+\index{GetRequestByIndex@{GetRequestByIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetRequestByIndex()}{GetRequestByIndex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structRequest}{Request}} $\ast$ Problem\+Data\+::\+Get\+Request\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_af1669abc307d14b2715f38c9dfa97259}\label{classProblemData_af1669abc307d14b2715f38c9dfa97259}} 
+\index{ProblemData@{ProblemData}!getVehicle@{getVehicle}}
+\index{getVehicle@{getVehicle}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{getVehicle()}{getVehicle()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structVehicle}{Vehicle}}$\ast$ Problem\+Data\+::get\+Vehicle (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_a5975d8b4a04b8670998de0920258bad3}\label{classProblemData_a5975d8b4a04b8670998de0920258bad3}} 
+\index{ProblemData@{ProblemData}!GetVertex@{GetVertex}}
+\index{GetVertex@{GetVertex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetVertex()}{GetVertex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ Problem\+Data\+::\+Get\+Vertex (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a8d94d838b2b84b4f2db51f5437615c51}\label{classProblemData_a8d94d838b2b84b4f2db51f5437615c51}} 
+\index{ProblemData@{ProblemData}!GetWaitingStation@{GetWaitingStation}}
+\index{GetWaitingStation@{GetWaitingStation}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetWaitingStation()}{GetWaitingStation()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}} $\ast$ Problem\+Data\+::\+Get\+Waiting\+Station (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a1eb1374c1b46595464f5892d0217f175}\label{classProblemData_a1eb1374c1b46595464f5892d0217f175}} 
+\index{ProblemData@{ProblemData}!GetWaitingStationByIndex@{GetWaitingStationByIndex}}
+\index{GetWaitingStationByIndex@{GetWaitingStationByIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{GetWaitingStationByIndex()}{GetWaitingStationByIndex()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}} $\ast$ Problem\+Data\+::\+Get\+Waiting\+Station\+By\+Index (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a110877be32f967f9701dd335a5e8778a}\label{classProblemData_a110877be32f967f9701dd335a5e8778a}} 
+\index{ProblemData@{ProblemData}!IndexToDestinationId@{IndexToDestinationId}}
+\index{IndexToDestinationId@{IndexToDestinationId}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IndexToDestinationId()}{IndexToDestinationId()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Index\+To\+Destination\+Id (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_aabc01d74455e82726b59b35f5ace8571}\label{classProblemData_aabc01d74455e82726b59b35f5ace8571}} 
+\index{ProblemData@{ProblemData}!IndexToRequestId@{IndexToRequestId}}
+\index{IndexToRequestId@{IndexToRequestId}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IndexToRequestId()}{IndexToRequestId()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Index\+To\+Request\+Id (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a920a18f7ac61b64f255dc8151ec027de}\label{classProblemData_a920a18f7ac61b64f255dc8151ec027de}} 
+\index{ProblemData@{ProblemData}!IndexToWaitingStationId@{IndexToWaitingStationId}}
+\index{IndexToWaitingStationId@{IndexToWaitingStationId}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IndexToWaitingStationId()}{IndexToWaitingStationId()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Index\+To\+Waiting\+Station\+Id (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a2cdca204dd6abd38641123620e521327}\label{classProblemData_a2cdca204dd6abd38641123620e521327}} 
+\index{ProblemData@{ProblemData}!InitialPositionIdToIndex@{InitialPositionIdToIndex}}
+\index{InitialPositionIdToIndex@{InitialPositionIdToIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{InitialPositionIdToIndex()}{InitialPositionIdToIndex()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Initial\+Position\+Id\+To\+Index (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a03f0a882e906a25990d38e384abb805f}\label{classProblemData_a03f0a882e906a25990d38e384abb805f}} 
+\index{ProblemData@{ProblemData}!InitialPositionIndexToId@{InitialPositionIndexToId}}
+\index{InitialPositionIndexToId@{InitialPositionIndexToId}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{InitialPositionIndexToId()}{InitialPositionIndexToId()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Initial\+Position\+Index\+To\+Id (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a08faaedfd888f7b15c33e0a7e557adff}\label{classProblemData_a08faaedfd888f7b15c33e0a7e557adff}} 
+\index{ProblemData@{ProblemData}!IsCompatible@{IsCompatible}}
+\index{IsCompatible@{IsCompatible}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsCompatible()}{IsCompatible()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Compatible (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRequest}{Request}} $\ast$}]{request,  }\item[{int}]{vehicle\+\_\+index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a67a7b4452ccd3daad77192b1275d6816}\label{classProblemData_a67a7b4452ccd3daad77192b1275d6816}} 
+\index{ProblemData@{ProblemData}!IsDestination@{IsDestination}}
+\index{IsDestination@{IsDestination}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsDestination()}{IsDestination()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Destination (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_ad5104efb04ff2ad41821175720769e75}\label{classProblemData_ad5104efb04ff2ad41821175720769e75}} 
+\index{ProblemData@{ProblemData}!IsInitialPosition@{IsInitialPosition}}
+\index{IsInitialPosition@{IsInitialPosition}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsInitialPosition()}{IsInitialPosition()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Initial\+Position (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_ae4ca281bf3960bedada8abeaec76ed3f}\label{classProblemData_ae4ca281bf3960bedada8abeaec76ed3f}} 
+\index{ProblemData@{ProblemData}!IsIntermediateVertex@{IsIntermediateVertex}}
+\index{IsIntermediateVertex@{IsIntermediateVertex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsIntermediateVertex()}{IsIntermediateVertex()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Intermediate\+Vertex (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_ab5ce953771e8d9502dc4ea6eb655ea1d}\label{classProblemData_ab5ce953771e8d9502dc4ea6eb655ea1d}} 
+\index{ProblemData@{ProblemData}!IsRequest@{IsRequest}}
+\index{IsRequest@{IsRequest}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsRequest()}{IsRequest()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Request (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a654434a9bf0b21a839622135e162f73d}\label{classProblemData_a654434a9bf0b21a839622135e162f73d}} 
+\index{ProblemData@{ProblemData}!IsWaitingStation@{IsWaitingStation}}
+\index{IsWaitingStation@{IsWaitingStation}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{IsWaitingStation()}{IsWaitingStation()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::\+Is\+Waiting\+Station (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a70f3a69ba18824459b7ba65c10b622c7}\label{classProblemData_a70f3a69ba18824459b7ba65c10b622c7}} 
+\index{ProblemData@{ProblemData}!NbRequests@{NbRequests}}
+\index{NbRequests@{NbRequests}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{NbRequests()}{NbRequests()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Nb\+Requests (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_a9175afcaa48704ebfea1e38504753200}\label{classProblemData_a9175afcaa48704ebfea1e38504753200}} 
+\index{ProblemData@{ProblemData}!NbVehicles@{NbVehicles}}
+\index{NbVehicles@{NbVehicles}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{NbVehicles()}{NbVehicles()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Nb\+Vehicles (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_ac9d499575ba2cb2932af5a15fce941fc}\label{classProblemData_ac9d499575ba2cb2932af5a15fce941fc}} 
+\index{ProblemData@{ProblemData}!NbVertices@{NbVertices}}
+\index{NbVertices@{NbVertices}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{NbVertices()}{NbVertices()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Nb\+Vertices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_a9f26b121a39da27ba2cc70dc120ce933}\label{classProblemData_a9f26b121a39da27ba2cc70dc120ce933}} 
+\index{ProblemData@{ProblemData}!NbWaitingStations@{NbWaitingStations}}
+\index{NbWaitingStations@{NbWaitingStations}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{NbWaitingStations()}{NbWaitingStations()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Nb\+Waiting\+Stations (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classProblemData_a5544fdf6d6e8abe281ae12c45289654e}\label{classProblemData_a5544fdf6d6e8abe281ae12c45289654e}} 
+\index{ProblemData@{ProblemData}!OmmitedDistance@{OmmitedDistance}}
+\index{OmmitedDistance@{OmmitedDistance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{OmmitedDistance()}{OmmitedDistance()}}
+{\footnotesize\ttfamily double Problem\+Data\+::\+Ommited\+Distance (\begin{DoxyParamCaption}\item[{int}]{i,  }\item[{int}]{j }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a6ff0d95b68b6fb989f75b840b98b0918}\label{classProblemData_a6ff0d95b68b6fb989f75b840b98b0918}} 
+\index{ProblemData@{ProblemData}!PrecomputeClosestWSs@{PrecomputeClosestWSs}}
+\index{PrecomputeClosestWSs@{PrecomputeClosestWSs}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{PrecomputeClosestWSs()}{PrecomputeClosestWSs()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Precompute\+Closest\+W\+Ss (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_abd06e3cfc48a9c014ec5f9a005bd5642}\label{classProblemData_abd06e3cfc48a9c014ec5f9a005bd5642}} 
+\index{ProblemData@{ProblemData}!readPDPTWInstance@{readPDPTWInstance}}
+\index{readPDPTWInstance@{readPDPTWInstance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{readPDPTWInstance()}{readPDPTWInstance()}}
+{\footnotesize\ttfamily void Problem\+Data\+::read\+P\+D\+P\+T\+W\+Instance (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a7858cfac756e1010ae909a1f7ee7a726}\label{classProblemData_a7858cfac756e1010ae909a1f7ee7a726}} 
+\index{ProblemData@{ProblemData}!readSDVRPTWInstance@{readSDVRPTWInstance}}
+\index{readSDVRPTWInstance@{readSDVRPTWInstance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{readSDVRPTWInstance()}{readSDVRPTWInstance()}}
+{\footnotesize\ttfamily void Problem\+Data\+::read\+S\+D\+V\+R\+P\+T\+W\+Instance (\begin{DoxyParamCaption}\item[{string}]{path }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_af2543fee06b189a3e1c713e5906a1c4f}\label{classProblemData_af2543fee06b189a3e1c713e5906a1c4f}} 
+\index{ProblemData@{ProblemData}!readVincentInstance@{readVincentInstance}}
+\index{readVincentInstance@{readVincentInstance}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{readVincentInstance()}{readVincentInstance()}}
+{\footnotesize\ttfamily bool Problem\+Data\+::read\+Vincent\+Instance (\begin{DoxyParamCaption}\item[{string}]{requests\+\_\+path,  }\item[{string}]{hospitals\+\_\+path,  }\item[{string}]{waiting\+\_\+stations\+\_\+path,  }\item[{string}]{cleaning\+\_\+stations\+\_\+path,  }\item[{int}]{instance\+\_\+index,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} \&}]{out\+Instance,  }\item[{bool}]{ten\+Columns,  }\item[{std\+::string}]{osm\+Path,  }\item[{bool}]{use\+Time\+Horizon = {\ttfamily false},  }\item[{double}]{time\+Horizon = {\ttfamily 0.0},  }\item[{int}]{overwrite\+Nb\+Vehicles = {\ttfamily -\/1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_ae6bb9fe55f12dc3d1852262ed02b43dc}\label{classProblemData_ae6bb9fe55f12dc3d1852262ed02b43dc}} 
+\index{ProblemData@{ProblemData}!RequestIdToIndex@{RequestIdToIndex}}
+\index{RequestIdToIndex@{RequestIdToIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{RequestIdToIndex()}{RequestIdToIndex()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Request\+Id\+To\+Index (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const}
+
+\mbox{\Hypertarget{classProblemData_a6d597c6784a49adf1a15260dab7c3102}\label{classProblemData_a6d597c6784a49adf1a15260dab7c3102}} 
+\index{ProblemData@{ProblemData}!ResetNumberOfVehicles@{ResetNumberOfVehicles}}
+\index{ResetNumberOfVehicles@{ResetNumberOfVehicles}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{ResetNumberOfVehicles()}{ResetNumberOfVehicles()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Reset\+Number\+Of\+Vehicles (\begin{DoxyParamCaption}\item[{int}]{new\+Nb\+Vehicles }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a6f48ae16eca60f07c789e6b67011785e}\label{classProblemData_a6f48ae16eca60f07c789e6b67011785e}} 
+\index{ProblemData@{ProblemData}!SetVehicleAvailability@{SetVehicleAvailability}}
+\index{SetVehicleAvailability@{SetVehicleAvailability}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{SetVehicleAvailability()}{SetVehicleAvailability()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Set\+Vehicle\+Availability (\begin{DoxyParamCaption}\item[{vector$<$ double $>$}]{vehicle\+Availability }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a031ed263ba62a0c96a760da92cf5d8c3}\label{classProblemData_a031ed263ba62a0c96a760da92cf5d8c3}} 
+\index{ProblemData@{ProblemData}!SetVehiclePositions@{SetVehiclePositions}}
+\index{SetVehiclePositions@{SetVehiclePositions}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{SetVehiclePositions()}{SetVehiclePositions()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Set\+Vehicle\+Positions (\begin{DoxyParamCaption}\item[{vector$<$ \mbox{\hyperlink{structPosition}{Position}} $>$}]{vehicle\+Positions }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_aa93ba921de3a5fceccdd5961513eb83a}\label{classProblemData_aa93ba921de3a5fceccdd5961513eb83a}} 
+\index{ProblemData@{ProblemData}!Validate@{Validate}}
+\index{Validate@{Validate}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily void Problem\+Data\+::\+Validate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a7407f06111fe4af53e7cdb1bb486ce63}\label{classProblemData_a7407f06111fe4af53e7cdb1bb486ce63}} 
+\index{ProblemData@{ProblemData}!VehicleSpeed@{VehicleSpeed}}
+\index{VehicleSpeed@{VehicleSpeed}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{VehicleSpeed()}{VehicleSpeed()}}
+{\footnotesize\ttfamily static double Problem\+Data\+::\+Vehicle\+Speed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+\mbox{\Hypertarget{classProblemData_ac0b86bfb1b2eafda407b24a5b264faab}\label{classProblemData_ac0b86bfb1b2eafda407b24a5b264faab}} 
+\index{ProblemData@{ProblemData}!WaitingStationIdToIndex@{WaitingStationIdToIndex}}
+\index{WaitingStationIdToIndex@{WaitingStationIdToIndex}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{WaitingStationIdToIndex()}{WaitingStationIdToIndex()}}
+{\footnotesize\ttfamily int Problem\+Data\+::\+Waiting\+Station\+Id\+To\+Index (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a815d7f79d94997bab1e9139d4a4f8307}\label{classProblemData_a815d7f79d94997bab1e9139d4a4f8307}} 
+\index{ProblemData@{ProblemData}!weighted\_lateness@{weighted\_lateness}}
+\index{weighted\_lateness@{weighted\_lateness}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{weighted\_lateness()}{weighted\_lateness()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily double Problem\+Data\+::weighted\+\_\+lateness (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{structRequest}{Request}} $\ast$}]{request,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classProblemData_a5dccce4e4274117cd39237a538d96afb}\label{classProblemData_a5dccce4e4274117cd39237a538d96afb}} 
+\index{ProblemData@{ProblemData}!weighted\_lateness@{weighted\_lateness}}
+\index{weighted\_lateness@{weighted\_lateness}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{weighted\_lateness()}{weighted\_lateness()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily double Problem\+Data\+::weighted\+\_\+lateness (\begin{DoxyParamCaption}\item[{int}]{req\+\_\+id,  }\item[{double}]{time }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classProblemData_a93348a14be9eca378f5885d15d5cc085}\label{classProblemData_a93348a14be9eca378f5885d15d5cc085}} 
+\index{ProblemData@{ProblemData}!allowRerouting@{allowRerouting}}
+\index{allowRerouting@{allowRerouting}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{allowRerouting}{allowRerouting}}
+{\footnotesize\ttfamily bool Problem\+Data\+::allow\+Rerouting = false}
+
+\mbox{\Hypertarget{classProblemData_ae86fc554b983615ee10f32b544ed23c9}\label{classProblemData_ae86fc554b983615ee10f32b544ed23c9}} 
+\index{ProblemData@{ProblemData}!computeTimeHorizon@{computeTimeHorizon}}
+\index{computeTimeHorizon@{computeTimeHorizon}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{computeTimeHorizon}{computeTimeHorizon}}
+{\footnotesize\ttfamily bool Problem\+Data\+::compute\+Time\+Horizon = false}
+
+\mbox{\Hypertarget{classProblemData_a10119065974f0a6738a0310f07270ca5}\label{classProblemData_a10119065974f0a6738a0310f07270ca5}} 
+\index{ProblemData@{ProblemData}!destinations@{destinations}}
+\index{destinations@{destinations}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{destinations}{destinations}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structDestination}{Destination}}$>$ Problem\+Data\+::destinations\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a438fda05cff8d35bcad1fb647dc3157b}\label{classProblemData_a438fda05cff8d35bcad1fb647dc3157b}} 
+\index{ProblemData@{ProblemData}!distances@{distances}}
+\index{distances@{distances}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{distances}{distances}}
+{\footnotesize\ttfamily vector$<$vector$<$double$>$ $>$ Problem\+Data\+::distances\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a6714a84d4221b94a69d4d7dc770d806b}\label{classProblemData_a6714a84d4221b94a69d4d7dc770d806b}} 
+\index{ProblemData@{ProblemData}!distanceType@{distanceType}}
+\index{distanceType@{distanceType}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{distanceType}{distanceType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}} Problem\+Data\+::distance\+Type}
+
+\mbox{\Hypertarget{classProblemData_a8c73ced1b76fbbdda329ad42a74e78b6}\label{classProblemData_a8c73ced1b76fbbdda329ad42a74e78b6}} 
+\index{ProblemData@{ProblemData}!initialPositions@{initialPositions}}
+\index{initialPositions@{initialPositions}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{initialPositions}{initialPositions}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structInitialPosition}{Initial\+Position}}$>$ Problem\+Data\+::initial\+Positions\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a0575dfcb5074568ceb7ebc0c8ec45ec4}\label{classProblemData_a0575dfcb5074568ceb7ebc0c8ec45ec4}} 
+\index{ProblemData@{ProblemData}!name@{name}}
+\index{name@{name}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{name}{name}}
+{\footnotesize\ttfamily string Problem\+Data\+::name}
+
+\mbox{\Hypertarget{classProblemData_aa83015007807629df943eda503c642be}\label{classProblemData_aa83015007807629df943eda503c642be}} 
+\index{ProblemData@{ProblemData}!requests@{requests}}
+\index{requests@{requests}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{requests}{requests}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structRequest}{Request}}$>$ Problem\+Data\+::requests\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a90e425ec3145a19fd3a67a9eeefab782}\label{classProblemData_a90e425ec3145a19fd3a67a9eeefab782}} 
+\index{ProblemData@{ProblemData}!target\_times\_per\_weight@{target\_times\_per\_weight}}
+\index{target\_times\_per\_weight@{target\_times\_per\_weight}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{target\_times\_per\_weight}{target\_times\_per\_weight}}
+{\footnotesize\ttfamily std\+::map$<$double, double$>$ Problem\+Data\+::target\+\_\+times\+\_\+per\+\_\+weight = \{\{1, 30$\ast$60\}, \{2, 15$\ast$60\}, \{4, 10$\ast$60\}\}}
+
+\mbox{\Hypertarget{classProblemData_aa9106e57ccbea6463bf9e82bfb66b4d1}\label{classProblemData_aa9106e57ccbea6463bf9e82bfb66b4d1}} 
+\index{ProblemData@{ProblemData}!timeHorizon@{timeHorizon}}
+\index{timeHorizon@{timeHorizon}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{timeHorizon}{timeHorizon}}
+{\footnotesize\ttfamily double Problem\+Data\+::time\+Horizon}
+
+\mbox{\Hypertarget{classProblemData_adcd8668e73d797ef3e32ce1400292343}\label{classProblemData_adcd8668e73d797ef3e32ce1400292343}} 
+\index{ProblemData@{ProblemData}!useTargetWaitTimeObjective@{useTargetWaitTimeObjective}}
+\index{useTargetWaitTimeObjective@{useTargetWaitTimeObjective}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{useTargetWaitTimeObjective}{useTargetWaitTimeObjective}}
+{\footnotesize\ttfamily bool Problem\+Data\+::use\+Target\+Wait\+Time\+Objective = false}
+
+\mbox{\Hypertarget{classProblemData_a7c5acfea02a010b11f5facf0987fad1e}\label{classProblemData_a7c5acfea02a010b11f5facf0987fad1e}} 
+\index{ProblemData@{ProblemData}!vehicles@{vehicles}}
+\index{vehicles@{vehicles}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{vehicles}{vehicles}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structVehicle}{Vehicle}}$>$ Problem\+Data\+::vehicles\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classProblemData_a15aa38fec6da8ced8d296b0696e6c205}\label{classProblemData_a15aa38fec6da8ced8d296b0696e6c205}} 
+\index{ProblemData@{ProblemData}!waitingStationPolicy@{waitingStationPolicy}}
+\index{waitingStationPolicy@{waitingStationPolicy}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{waitingStationPolicy}{waitingStationPolicy}}
+{\footnotesize\ttfamily \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}} Problem\+Data\+::waiting\+Station\+Policy = \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2da7d877dfa2d36e1a8b8f7be06ac48f398}{Waiting\+Station\+Policy\+::optional\+Stop\+In\+Closest\+Waiting\+Station}}}
+
+\mbox{\Hypertarget{classProblemData_a36e416cb4cad7e710b0a94fee4a0426c}\label{classProblemData_a36e416cb4cad7e710b0a94fee4a0426c}} 
+\index{ProblemData@{ProblemData}!waitingStations@{waitingStations}}
+\index{waitingStations@{waitingStations}!ProblemData@{ProblemData}}
+\doxysubsubsection{\texorpdfstring{waitingStations}{waitingStations}}
+{\footnotesize\ttfamily std\+::vector$<$\mbox{\hyperlink{structWaitingStation}{Waiting\+Station}}$>$ Problem\+Data\+::waiting\+Stations\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ProblemData_8h}{Problem\+Data.\+h}}\item 
+src/\mbox{\hyperlink{ProblemData_8cpp}{Problem\+Data.\+cpp}}\end{DoxyCompactItemize}

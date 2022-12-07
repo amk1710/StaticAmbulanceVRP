@@ -1,0 +1,108 @@
+\hypertarget{ProblemData_8h}{}\doxysection{include/\+Problem\+Data.h File Reference}
+\label{ProblemData_8h}\index{include/ProblemData.h@{include/ProblemData.h}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$memory$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$stdexcept$>$}\newline
+{\ttfamily \#include $<$random$>$}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+Include dependency graph for Problem\+Data.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ProblemData_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{ProblemData_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structVehicle}{Vehicle}}
+\item 
+struct \mbox{\hyperlink{structPosition}{Position}}
+\item 
+struct \mbox{\hyperlink{structVertex}{Vertex}}
+\item 
+struct \mbox{\hyperlink{structIntermediateVertex}{Intermediate\+Vertex}}
+\item 
+struct \mbox{\hyperlink{structDestination}{Destination}}
+\item 
+struct \mbox{\hyperlink{structInitialPosition}{Initial\+Position}}
+\item 
+struct \mbox{\hyperlink{structRequest}{Request}}
+\item 
+struct \mbox{\hyperlink{structWaitingStation}{Waiting\+Station}}
+\item 
+class \mbox{\hyperlink{classProblemData}{Problem\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}} \{ \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad665e5f1a5fea00776d7edbec57c09b0}{Distance\+Type\+::euclidian}}, 
+\mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0a8ed7b9ce452ffa947b4d8e2e7e5f6da0}{Distance\+Type\+::geodesic}}, 
+\mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad055de036fb16938fbe9dd3c6fd7e300}{Distance\+Type\+::osrm}}
+ \}
+\item 
+enum \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}} \{ \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac21a31251a8a6055e0221c5554ee5fd7}{Waiting\+Station\+Policy\+::mandatory\+Stop\+In\+Fixed\+Station}}, 
+\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2daccb66b127e58952461f7987db8dd7aa8}{Waiting\+Station\+Policy\+::optional\+Stop\+In\+Fixed\+Station}}, 
+\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2da7d877dfa2d36e1a8b8f7be06ac48f398}{Waiting\+Station\+Policy\+::optional\+Stop\+In\+Closest\+Waiting\+Station}}, 
+\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac6a15532c2162e079d0fb634873a4903}{Waiting\+Station\+Policy\+::best\+Optional\+Stop}}
+ \}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}\label{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}} 
+\index{ProblemData.h@{ProblemData.h}!DistanceType@{DistanceType}}
+\index{DistanceType@{DistanceType}!ProblemData.h@{ProblemData.h}}
+\doxysubsubsection{\texorpdfstring{DistanceType}{DistanceType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0}{Distance\+Type}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{euclidian@{euclidian}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!euclidian@{euclidian}}}\mbox{\Hypertarget{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad665e5f1a5fea00776d7edbec57c09b0}\label{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad665e5f1a5fea00776d7edbec57c09b0}} 
+euclidian&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{geodesic@{geodesic}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!geodesic@{geodesic}}}\mbox{\Hypertarget{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0a8ed7b9ce452ffa947b4d8e2e7e5f6da0}\label{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0a8ed7b9ce452ffa947b4d8e2e7e5f6da0}} 
+geodesic&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{osrm@{osrm}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!osrm@{osrm}}}\mbox{\Hypertarget{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad055de036fb16938fbe9dd3c6fd7e300}\label{ProblemData_8h_a8358ad9993cdc0fef6e1d5fb5a87a5c0ad055de036fb16938fbe9dd3c6fd7e300}} 
+osrm&\\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}\label{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}} 
+\index{ProblemData.h@{ProblemData.h}!WaitingStationPolicy@{WaitingStationPolicy}}
+\index{WaitingStationPolicy@{WaitingStationPolicy}!ProblemData.h@{ProblemData.h}}
+\doxysubsubsection{\texorpdfstring{WaitingStationPolicy}{WaitingStationPolicy}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}}\hspace{0.3cm}{\ttfamily [strong]}}
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{mandatoryStopInFixedStation@{mandatoryStopInFixedStation}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!mandatoryStopInFixedStation@{mandatoryStopInFixedStation}}}\mbox{\Hypertarget{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac21a31251a8a6055e0221c5554ee5fd7}\label{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac21a31251a8a6055e0221c5554ee5fd7}} 
+mandatory\+Stop\+In\+Fixed\+Station&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{optionalStopInFixedStation@{optionalStopInFixedStation}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!optionalStopInFixedStation@{optionalStopInFixedStation}}}\mbox{\Hypertarget{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2daccb66b127e58952461f7987db8dd7aa8}\label{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2daccb66b127e58952461f7987db8dd7aa8}} 
+optional\+Stop\+In\+Fixed\+Station&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{optionalStopInClosestWaitingStation@{optionalStopInClosestWaitingStation}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!optionalStopInClosestWaitingStation@{optionalStopInClosestWaitingStation}}}\mbox{\Hypertarget{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2da7d877dfa2d36e1a8b8f7be06ac48f398}\label{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2da7d877dfa2d36e1a8b8f7be06ac48f398}} 
+optional\+Stop\+In\+Closest\+Waiting\+Station&\\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{bestOptionalStop@{bestOptionalStop}!ProblemData.h@{ProblemData.h}}\index{ProblemData.h@{ProblemData.h}!bestOptionalStop@{bestOptionalStop}}}\mbox{\Hypertarget{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac6a15532c2162e079d0fb634873a4903}\label{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2dac6a15532c2162e079d0fb634873a4903}} 
+best\+Optional\+Stop&\\
+\hline
+
+\end{DoxyEnumFields}

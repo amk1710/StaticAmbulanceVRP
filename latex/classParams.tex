@@ -1,0 +1,294 @@
+\hypertarget{classParams}{}\doxysection{Params Class Reference}
+\label{classParams}\index{Params@{Params}}
+
+
+{\ttfamily \#include $<$Params.\+h$>$}
+
+
+
+Collaboration diagram for Params\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classParams__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParams_a1c0d445a3ea36e3b4d8696c55217fdd2}{Params}} ()
+\item 
+\mbox{\hyperlink{classParams_a8164a931bc732e29c0fb5137f859ec3b}{Params}} (string path\+To\+Instance, string instance\+Type=\char`\"{}pdptw\char`\"{})
+\item 
+void \mbox{\hyperlink{classParams_abb5a6a13f23df2b60ea7fd53dfc864bb}{Start\+Time}} ()
+\item 
+double \mbox{\hyperlink{classParams_af09914aaa33c2807a22e81f61fe549a5}{Get\+Elapsed\+Time}} ()
+\item 
+bool \mbox{\hyperlink{classParams_af0938c1d0f7d4b7f39f38552834275b5}{Timeout}} ()
+\item 
+bool \mbox{\hyperlink{classParams_a1db37e1ee7d62739712dd1ebe7cbace0}{Allows\+Positive\+R\+C\+Elimination}} (\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}} wsp)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+string \mbox{\hyperlink{classParams_a11760aed576735d5fe1757dab022b416}{descriptive\+String}}
+\item 
+string \mbox{\hyperlink{classParams_a32d98300811f4788f20e7b70fca0b5b9}{output\+Directory}}
+\item 
+string \mbox{\hyperlink{classParams_a7eb5d90a8d04c5d1f4dc88971bcc8996}{output\+Suffix}}
+\item 
+bool \mbox{\hyperlink{classParams_a5369faaee2b76cdee1588df48d1c3d40}{solve\+Relaxed\+Problem}} = false
+\item 
+int \mbox{\hyperlink{classParams_a3b666316812193c40e69b0a204adf5ac}{heuristic\+\_\+run}} = 0
+\item 
+bool \mbox{\hyperlink{classParams_a8e8b58d3470cf2b8f3a2d1d751b9aecf}{output\+Duals}}
+\item 
+int \mbox{\hyperlink{classParams_a62580b0d8e6bedd9c53c2463bbc39286}{new\+Routes\+Per\+Pricing}}
+\item 
+double \mbox{\hyperlink{classParams_ac3fd5d944b7c268b85e04efcbc99f196}{initial\+D\+SF}}
+\item 
+double \mbox{\hyperlink{classParams_a8be3e5629c2748892949b136ed403c62}{D\+S\+F\+Decrement}}
+\item 
+\mbox{\hyperlink{Params_8h_a805011bfd02930e893ac262a1fd88a32}{Pricing\+Algorithm}} \mbox{\hyperlink{classParams_a1eae33504782f8194500d3608b87abf2}{pricing\+Algorithm}}
+\item 
+double \mbox{\hyperlink{classParams_a566a97802a412b8adae71220802a79f9}{max\+\_\+time}}
+\item 
+double \mbox{\hyperlink{classParams_ac5d56a94cdb5aff0811dc7b10a584faf}{max\+\_\+memory}}
+\item 
+double \mbox{\hyperlink{classParams_a70ce2f936ef84f08d19b4f78b1fe6359}{max\+Time\+Single\+Pricing}}
+\item 
+double \mbox{\hyperlink{classParams_a66b7492a5aaf361e812ef901340e5a91}{max\+Memory\+Single\+Pricing}}
+\item 
+int \mbox{\hyperlink{classParams_ac7102966d2cc23982fa73fbbd25c93a6}{nb\+Random\+Initial\+Routes}}
+\item 
+int \mbox{\hyperlink{classParams_a5cf6a4a0154184c0b86106ad5931254a}{route\+\_\+gen\+\_\+seed}}
+\item 
+bool \mbox{\hyperlink{classParams_a72ebcce1afad93caa5d385761da76b4a}{use\+Branching\+On\+Vehicles}}
+\item 
+bool \mbox{\hyperlink{classParams_af60c3a8e18ee23df8bb0f57252ffc004}{use\+Branching\+On\+Edges}}
+\item 
+bool \mbox{\hyperlink{classParams_a64dbd6165a47fb1f5985e8e1cb2c19b0}{always\+Loop\+Vehicles}}
+\item 
+int \mbox{\hyperlink{classParams_ac3864613d390e9fcca389f2d5da825e7}{max\+Solver\+Iterations}}
+\item 
+int \mbox{\hyperlink{classParams_a8b8fb151846001f8c8a01bb3a4a5dbe5}{max\+Nb\+Routes}}
+\item 
+double \mbox{\hyperlink{classParams_aa004d1ee874cbc9df436e1930842e0b7}{R\+C\+Epsilon}} = 1.\+0
+\item 
+bool \mbox{\hyperlink{classParams_ab3245a48da0aaca3951b017870da5bdd}{timeout}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+std\+::default\+\_\+random\+\_\+engine \mbox{\hyperlink{classParams_afd47e1395be95a3e3f419abf23f06e55}{generator}}
+\item 
+int \mbox{\hyperlink{classParams_aa85fc90d0b46982d955b288fa4e5676d}{seed}}
+\item 
+std\+::clock\+\_\+t \mbox{\hyperlink{classParams_a4072bf8275968927039c515266bc2abf}{alg\+\_\+start}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classParams_a1c0d445a3ea36e3b4d8696c55217fdd2}\label{classParams_a1c0d445a3ea36e3b4d8696c55217fdd2}} 
+\index{Params@{Params}!Params@{Params}}
+\index{Params@{Params}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{Params()}{Params()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Params\+::\+Params (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classParams_a8164a931bc732e29c0fb5137f859ec3b}\label{classParams_a8164a931bc732e29c0fb5137f859ec3b}} 
+\index{Params@{Params}!Params@{Params}}
+\index{Params@{Params}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{Params()}{Params()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Params\+::\+Params (\begin{DoxyParamCaption}\item[{string}]{path\+To\+Instance,  }\item[{string}]{instance\+Type = {\ttfamily \char`\"{}pdptw\char`\"{}} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classParams_a1db37e1ee7d62739712dd1ebe7cbace0}\label{classParams_a1db37e1ee7d62739712dd1ebe7cbace0}} 
+\index{Params@{Params}!AllowsPositiveRCElimination@{AllowsPositiveRCElimination}}
+\index{AllowsPositiveRCElimination@{AllowsPositiveRCElimination}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{AllowsPositiveRCElimination()}{AllowsPositiveRCElimination()}}
+{\footnotesize\ttfamily bool Params\+::\+Allows\+Positive\+R\+C\+Elimination (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{ProblemData_8h_a311a310e9d0426b9f92c4bafd2c90f2d}{Waiting\+Station\+Policy}}}]{wsp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classParams_af09914aaa33c2807a22e81f61fe549a5}\label{classParams_af09914aaa33c2807a22e81f61fe549a5}} 
+\index{Params@{Params}!GetElapsedTime@{GetElapsedTime}}
+\index{GetElapsedTime@{GetElapsedTime}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{GetElapsedTime()}{GetElapsedTime()}}
+{\footnotesize\ttfamily double Params\+::\+Get\+Elapsed\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classParams_abb5a6a13f23df2b60ea7fd53dfc864bb}\label{classParams_abb5a6a13f23df2b60ea7fd53dfc864bb}} 
+\index{Params@{Params}!StartTime@{StartTime}}
+\index{StartTime@{StartTime}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{StartTime()}{StartTime()}}
+{\footnotesize\ttfamily void Params\+::\+Start\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classParams_af0938c1d0f7d4b7f39f38552834275b5}\label{classParams_af0938c1d0f7d4b7f39f38552834275b5}} 
+\index{Params@{Params}!Timeout@{Timeout}}
+\index{Timeout@{Timeout}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{Timeout()}{Timeout()}}
+{\footnotesize\ttfamily bool Params\+::\+Timeout (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classParams_a4072bf8275968927039c515266bc2abf}\label{classParams_a4072bf8275968927039c515266bc2abf}} 
+\index{Params@{Params}!alg\_start@{alg\_start}}
+\index{alg\_start@{alg\_start}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{alg\_start}{alg\_start}}
+{\footnotesize\ttfamily std\+::clock\+\_\+t Params\+::alg\+\_\+start\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classParams_a64dbd6165a47fb1f5985e8e1cb2c19b0}\label{classParams_a64dbd6165a47fb1f5985e8e1cb2c19b0}} 
+\index{Params@{Params}!alwaysLoopVehicles@{alwaysLoopVehicles}}
+\index{alwaysLoopVehicles@{alwaysLoopVehicles}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{alwaysLoopVehicles}{alwaysLoopVehicles}}
+{\footnotesize\ttfamily bool Params\+::always\+Loop\+Vehicles}
+
+\mbox{\Hypertarget{classParams_a11760aed576735d5fe1757dab022b416}\label{classParams_a11760aed576735d5fe1757dab022b416}} 
+\index{Params@{Params}!descriptiveString@{descriptiveString}}
+\index{descriptiveString@{descriptiveString}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{descriptiveString}{descriptiveString}}
+{\footnotesize\ttfamily string Params\+::descriptive\+String}
+
+\mbox{\Hypertarget{classParams_a8be3e5629c2748892949b136ed403c62}\label{classParams_a8be3e5629c2748892949b136ed403c62}} 
+\index{Params@{Params}!DSFDecrement@{DSFDecrement}}
+\index{DSFDecrement@{DSFDecrement}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{DSFDecrement}{DSFDecrement}}
+{\footnotesize\ttfamily double Params\+::\+D\+S\+F\+Decrement}
+
+\mbox{\Hypertarget{classParams_afd47e1395be95a3e3f419abf23f06e55}\label{classParams_afd47e1395be95a3e3f419abf23f06e55}} 
+\index{Params@{Params}!generator@{generator}}
+\index{generator@{generator}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{generator}{generator}}
+{\footnotesize\ttfamily std\+::default\+\_\+random\+\_\+engine Params\+::generator\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classParams_a3b666316812193c40e69b0a204adf5ac}\label{classParams_a3b666316812193c40e69b0a204adf5ac}} 
+\index{Params@{Params}!heuristic\_run@{heuristic\_run}}
+\index{heuristic\_run@{heuristic\_run}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{heuristic\_run}{heuristic\_run}}
+{\footnotesize\ttfamily int Params\+::heuristic\+\_\+run = 0}
+
+\mbox{\Hypertarget{classParams_ac3fd5d944b7c268b85e04efcbc99f196}\label{classParams_ac3fd5d944b7c268b85e04efcbc99f196}} 
+\index{Params@{Params}!initialDSF@{initialDSF}}
+\index{initialDSF@{initialDSF}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{initialDSF}{initialDSF}}
+{\footnotesize\ttfamily double Params\+::initial\+D\+SF}
+
+\mbox{\Hypertarget{classParams_ac5d56a94cdb5aff0811dc7b10a584faf}\label{classParams_ac5d56a94cdb5aff0811dc7b10a584faf}} 
+\index{Params@{Params}!max\_memory@{max\_memory}}
+\index{max\_memory@{max\_memory}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{max\_memory}{max\_memory}}
+{\footnotesize\ttfamily double Params\+::max\+\_\+memory}
+
+\mbox{\Hypertarget{classParams_a566a97802a412b8adae71220802a79f9}\label{classParams_a566a97802a412b8adae71220802a79f9}} 
+\index{Params@{Params}!max\_time@{max\_time}}
+\index{max\_time@{max\_time}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{max\_time}{max\_time}}
+{\footnotesize\ttfamily double Params\+::max\+\_\+time}
+
+\mbox{\Hypertarget{classParams_a66b7492a5aaf361e812ef901340e5a91}\label{classParams_a66b7492a5aaf361e812ef901340e5a91}} 
+\index{Params@{Params}!maxMemorySinglePricing@{maxMemorySinglePricing}}
+\index{maxMemorySinglePricing@{maxMemorySinglePricing}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{maxMemorySinglePricing}{maxMemorySinglePricing}}
+{\footnotesize\ttfamily double Params\+::max\+Memory\+Single\+Pricing}
+
+\mbox{\Hypertarget{classParams_a8b8fb151846001f8c8a01bb3a4a5dbe5}\label{classParams_a8b8fb151846001f8c8a01bb3a4a5dbe5}} 
+\index{Params@{Params}!maxNbRoutes@{maxNbRoutes}}
+\index{maxNbRoutes@{maxNbRoutes}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{maxNbRoutes}{maxNbRoutes}}
+{\footnotesize\ttfamily int Params\+::max\+Nb\+Routes}
+
+\mbox{\Hypertarget{classParams_ac3864613d390e9fcca389f2d5da825e7}\label{classParams_ac3864613d390e9fcca389f2d5da825e7}} 
+\index{Params@{Params}!maxSolverIterations@{maxSolverIterations}}
+\index{maxSolverIterations@{maxSolverIterations}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{maxSolverIterations}{maxSolverIterations}}
+{\footnotesize\ttfamily int Params\+::max\+Solver\+Iterations}
+
+\mbox{\Hypertarget{classParams_a70ce2f936ef84f08d19b4f78b1fe6359}\label{classParams_a70ce2f936ef84f08d19b4f78b1fe6359}} 
+\index{Params@{Params}!maxTimeSinglePricing@{maxTimeSinglePricing}}
+\index{maxTimeSinglePricing@{maxTimeSinglePricing}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{maxTimeSinglePricing}{maxTimeSinglePricing}}
+{\footnotesize\ttfamily double Params\+::max\+Time\+Single\+Pricing}
+
+\mbox{\Hypertarget{classParams_ac7102966d2cc23982fa73fbbd25c93a6}\label{classParams_ac7102966d2cc23982fa73fbbd25c93a6}} 
+\index{Params@{Params}!nbRandomInitialRoutes@{nbRandomInitialRoutes}}
+\index{nbRandomInitialRoutes@{nbRandomInitialRoutes}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{nbRandomInitialRoutes}{nbRandomInitialRoutes}}
+{\footnotesize\ttfamily int Params\+::nb\+Random\+Initial\+Routes}
+
+\mbox{\Hypertarget{classParams_a62580b0d8e6bedd9c53c2463bbc39286}\label{classParams_a62580b0d8e6bedd9c53c2463bbc39286}} 
+\index{Params@{Params}!newRoutesPerPricing@{newRoutesPerPricing}}
+\index{newRoutesPerPricing@{newRoutesPerPricing}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{newRoutesPerPricing}{newRoutesPerPricing}}
+{\footnotesize\ttfamily int Params\+::new\+Routes\+Per\+Pricing}
+
+\mbox{\Hypertarget{classParams_a32d98300811f4788f20e7b70fca0b5b9}\label{classParams_a32d98300811f4788f20e7b70fca0b5b9}} 
+\index{Params@{Params}!outputDirectory@{outputDirectory}}
+\index{outputDirectory@{outputDirectory}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{outputDirectory}{outputDirectory}}
+{\footnotesize\ttfamily string Params\+::output\+Directory}
+
+\mbox{\Hypertarget{classParams_a8e8b58d3470cf2b8f3a2d1d751b9aecf}\label{classParams_a8e8b58d3470cf2b8f3a2d1d751b9aecf}} 
+\index{Params@{Params}!outputDuals@{outputDuals}}
+\index{outputDuals@{outputDuals}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{outputDuals}{outputDuals}}
+{\footnotesize\ttfamily bool Params\+::output\+Duals}
+
+\mbox{\Hypertarget{classParams_a7eb5d90a8d04c5d1f4dc88971bcc8996}\label{classParams_a7eb5d90a8d04c5d1f4dc88971bcc8996}} 
+\index{Params@{Params}!outputSuffix@{outputSuffix}}
+\index{outputSuffix@{outputSuffix}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{outputSuffix}{outputSuffix}}
+{\footnotesize\ttfamily string Params\+::output\+Suffix}
+
+\mbox{\Hypertarget{classParams_a1eae33504782f8194500d3608b87abf2}\label{classParams_a1eae33504782f8194500d3608b87abf2}} 
+\index{Params@{Params}!pricingAlgorithm@{pricingAlgorithm}}
+\index{pricingAlgorithm@{pricingAlgorithm}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{pricingAlgorithm}{pricingAlgorithm}}
+{\footnotesize\ttfamily \mbox{\hyperlink{Params_8h_a805011bfd02930e893ac262a1fd88a32}{Pricing\+Algorithm}} Params\+::pricing\+Algorithm}
+
+\mbox{\Hypertarget{classParams_aa004d1ee874cbc9df436e1930842e0b7}\label{classParams_aa004d1ee874cbc9df436e1930842e0b7}} 
+\index{Params@{Params}!RCEpsilon@{RCEpsilon}}
+\index{RCEpsilon@{RCEpsilon}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{RCEpsilon}{RCEpsilon}}
+{\footnotesize\ttfamily double Params\+::\+R\+C\+Epsilon = 1.\+0}
+
+\mbox{\Hypertarget{classParams_a5cf6a4a0154184c0b86106ad5931254a}\label{classParams_a5cf6a4a0154184c0b86106ad5931254a}} 
+\index{Params@{Params}!route\_gen\_seed@{route\_gen\_seed}}
+\index{route\_gen\_seed@{route\_gen\_seed}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{route\_gen\_seed}{route\_gen\_seed}}
+{\footnotesize\ttfamily int Params\+::route\+\_\+gen\+\_\+seed}
+
+\mbox{\Hypertarget{classParams_aa85fc90d0b46982d955b288fa4e5676d}\label{classParams_aa85fc90d0b46982d955b288fa4e5676d}} 
+\index{Params@{Params}!seed@{seed}}
+\index{seed@{seed}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{seed}{seed}}
+{\footnotesize\ttfamily int Params\+::seed\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classParams_a5369faaee2b76cdee1588df48d1c3d40}\label{classParams_a5369faaee2b76cdee1588df48d1c3d40}} 
+\index{Params@{Params}!solveRelaxedProblem@{solveRelaxedProblem}}
+\index{solveRelaxedProblem@{solveRelaxedProblem}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{solveRelaxedProblem}{solveRelaxedProblem}}
+{\footnotesize\ttfamily bool Params\+::solve\+Relaxed\+Problem = false}
+
+\mbox{\Hypertarget{classParams_ab3245a48da0aaca3951b017870da5bdd}\label{classParams_ab3245a48da0aaca3951b017870da5bdd}} 
+\index{Params@{Params}!timeout@{timeout}}
+\index{timeout@{timeout}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{timeout}{timeout}}
+{\footnotesize\ttfamily bool Params\+::timeout}
+
+\mbox{\Hypertarget{classParams_af60c3a8e18ee23df8bb0f57252ffc004}\label{classParams_af60c3a8e18ee23df8bb0f57252ffc004}} 
+\index{Params@{Params}!useBranchingOnEdges@{useBranchingOnEdges}}
+\index{useBranchingOnEdges@{useBranchingOnEdges}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{useBranchingOnEdges}{useBranchingOnEdges}}
+{\footnotesize\ttfamily bool Params\+::use\+Branching\+On\+Edges}
+
+\mbox{\Hypertarget{classParams_a72ebcce1afad93caa5d385761da76b4a}\label{classParams_a72ebcce1afad93caa5d385761da76b4a}} 
+\index{Params@{Params}!useBranchingOnVehicles@{useBranchingOnVehicles}}
+\index{useBranchingOnVehicles@{useBranchingOnVehicles}!Params@{Params}}
+\doxysubsubsection{\texorpdfstring{useBranchingOnVehicles}{useBranchingOnVehicles}}
+{\footnotesize\ttfamily bool Params\+::use\+Branching\+On\+Vehicles}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{Params_8h}{Params.\+h}}\end{DoxyCompactItemize}

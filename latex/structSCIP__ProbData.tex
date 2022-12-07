@@ -1,0 +1,144 @@
+\hypertarget{structSCIP__ProbData}{}\doxysection{S\+C\+I\+P\+\_\+\+Prob\+Data Struct Reference}
+\label{structSCIP__ProbData}\index{SCIP\_ProbData@{SCIP\_ProbData}}
+
+
+Problem data which is accessible in all places.  
+
+
+
+
+Collaboration diagram for S\+C\+I\+P\+\_\+\+Prob\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSCIP__ProbData__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$ \mbox{\hyperlink{structSCIP__ProbData_abb295307006aae56efb950343eb2445e}{vars}}
+\item 
+S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$ \mbox{\hyperlink{structSCIP__ProbData_ab0fa01336a6c6fc44bae8a2b550bb497}{conss}}
+\item 
+int \mbox{\hyperlink{structSCIP__ProbData_a1e26b161cf908cc33139d6e57a7d08be}{nvars}}
+\item 
+int \mbox{\hyperlink{structSCIP__ProbData_a0df6415a3e08c1618f80eb700203d531}{varssize}}
+\item 
+\mbox{\hyperlink{classParams}{Params}} $\ast$ \mbox{\hyperlink{structSCIP__ProbData_a31a25836d6edc5522ce4fe53b17ad2a3}{params}}
+\item 
+\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$ \mbox{\hyperlink{structSCIP__ProbData_af3c2161d371a83973f97780b44d1975b}{problem\+Data}}
+\item 
+vector$<$ S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$ $>$ $\ast$ \mbox{\hyperlink{structSCIP__ProbData_a76fd575e17683bcdb63d1f7acd1b338a}{vehicle\+Branching\+Constraints}}
+\item 
+vector$<$ int $>$ $\ast$ \mbox{\hyperlink{structSCIP__ProbData_a2a74e57c5b910c15adbc2b135424447e}{constrained\+Vehicles}}
+\item 
+vector$<$ S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$ $>$ $\ast$ \mbox{\hyperlink{structSCIP__ProbData_a7a7b77081e8070ca9ae08df56d0c6d58}{edge\+Branching\+Constraints}}
+\item 
+vector$<$ pair$<$ int, int $>$ $>$ $\ast$ \mbox{\hyperlink{structSCIP__ProbData_a02773979daf1febbe901dff20859ce67}{constrainted\+Edges}}
+\item 
+std\+::multimap$<$ size\+\_\+t, S\+C\+I\+P\+\_\+\+V\+AR $\ast$ $>$ $\ast$ \mbox{\hyperlink{structSCIP__ProbData_aeda7709d86a929f469978b485a278083}{Route\+To\+Var\+Map}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__ProbData_a297ae1d79c06a5f19b495c22fab55c10}{times\+Branched\+With\+Rule}} \mbox{[}3\mbox{]}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__ProbData_afc2edf19b6aeb410b2b9e5dcc9135ce0}{times\+Repeated\+Route\+Was\+Priced}}
+\item 
+double \mbox{\hyperlink{structSCIP__ProbData_a25fa3d3d938e78d4fd8b993e099d192b}{repeated\+Routes\+Total\+Reduced\+Cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Problem data which is accessible in all places. 
+
+This problem data is used to store the input of the binpacking, all variables which are created, and all constraints. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structSCIP__ProbData_ab0fa01336a6c6fc44bae8a2b550bb497}\label{structSCIP__ProbData_ab0fa01336a6c6fc44bae8a2b550bb497}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!conss@{conss}}
+\index{conss@{conss}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{conss}{conss}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::conss}
+
+set partitioning constraints for each item exactly one \mbox{\Hypertarget{structSCIP__ProbData_a2a74e57c5b910c15adbc2b135424447e}\label{structSCIP__ProbData_a2a74e57c5b910c15adbc2b135424447e}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!constrainedVehicles@{constrainedVehicles}}
+\index{constrainedVehicles@{constrainedVehicles}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{constrainedVehicles}{constrainedVehicles}}
+{\footnotesize\ttfamily vector$<$int$>$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::constrained\+Vehicles}
+
+\mbox{\Hypertarget{structSCIP__ProbData_a02773979daf1febbe901dff20859ce67}\label{structSCIP__ProbData_a02773979daf1febbe901dff20859ce67}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!constraintedEdges@{constraintedEdges}}
+\index{constraintedEdges@{constraintedEdges}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{constraintedEdges}{constraintedEdges}}
+{\footnotesize\ttfamily vector$<$pair$<$int, int$>$ $>$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::constrainted\+Edges}
+
+\mbox{\Hypertarget{structSCIP__ProbData_a7a7b77081e8070ca9ae08df56d0c6d58}\label{structSCIP__ProbData_a7a7b77081e8070ca9ae08df56d0c6d58}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!edgeBranchingConstraints@{edgeBranchingConstraints}}
+\index{edgeBranchingConstraints@{edgeBranchingConstraints}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{edgeBranchingConstraints}{edgeBranchingConstraints}}
+{\footnotesize\ttfamily vector$<$S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$>$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::edge\+Branching\+Constraints}
+
+\mbox{\Hypertarget{structSCIP__ProbData_a1e26b161cf908cc33139d6e57a7d08be}\label{structSCIP__ProbData_a1e26b161cf908cc33139d6e57a7d08be}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!nvars@{nvars}}
+\index{nvars@{nvars}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{nvars}{nvars}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Prob\+Data\+::nvars}
+
+number of generated variables \mbox{\Hypertarget{structSCIP__ProbData_a31a25836d6edc5522ce4fe53b17ad2a3}\label{structSCIP__ProbData_a31a25836d6edc5522ce4fe53b17ad2a3}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!params@{params}}
+\index{params@{params}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParams}{Params}}$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::params}
+
+\mbox{\Hypertarget{structSCIP__ProbData_af3c2161d371a83973f97780b44d1975b}\label{structSCIP__ProbData_af3c2161d371a83973f97780b44d1975b}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!problemData@{problemData}}
+\index{problemData@{problemData}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{problemData}{problemData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProblemData}{Problem\+Data}}$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::problem\+Data}
+
+\mbox{\Hypertarget{structSCIP__ProbData_a25fa3d3d938e78d4fd8b993e099d192b}\label{structSCIP__ProbData_a25fa3d3d938e78d4fd8b993e099d192b}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!repeatedRoutesTotalReducedCost@{repeatedRoutesTotalReducedCost}}
+\index{repeatedRoutesTotalReducedCost@{repeatedRoutesTotalReducedCost}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{repeatedRoutesTotalReducedCost}{repeatedRoutesTotalReducedCost}}
+{\footnotesize\ttfamily double S\+C\+I\+P\+\_\+\+Prob\+Data\+::repeated\+Routes\+Total\+Reduced\+Cost}
+
+\mbox{\Hypertarget{structSCIP__ProbData_aeda7709d86a929f469978b485a278083}\label{structSCIP__ProbData_aeda7709d86a929f469978b485a278083}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!RouteToVarMap@{RouteToVarMap}}
+\index{RouteToVarMap@{RouteToVarMap}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{RouteToVarMap}{RouteToVarMap}}
+{\footnotesize\ttfamily std\+::multimap$<$size\+\_\+t, S\+C\+I\+P\+\_\+\+V\+AR$\ast$$>$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::\+Route\+To\+Var\+Map}
+
+\mbox{\Hypertarget{structSCIP__ProbData_a297ae1d79c06a5f19b495c22fab55c10}\label{structSCIP__ProbData_a297ae1d79c06a5f19b495c22fab55c10}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!timesBranchedWithRule@{timesBranchedWithRule}}
+\index{timesBranchedWithRule@{timesBranchedWithRule}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{timesBranchedWithRule}{timesBranchedWithRule}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Prob\+Data\+::times\+Branched\+With\+Rule\mbox{[}3\mbox{]}}
+
+\mbox{\Hypertarget{structSCIP__ProbData_afc2edf19b6aeb410b2b9e5dcc9135ce0}\label{structSCIP__ProbData_afc2edf19b6aeb410b2b9e5dcc9135ce0}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!timesRepeatedRouteWasPriced@{timesRepeatedRouteWasPriced}}
+\index{timesRepeatedRouteWasPriced@{timesRepeatedRouteWasPriced}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{timesRepeatedRouteWasPriced}{timesRepeatedRouteWasPriced}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Prob\+Data\+::times\+Repeated\+Route\+Was\+Priced}
+
+\mbox{\Hypertarget{structSCIP__ProbData_abb295307006aae56efb950343eb2445e}\label{structSCIP__ProbData_abb295307006aae56efb950343eb2445e}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!vars@{vars}}
+\index{vars@{vars}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{vars}{vars}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+V\+AR$\ast$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::vars}
+
+all exiting variables in the problem \mbox{\Hypertarget{structSCIP__ProbData_a0df6415a3e08c1618f80eb700203d531}\label{structSCIP__ProbData_a0df6415a3e08c1618f80eb700203d531}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!varssize@{varssize}}
+\index{varssize@{varssize}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{varssize}{varssize}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Prob\+Data\+::varssize}
+
+size of the variable array \mbox{\Hypertarget{structSCIP__ProbData_a76fd575e17683bcdb63d1f7acd1b338a}\label{structSCIP__ProbData_a76fd575e17683bcdb63d1f7acd1b338a}} 
+\index{SCIP\_ProbData@{SCIP\_ProbData}!vehicleBranchingConstraints@{vehicleBranchingConstraints}}
+\index{vehicleBranchingConstraints@{vehicleBranchingConstraints}!SCIP\_ProbData@{SCIP\_ProbData}}
+\doxysubsubsection{\texorpdfstring{vehicleBranchingConstraints}{vehicleBranchingConstraints}}
+{\footnotesize\ttfamily vector$<$S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$>$$\ast$ S\+C\+I\+P\+\_\+\+Prob\+Data\+::vehicle\+Branching\+Constraints}
+
+all data for this problem instance is acessible via this C++ Class 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{probdata__SPwCG_8cpp}{probdata\+\_\+\+S\+Pw\+C\+G.\+cpp}}\end{DoxyCompactItemize}

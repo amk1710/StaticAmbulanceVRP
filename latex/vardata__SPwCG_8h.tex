@@ -1,0 +1,75 @@
+\hypertarget{vardata__SPwCG_8h}{}\doxysection{include/vardata\+\_\+\+S\+Pw\+CG.h File Reference}
+\label{vardata__SPwCG_8h}\index{include/vardata\_SPwCG.h@{include/vardata\_SPwCG.h}}
+{\ttfamily \#include \char`\"{}Problem\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Solution.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scip.\+h\char`\"{}}\newline
+Include dependency graph for vardata\+\_\+\+S\+Pw\+C\+G.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vardata__SPwCG_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{vardata__SPwCG_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{vardata__SPwCG_8h_a01506ed40864be9b4e79aa26695d6fde}{S\+C\+I\+Pvardata\+Create\+Binpacking}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$$\ast$vardata, int $\ast$consids, int $\ast$conscoeffs, int nconss, \mbox{\hyperlink{classRoute}{Route}} $\ast$route)
+\item 
+int \mbox{\hyperlink{vardata__SPwCG_8h_afebc79effc3ad5790063ffb9c7006755}{S\+C\+I\+Pvardata\+Get\+N\+Consids}} (S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$vardata)
+\item 
+int $\ast$ \mbox{\hyperlink{vardata__SPwCG_8h_a86725da35ed621a900df81e8ba1df6a6}{S\+C\+I\+Pvardata\+Get\+Consids}} (S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$vardata)
+\item 
+\mbox{\hyperlink{classRoute}{Route}} $\ast$ \mbox{\hyperlink{vardata__SPwCG_8h_af4bad051918ddb680003f1ebd7c4f7ee}{S\+C\+I\+Pvardata\+Get\+Route}} (S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$vardata)
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{vardata__SPwCG_8h_ac9f3b3cfde7a21fcba8b2208ae4c728f}{S\+C\+I\+Pcreate\+Var\+Binpacking}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$var, const char $\ast$name, S\+C\+I\+P\+\_\+\+Real obj, S\+C\+I\+P\+\_\+\+Bool initial, S\+C\+I\+P\+\_\+\+Bool removable, bool relaxed, S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$vardata)
+\item 
+void \mbox{\hyperlink{vardata__SPwCG_8h_a58dbc278350fb08f64366caeed5025b1}{S\+C\+I\+Pvardata\+Print}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$vardata, F\+I\+LE $\ast$file)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{vardata__SPwCG_8h_ac9f3b3cfde7a21fcba8b2208ae4c728f}\label{vardata__SPwCG_8h_ac9f3b3cfde7a21fcba8b2208ae4c728f}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPcreateVarBinpacking@{SCIPcreateVarBinpacking}}
+\index{SCIPcreateVarBinpacking@{SCIPcreateVarBinpacking}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPcreateVarBinpacking()}{SCIPcreateVarBinpacking()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pcreate\+Var\+Binpacking (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$}]{var,  }\item[{const char $\ast$}]{name,  }\item[{S\+C\+I\+P\+\_\+\+Real}]{obj,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{initial,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{removable,  }\item[{bool}]{relaxed,  }\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$}]{vardata }\end{DoxyParamCaption})}
+
+creates variable \mbox{\Hypertarget{vardata__SPwCG_8h_a01506ed40864be9b4e79aa26695d6fde}\label{vardata__SPwCG_8h_a01506ed40864be9b4e79aa26695d6fde}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPvardataCreateBinpacking@{SCIPvardataCreateBinpacking}}
+\index{SCIPvardataCreateBinpacking@{SCIPvardataCreateBinpacking}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPvardataCreateBinpacking()}{SCIPvardataCreateBinpacking()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pvardata\+Create\+Binpacking (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$$\ast$}]{vardata,  }\item[{int $\ast$}]{consids,  }\item[{int $\ast$}]{conscoeffs,  }\item[{int}]{nconsids,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route }\end{DoxyParamCaption})}
+
+create variable data \mbox{\Hypertarget{vardata__SPwCG_8h_a86725da35ed621a900df81e8ba1df6a6}\label{vardata__SPwCG_8h_a86725da35ed621a900df81e8ba1df6a6}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPvardataGetConsids@{SCIPvardataGetConsids}}
+\index{SCIPvardataGetConsids@{SCIPvardataGetConsids}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPvardataGetConsids()}{SCIPvardataGetConsids()}}
+{\footnotesize\ttfamily int$\ast$ S\+C\+I\+Pvardata\+Get\+Consids (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$}]{vardata }\end{DoxyParamCaption})}
+
+returns sorted constraint id array \mbox{\Hypertarget{vardata__SPwCG_8h_afebc79effc3ad5790063ffb9c7006755}\label{vardata__SPwCG_8h_afebc79effc3ad5790063ffb9c7006755}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPvardataGetNConsids@{SCIPvardataGetNConsids}}
+\index{SCIPvardataGetNConsids@{SCIPvardataGetNConsids}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPvardataGetNConsids()}{SCIPvardataGetNConsids()}}
+{\footnotesize\ttfamily int S\+C\+I\+Pvardata\+Get\+N\+Consids (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$}]{vardata }\end{DoxyParamCaption})}
+
+get number of constraints \mbox{\Hypertarget{vardata__SPwCG_8h_af4bad051918ddb680003f1ebd7c4f7ee}\label{vardata__SPwCG_8h_af4bad051918ddb680003f1ebd7c4f7ee}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPvardataGetRoute@{SCIPvardataGetRoute}}
+\index{SCIPvardataGetRoute@{SCIPvardataGetRoute}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPvardataGetRoute()}{SCIPvardataGetRoute()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRoute}{Route}}$\ast$ S\+C\+I\+Pvardata\+Get\+Route (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$}]{vardata }\end{DoxyParamCaption})}
+
+returns route pointer \mbox{\Hypertarget{vardata__SPwCG_8h_a58dbc278350fb08f64366caeed5025b1}\label{vardata__SPwCG_8h_a58dbc278350fb08f64366caeed5025b1}} 
+\index{vardata\_SPwCG.h@{vardata\_SPwCG.h}!SCIPvardataPrint@{SCIPvardataPrint}}
+\index{SCIPvardataPrint@{SCIPvardataPrint}!vardata\_SPwCG.h@{vardata\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPvardataPrint()}{SCIPvardataPrint()}}
+{\footnotesize\ttfamily void S\+C\+I\+Pvardata\+Print (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+V\+A\+R\+D\+A\+TA $\ast$}]{vardata,  }\item[{F\+I\+LE $\ast$}]{file }\end{DoxyParamCaption})}
+
+prints vardata to file stream 

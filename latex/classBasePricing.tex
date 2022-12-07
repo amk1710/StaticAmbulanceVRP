@@ -1,0 +1,127 @@
+\hypertarget{classBasePricing}{}\doxysection{Base\+Pricing Class Reference}
+\label{classBasePricing}\index{BasePricing@{BasePricing}}
+
+
+{\ttfamily \#include $<$Base\+Pricing.\+h$>$}
+
+
+
+Inheritance diagram for Base\+Pricing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classBasePricing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Base\+Pricing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBasePricing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBasePricing_a0bdf6af3651514f7e5c6fcf5f80d9759}{Set\+Max\+Time}} (double \mbox{\hyperlink{classBasePricing_a25033f31b2e97493ea98dc470a7a7484}{max\+\_\+time}})
+\item 
+void \mbox{\hyperlink{classBasePricing_a15baa357a1003771b15d6d451e36474f}{Set\+Max\+Memory}} (int \mbox{\hyperlink{classBasePricing_a6c5c296e17646d37621af0947137edb5}{max\+\_\+memory}})
+\item 
+\mbox{\hyperlink{classBasePricing_a97afa916b62d3b23cbd4d73277f9fbfb}{Base\+Pricing}} ()
+\item 
+virtual \mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} \mbox{\hyperlink{classBasePricing_ac1f63f23f8845244b46002ae21cf9eb3}{Price}} (int vehicle\+\_\+id, int n\+\_\+routes, vector$<$ double $>$ \&alpha\+\_\+duals, vector$<$ double $>$ \&beta\+\_\+duals, vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&out\+Routes, vector$<$ int $>$ considered\+Requests, set$<$ pair$<$ int, int $>$$>$ forbidden\+Edges, map$<$ pair$<$ int, int $>$, double $>$ edge\+Duals)=0
+\item 
+\mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} \mbox{\hyperlink{classBasePricing_a77427dae5f91345e01bb648ca15a9960}{Price}} (int vehicle\+\_\+id, int n\+\_\+routes, vector$<$ double $>$ \&alpha\+\_\+duals, vector$<$ double $>$ \&beta\+\_\+duals, vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&out\+Routes)
+\item 
+virtual \mbox{\hyperlink{classBasePricing_ac283159f33ceba71d17b9534e320fc67}{$\sim$\+Base\+Pricing}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$ \mbox{\hyperlink{classBasePricing_aacb80de56958a14cb85f062fa372b28d}{problem\+Data}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classParams}{Params}} $\ast$ \mbox{\hyperlink{classBasePricing_ac7154a91fca92b36c7648855e449f029}{params}}
+\item 
+double \mbox{\hyperlink{classBasePricing_a25033f31b2e97493ea98dc470a7a7484}{max\+\_\+time}}
+\item 
+int \mbox{\hyperlink{classBasePricing_a6c5c296e17646d37621af0947137edb5}{max\+\_\+memory}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBasePricing_a97afa916b62d3b23cbd4d73277f9fbfb}\label{classBasePricing_a97afa916b62d3b23cbd4d73277f9fbfb}} 
+\index{BasePricing@{BasePricing}!BasePricing@{BasePricing}}
+\index{BasePricing@{BasePricing}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{BasePricing()}{BasePricing()}}
+{\footnotesize\ttfamily Base\+Pricing\+::\+Base\+Pricing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasePricing_ac283159f33ceba71d17b9534e320fc67}\label{classBasePricing_ac283159f33ceba71d17b9534e320fc67}} 
+\index{BasePricing@{BasePricing}!````~BasePricing@{$\sim$BasePricing}}
+\index{````~BasePricing@{$\sim$BasePricing}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{$\sim$BasePricing()}{~BasePricing()}}
+{\footnotesize\ttfamily virtual Base\+Pricing\+::$\sim$\+Base\+Pricing (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBasePricing_a77427dae5f91345e01bb648ca15a9960}\label{classBasePricing_a77427dae5f91345e01bb648ca15a9960}} 
+\index{BasePricing@{BasePricing}!Price@{Price}}
+\index{Price@{Price}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{Price()}{Price()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} Base\+Pricing\+::\+Price (\begin{DoxyParamCaption}\item[{int}]{vehicle\+\_\+id,  }\item[{int}]{n\+\_\+routes,  }\item[{vector$<$ double $>$ \&}]{alpha\+\_\+duals,  }\item[{vector$<$ double $>$ \&}]{beta\+\_\+duals,  }\item[{vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&}]{out\+Routes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasePricing_ac1f63f23f8845244b46002ae21cf9eb3}\label{classBasePricing_ac1f63f23f8845244b46002ae21cf9eb3}} 
+\index{BasePricing@{BasePricing}!Price@{Price}}
+\index{Price@{Price}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{Price()}{Price()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{structPricingReturn}{Pricing\+Return}} Base\+Pricing\+::\+Price (\begin{DoxyParamCaption}\item[{int}]{vehicle\+\_\+id,  }\item[{int}]{n\+\_\+routes,  }\item[{vector$<$ double $>$ \&}]{alpha\+\_\+duals,  }\item[{vector$<$ double $>$ \&}]{beta\+\_\+duals,  }\item[{vector$<$ \mbox{\hyperlink{classRoute}{Route}} $>$ \&}]{out\+Routes,  }\item[{vector$<$ int $>$}]{considered\+Requests,  }\item[{set$<$ pair$<$ int, int $>$$>$}]{forbidden\+Edges,  }\item[{map$<$ pair$<$ int, int $>$, double $>$}]{edge\+Duals }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+\mbox{\Hypertarget{classBasePricing_a15baa357a1003771b15d6d451e36474f}\label{classBasePricing_a15baa357a1003771b15d6d451e36474f}} 
+\index{BasePricing@{BasePricing}!SetMaxMemory@{SetMaxMemory}}
+\index{SetMaxMemory@{SetMaxMemory}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{SetMaxMemory()}{SetMaxMemory()}}
+{\footnotesize\ttfamily void Base\+Pricing\+::\+Set\+Max\+Memory (\begin{DoxyParamCaption}\item[{int}]{max\+\_\+memory }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classBasePricing_a0bdf6af3651514f7e5c6fcf5f80d9759}\label{classBasePricing_a0bdf6af3651514f7e5c6fcf5f80d9759}} 
+\index{BasePricing@{BasePricing}!SetMaxTime@{SetMaxTime}}
+\index{SetMaxTime@{SetMaxTime}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{SetMaxTime()}{SetMaxTime()}}
+{\footnotesize\ttfamily void Base\+Pricing\+::\+Set\+Max\+Time (\begin{DoxyParamCaption}\item[{double}]{max\+\_\+time }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classBasePricing_a6c5c296e17646d37621af0947137edb5}\label{classBasePricing_a6c5c296e17646d37621af0947137edb5}} 
+\index{BasePricing@{BasePricing}!max\_memory@{max\_memory}}
+\index{max\_memory@{max\_memory}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{max\_memory}{max\_memory}}
+{\footnotesize\ttfamily int Base\+Pricing\+::max\+\_\+memory\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBasePricing_a25033f31b2e97493ea98dc470a7a7484}\label{classBasePricing_a25033f31b2e97493ea98dc470a7a7484}} 
+\index{BasePricing@{BasePricing}!max\_time@{max\_time}}
+\index{max\_time@{max\_time}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{max\_time}{max\_time}}
+{\footnotesize\ttfamily double Base\+Pricing\+::max\+\_\+time\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBasePricing_ac7154a91fca92b36c7648855e449f029}\label{classBasePricing_ac7154a91fca92b36c7648855e449f029}} 
+\index{BasePricing@{BasePricing}!params@{params}}
+\index{params@{params}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParams}{Params}}$\ast$ Base\+Pricing\+::params\hspace{0.3cm}{\ttfamily [protected]}}
+
+\mbox{\Hypertarget{classBasePricing_aacb80de56958a14cb85f062fa372b28d}\label{classBasePricing_aacb80de56958a14cb85f062fa372b28d}} 
+\index{BasePricing@{BasePricing}!problemData@{problemData}}
+\index{problemData@{problemData}!BasePricing@{BasePricing}}
+\doxysubsubsection{\texorpdfstring{problemData}{problemData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProblemData}{Problem\+Data}}$\ast$ Base\+Pricing\+::problem\+Data}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{BasePricing_8h}{Base\+Pricing.\+h}}\end{DoxyCompactItemize}

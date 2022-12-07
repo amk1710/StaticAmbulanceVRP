@@ -1,0 +1,170 @@
+\hypertarget{structSCIP__PricerData}{}\doxysection{S\+C\+I\+P\+\_\+\+Pricer\+Data Struct Reference}
+\label{structSCIP__PricerData}\index{SCIP\_PricerData@{SCIP\_PricerData}}
+
+
+Variable pricer data used in the pricer.  
+
+
+
+
+{\ttfamily \#include $<$pricer\+\_\+\+S\+Pw\+C\+G.\+h$>$}
+
+
+
+Collaboration diagram for S\+C\+I\+P\+\_\+\+Pricer\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSCIP__PricerData__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+C\+O\+N\+S\+H\+D\+LR $\ast$ \mbox{\hyperlink{structSCIP__PricerData_a59ef590d296264d41be41e59298378dd}{conshdlr}}
+\item 
+S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$ \mbox{\hyperlink{structSCIP__PricerData_a7f91ba96f7ff8505817fa2a982a8bbf6}{conss}}
+\item 
+\mbox{\hyperlink{classParams}{Params}} $\ast$ \mbox{\hyperlink{structSCIP__PricerData_a6160134d82df10a1facc763e575a2113}{params}}
+\item 
+\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$ \mbox{\hyperlink{structSCIP__PricerData_a6454416aa2c8cdcb3ee649d30f738d90}{problem\+Data}}
+\item 
+\mbox{\hyperlink{classBasePricing}{Base\+Pricing}} $\ast$ \mbox{\hyperlink{structSCIP__PricerData_aeac3e29d46e260517ded550c2cdfb24c}{pricing\+Algo}}
+\item 
+bool \mbox{\hyperlink{structSCIP__PricerData_ab7b49d7619fe03490d868abf7af1baa0}{heuristic\+Pricing}}
+\item 
+int \mbox{\hyperlink{structSCIP__PricerData_a4d7841b2b6695b4214dfd382d821ca76}{last\+Successfull\+Vehicle}}
+\item 
+double \mbox{\hyperlink{structSCIP__PricerData_a03f9ddf343ebc4e8987fd9240d8dae93}{total\+\_\+pricing\+\_\+time}}
+\item 
+int \mbox{\hyperlink{structSCIP__PricerData_a0edadcf6c77e86fa969087c9c1ce0cf2}{total\+\_\+pricing\+\_\+calls}}
+\item 
+int \mbox{\hyperlink{structSCIP__PricerData_a268584bc7954c66214e1abdfe15dcc9b}{total\+\_\+pricing\+\_\+fails}}
+\item 
+int \mbox{\hyperlink{structSCIP__PricerData_a64fdeca09000c638d2b7eac304602f94}{total\+\_\+pricing\+\_\+timeouts}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_a21ed018934b45fb0eaf6a68886bbe10c}{labels\+Priced}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_a1db6af1b6d4e93edaceefd70ae4ac65c}{labels\+Stored}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_a80ec19ca2a4e6ac624acc179ffbe0627}{labels\+Deleted}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_a5f36b55d410954ce7bee43ce840128fe}{sum\+Of\+Max\+Labels\+Stored\+Simultaneously}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_a2568aca0113489c35bcd7e97639e7605}{sum\+Of\+Most\+Labels\+In\+Request}}
+\item 
+size\+\_\+t \mbox{\hyperlink{structSCIP__PricerData_afd70b4fdb621dfde15da2260f844215b}{sum\+Of\+Nb\+Considered\+Requests}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Variable pricer data used in the pricer. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structSCIP__PricerData_a59ef590d296264d41be41e59298378dd}\label{structSCIP__PricerData_a59ef590d296264d41be41e59298378dd}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!conshdlr@{conshdlr}}
+\index{conshdlr@{conshdlr}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{conshdlr}{conshdlr}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+C\+O\+N\+S\+H\+D\+LR$\ast$ S\+C\+I\+P\+\_\+\+Pricer\+Data\+::conshdlr}
+
+comstraint handler for \char`\"{}same\char`\"{} and \char`\"{}diff\char`\"{} constraints \mbox{\Hypertarget{structSCIP__PricerData_a7f91ba96f7ff8505817fa2a982a8bbf6}\label{structSCIP__PricerData_a7f91ba96f7ff8505817fa2a982a8bbf6}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!conss@{conss}}
+\index{conss@{conss}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{conss}{conss}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$\ast$ S\+C\+I\+P\+\_\+\+Pricer\+Data\+::conss}
+
+set covering constraints for the items \mbox{\Hypertarget{structSCIP__PricerData_ab7b49d7619fe03490d868abf7af1baa0}\label{structSCIP__PricerData_ab7b49d7619fe03490d868abf7af1baa0}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!heuristicPricing@{heuristicPricing}}
+\index{heuristicPricing@{heuristicPricing}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{heuristicPricing}{heuristicPricing}}
+{\footnotesize\ttfamily bool S\+C\+I\+P\+\_\+\+Pricer\+Data\+::heuristic\+Pricing}
+
+$<$ implementation of pricing algorithm \mbox{\Hypertarget{structSCIP__PricerData_a80ec19ca2a4e6ac624acc179ffbe0627}\label{structSCIP__PricerData_a80ec19ca2a4e6ac624acc179ffbe0627}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!labelsDeleted@{labelsDeleted}}
+\index{labelsDeleted@{labelsDeleted}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{labelsDeleted}{labelsDeleted}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::labels\+Deleted}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a21ed018934b45fb0eaf6a68886bbe10c}\label{structSCIP__PricerData_a21ed018934b45fb0eaf6a68886bbe10c}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!labelsPriced@{labelsPriced}}
+\index{labelsPriced@{labelsPriced}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{labelsPriced}{labelsPriced}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::labels\+Priced}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a1db6af1b6d4e93edaceefd70ae4ac65c}\label{structSCIP__PricerData_a1db6af1b6d4e93edaceefd70ae4ac65c}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!labelsStored@{labelsStored}}
+\index{labelsStored@{labelsStored}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{labelsStored}{labelsStored}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::labels\+Stored}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a4d7841b2b6695b4214dfd382d821ca76}\label{structSCIP__PricerData_a4d7841b2b6695b4214dfd382d821ca76}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!lastSuccessfullVehicle@{lastSuccessfullVehicle}}
+\index{lastSuccessfullVehicle@{lastSuccessfullVehicle}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{lastSuccessfullVehicle}{lastSuccessfullVehicle}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Pricer\+Data\+::last\+Successfull\+Vehicle}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a6160134d82df10a1facc763e575a2113}\label{structSCIP__PricerData_a6160134d82df10a1facc763e575a2113}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!params@{params}}
+\index{params@{params}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{params}{params}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParams}{Params}}$\ast$ S\+C\+I\+P\+\_\+\+Pricer\+Data\+::params}
+
+\mbox{\Hypertarget{structSCIP__PricerData_aeac3e29d46e260517ded550c2cdfb24c}\label{structSCIP__PricerData_aeac3e29d46e260517ded550c2cdfb24c}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!pricingAlgo@{pricingAlgo}}
+\index{pricingAlgo@{pricingAlgo}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{pricingAlgo}{pricingAlgo}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBasePricing}{Base\+Pricing}}$\ast$ S\+C\+I\+P\+\_\+\+Pricer\+Data\+::pricing\+Algo}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a6454416aa2c8cdcb3ee649d30f738d90}\label{structSCIP__PricerData_a6454416aa2c8cdcb3ee649d30f738d90}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!problemData@{problemData}}
+\index{problemData@{problemData}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{problemData}{problemData}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProblemData}{Problem\+Data}}$\ast$ S\+C\+I\+P\+\_\+\+Pricer\+Data\+::problem\+Data}
+
+general problem info \mbox{\Hypertarget{structSCIP__PricerData_a5f36b55d410954ce7bee43ce840128fe}\label{structSCIP__PricerData_a5f36b55d410954ce7bee43ce840128fe}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!sumOfMaxLabelsStoredSimultaneously@{sumOfMaxLabelsStoredSimultaneously}}
+\index{sumOfMaxLabelsStoredSimultaneously@{sumOfMaxLabelsStoredSimultaneously}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{sumOfMaxLabelsStoredSimultaneously}{sumOfMaxLabelsStoredSimultaneously}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::sum\+Of\+Max\+Labels\+Stored\+Simultaneously}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a2568aca0113489c35bcd7e97639e7605}\label{structSCIP__PricerData_a2568aca0113489c35bcd7e97639e7605}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!sumOfMostLabelsInRequest@{sumOfMostLabelsInRequest}}
+\index{sumOfMostLabelsInRequest@{sumOfMostLabelsInRequest}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{sumOfMostLabelsInRequest}{sumOfMostLabelsInRequest}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::sum\+Of\+Most\+Labels\+In\+Request}
+
+\mbox{\Hypertarget{structSCIP__PricerData_afd70b4fdb621dfde15da2260f844215b}\label{structSCIP__PricerData_afd70b4fdb621dfde15da2260f844215b}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!sumOfNbConsideredRequests@{sumOfNbConsideredRequests}}
+\index{sumOfNbConsideredRequests@{sumOfNbConsideredRequests}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{sumOfNbConsideredRequests}{sumOfNbConsideredRequests}}
+{\footnotesize\ttfamily size\+\_\+t S\+C\+I\+P\+\_\+\+Pricer\+Data\+::sum\+Of\+Nb\+Considered\+Requests}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a0edadcf6c77e86fa969087c9c1ce0cf2}\label{structSCIP__PricerData_a0edadcf6c77e86fa969087c9c1ce0cf2}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!total\_pricing\_calls@{total\_pricing\_calls}}
+\index{total\_pricing\_calls@{total\_pricing\_calls}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{total\_pricing\_calls}{total\_pricing\_calls}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Pricer\+Data\+::total\+\_\+pricing\+\_\+calls}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a268584bc7954c66214e1abdfe15dcc9b}\label{structSCIP__PricerData_a268584bc7954c66214e1abdfe15dcc9b}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!total\_pricing\_fails@{total\_pricing\_fails}}
+\index{total\_pricing\_fails@{total\_pricing\_fails}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{total\_pricing\_fails}{total\_pricing\_fails}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Pricer\+Data\+::total\+\_\+pricing\+\_\+fails}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a03f9ddf343ebc4e8987fd9240d8dae93}\label{structSCIP__PricerData_a03f9ddf343ebc4e8987fd9240d8dae93}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!total\_pricing\_time@{total\_pricing\_time}}
+\index{total\_pricing\_time@{total\_pricing\_time}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{total\_pricing\_time}{total\_pricing\_time}}
+{\footnotesize\ttfamily double S\+C\+I\+P\+\_\+\+Pricer\+Data\+::total\+\_\+pricing\+\_\+time}
+
+\mbox{\Hypertarget{structSCIP__PricerData_a64fdeca09000c638d2b7eac304602f94}\label{structSCIP__PricerData_a64fdeca09000c638d2b7eac304602f94}} 
+\index{SCIP\_PricerData@{SCIP\_PricerData}!total\_pricing\_timeouts@{total\_pricing\_timeouts}}
+\index{total\_pricing\_timeouts@{total\_pricing\_timeouts}!SCIP\_PricerData@{SCIP\_PricerData}}
+\doxysubsubsection{\texorpdfstring{total\_pricing\_timeouts}{total\_pricing\_timeouts}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Pricer\+Data\+::total\+\_\+pricing\+\_\+timeouts}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{pricer__SPwCG_8h}{pricer\+\_\+\+S\+Pw\+C\+G.\+h}}\end{DoxyCompactItemize}

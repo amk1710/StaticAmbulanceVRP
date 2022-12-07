@@ -1,0 +1,58 @@
+\hypertarget{pricer__SPwCG_8h}{}\doxysection{include/pricer\+\_\+\+S\+Pw\+CG.h File Reference}
+\label{pricer__SPwCG_8h}\index{include/pricer\_SPwCG.h@{include/pricer\_SPwCG.h}}
+{\ttfamily \#include \char`\"{}scip/scip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/struct\+\_\+pricer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Params.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Base\+Pricing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Solution.\+h\char`\"{}}\newline
+Include dependency graph for pricer\+\_\+\+S\+Pw\+C\+G.\+h\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pricer__SPwCG_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pricer__SPwCG_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSCIP__PricerData}{S\+C\+I\+P\+\_\+\+Pricer\+Data}}
+\begin{DoxyCompactList}\small\item\em Variable pricer data used in the pricer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{pricer__SPwCG_8h_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}{S\+C\+I\+Pinclude\+Pricer\+S\+Pw\+CG}} (S\+C\+IP $\ast$scip)
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{pricer__SPwCG_8h_ae07dce396d8253d26af844872b5798cc}{S\+C\+I\+Ppricer\+S\+Pw\+C\+G\+Activate}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$conss, \mbox{\hyperlink{classParams}{Params}} $\ast$params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+bool \mbox{\hyperlink{pricer__SPwCG_8h_aa181593bca18fa846edb897314dcf7df}{create\+Route\+Variable}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classParams}{Params}} $\ast$params, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$all\+\_\+cons, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, \mbox{\hyperlink{classRoute}{Route}} $\ast$route, S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$ret\+Var, bool initial\+\_\+var, double reduced\+Cost=0.\+0)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pricer__SPwCG_8h_aa181593bca18fa846edb897314dcf7df}\label{pricer__SPwCG_8h_aa181593bca18fa846edb897314dcf7df}} 
+\index{pricer\_SPwCG.h@{pricer\_SPwCG.h}!createRouteVariable@{createRouteVariable}}
+\index{createRouteVariable@{createRouteVariable}!pricer\_SPwCG.h@{pricer\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{createRouteVariable()}{createRouteVariable()}}
+{\footnotesize\ttfamily bool create\+Route\+Variable (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{all\+\_\+cons,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$}]{ret\+Var,  }\item[{bool}]{initial\+\_\+var,  }\item[{double}]{reduced\+Cost = {\ttfamily 0.0} }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pricer__SPwCG_8h_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}\label{pricer__SPwCG_8h_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}} 
+\index{pricer\_SPwCG.h@{pricer\_SPwCG.h}!SCIPincludePricerSPwCG@{SCIPincludePricerSPwCG}}
+\index{SCIPincludePricerSPwCG@{SCIPincludePricerSPwCG}!pricer\_SPwCG.h@{pricer\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPincludePricerSPwCG()}{SCIPincludePricerSPwCG()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pinclude\+Pricer\+S\+Pw\+CG (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})}
+
+creates the binpacking variable pricer and includes it in S\+C\+IP \mbox{\Hypertarget{pricer__SPwCG_8h_ae07dce396d8253d26af844872b5798cc}\label{pricer__SPwCG_8h_ae07dce396d8253d26af844872b5798cc}} 
+\index{pricer\_SPwCG.h@{pricer\_SPwCG.h}!SCIPpricerSPwCGActivate@{SCIPpricerSPwCGActivate}}
+\index{SCIPpricerSPwCGActivate@{SCIPpricerSPwCGActivate}!pricer\_SPwCG.h@{pricer\_SPwCG.h}}
+\doxysubsubsection{\texorpdfstring{SCIPpricerSPwCGActivate()}{SCIPpricerSPwCGActivate()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Ppricer\+S\+Pw\+C\+G\+Activate (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{conss,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+added problem specific data to pricer and activates pricer 

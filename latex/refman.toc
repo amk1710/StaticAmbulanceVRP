@@ -1,0 +1,535 @@
+\@ifundefined {etoctocstyle}{\let \etoc@startlocaltoc \@gobble \let \etoc@settocdepth \@gobble \let \etoc@depthtag \@gobble \let \etoc@setlocaltop \@gobble }{}
+\contentsline {chapter}{\numberline {1}Hierarchical Index}{1}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Class Hierarchy}{1}{section.1.1}%
+\contentsline {chapter}{\numberline {2}Class Index}{3}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Class List}{3}{section.2.1}%
+\contentsline {chapter}{\numberline {3}File Index}{5}{chapter.3}%
+\contentsline {section}{\numberline {3.1}File List}{5}{section.3.1}%
+\contentsline {chapter}{\numberline {4}Class Documentation}{7}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Aggregated\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Problem Class Reference}{7}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}Member Data Documentation}{7}{subsection.4.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.1}baseDate}{8}{subsubsection.4.1.1.1}%
+\contentsline {subsubsection}{\numberline {4.1.1.2}scenario}{8}{subsubsection.4.1.1.2}%
+\contentsline {section}{\numberline {4.2}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing Class Reference}{8}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Constructor \& Destructor Documentation}{9}{subsection.4.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.1}BasePricing()}{9}{subsubsection.4.2.1.1}%
+\contentsline {subsubsection}{\numberline {4.2.1.2}$\sim $BasePricing()}{9}{subsubsection.4.2.1.2}%
+\contentsline {subsection}{\numberline {4.2.2}Member Function Documentation}{9}{subsection.4.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.1}Price()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{9}{subsubsection.4.2.2.1}%
+\contentsline {subsubsection}{\numberline {4.2.2.2}Price()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{10}{subsubsection.4.2.2.2}%
+\contentsline {subsubsection}{\numberline {4.2.2.3}SetMaxMemory()}{10}{subsubsection.4.2.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.2.4}SetMaxTime()}{10}{subsubsection.4.2.2.4}%
+\contentsline {subsection}{\numberline {4.2.3}Member Data Documentation}{10}{subsection.4.2.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.1}max\_memory}{10}{subsubsection.4.2.3.1}%
+\contentsline {subsubsection}{\numberline {4.2.3.2}max\_time}{10}{subsubsection.4.2.3.2}%
+\contentsline {subsubsection}{\numberline {4.2.3.3}params}{10}{subsubsection.4.2.3.3}%
+\contentsline {subsubsection}{\numberline {4.2.3.4}problemData}{11}{subsubsection.4.2.3.4}%
+\contentsline {section}{\numberline {4.3}Demand\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Scenario Class Reference}{11}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Member Data Documentation}{11}{subsection.4.3.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.1}destinations}{11}{subsubsection.4.3.1.1}%
+\contentsline {subsubsection}{\numberline {4.3.1.2}positions}{12}{subsubsection.4.3.1.2}%
+\contentsline {subsubsection}{\numberline {4.3.1.3}requests}{12}{subsubsection.4.3.1.3}%
+\contentsline {section}{\numberline {4.4}Destination Struct Reference}{12}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Member Data Documentation}{13}{subsection.4.4.1}%
+\contentsline {subsubsection}{\numberline {4.4.1.1}projected}{13}{subsubsection.4.4.1.1}%
+\contentsline {section}{\numberline {4.5}Initial\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Position Struct Reference}{13}{section.4.5}%
+\contentsline {section}{\numberline {4.6}Intermediate\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Vertex Struct Reference}{14}{section.4.6}%
+\contentsline {subsection}{\numberline {4.6.1}Member Data Documentation}{15}{subsection.4.6.1}%
+\contentsline {subsubsection}{\numberline {4.6.1.1}ws\_id}{15}{subsubsection.4.6.1.1}%
+\contentsline {section}{\numberline {4.7}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Helper Class Reference}{15}{section.4.7}%
+\contentsline {subsection}{\numberline {4.7.1}Detailed Description}{16}{subsection.4.7.1}%
+\contentsline {subsection}{\numberline {4.7.2}Constructor \& Destructor Documentation}{16}{subsection.4.7.2}%
+\contentsline {subsubsection}{\numberline {4.7.2.1}OSRMHelper()}{16}{subsubsection.4.7.2.1}%
+\contentsline {subsection}{\numberline {4.7.3}Member Function Documentation}{16}{subsection.4.7.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.1}GetDistance()}{16}{subsubsection.4.7.3.1}%
+\contentsline {subsubsection}{\numberline {4.7.3.2}GetDuration()}{16}{subsubsection.4.7.3.2}%
+\contentsline {subsubsection}{\numberline {4.7.3.3}TableRequest()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{17}{subsubsection.4.7.3.3}%
+\contentsline {subsubsection}{\numberline {4.7.3.4}TableRequest()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{17}{subsubsection.4.7.3.4}%
+\contentsline {section}{\numberline {4.8}Params Class Reference}{17}{section.4.8}%
+\contentsline {subsection}{\numberline {4.8.1}Constructor \& Destructor Documentation}{18}{subsection.4.8.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.1}Params()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{18}{subsubsection.4.8.1.1}%
+\contentsline {subsubsection}{\numberline {4.8.1.2}Params()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{18}{subsubsection.4.8.1.2}%
+\contentsline {subsection}{\numberline {4.8.2}Member Function Documentation}{19}{subsection.4.8.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.1}AllowsPositiveRCElimination()}{19}{subsubsection.4.8.2.1}%
+\contentsline {subsubsection}{\numberline {4.8.2.2}GetElapsedTime()}{19}{subsubsection.4.8.2.2}%
+\contentsline {subsubsection}{\numberline {4.8.2.3}StartTime()}{19}{subsubsection.4.8.2.3}%
+\contentsline {subsubsection}{\numberline {4.8.2.4}Timeout()}{19}{subsubsection.4.8.2.4}%
+\contentsline {subsection}{\numberline {4.8.3}Member Data Documentation}{19}{subsection.4.8.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.1}alg\_start}{19}{subsubsection.4.8.3.1}%
+\contentsline {subsubsection}{\numberline {4.8.3.2}alwaysLoopVehicles}{19}{subsubsection.4.8.3.2}%
+\contentsline {subsubsection}{\numberline {4.8.3.3}descriptiveString}{20}{subsubsection.4.8.3.3}%
+\contentsline {subsubsection}{\numberline {4.8.3.4}DSFDecrement}{20}{subsubsection.4.8.3.4}%
+\contentsline {subsubsection}{\numberline {4.8.3.5}generator}{20}{subsubsection.4.8.3.5}%
+\contentsline {subsubsection}{\numberline {4.8.3.6}heuristic\_run}{20}{subsubsection.4.8.3.6}%
+\contentsline {subsubsection}{\numberline {4.8.3.7}initialDSF}{20}{subsubsection.4.8.3.7}%
+\contentsline {subsubsection}{\numberline {4.8.3.8}max\_memory}{20}{subsubsection.4.8.3.8}%
+\contentsline {subsubsection}{\numberline {4.8.3.9}max\_time}{20}{subsubsection.4.8.3.9}%
+\contentsline {subsubsection}{\numberline {4.8.3.10}maxMemorySinglePricing}{20}{subsubsection.4.8.3.10}%
+\contentsline {subsubsection}{\numberline {4.8.3.11}maxNbRoutes}{21}{subsubsection.4.8.3.11}%
+\contentsline {subsubsection}{\numberline {4.8.3.12}maxSolverIterations}{21}{subsubsection.4.8.3.12}%
+\contentsline {subsubsection}{\numberline {4.8.3.13}maxTimeSinglePricing}{21}{subsubsection.4.8.3.13}%
+\contentsline {subsubsection}{\numberline {4.8.3.14}nbRandomInitialRoutes}{21}{subsubsection.4.8.3.14}%
+\contentsline {subsubsection}{\numberline {4.8.3.15}newRoutesPerPricing}{21}{subsubsection.4.8.3.15}%
+\contentsline {subsubsection}{\numberline {4.8.3.16}outputDirectory}{21}{subsubsection.4.8.3.16}%
+\contentsline {subsubsection}{\numberline {4.8.3.17}outputDuals}{21}{subsubsection.4.8.3.17}%
+\contentsline {subsubsection}{\numberline {4.8.3.18}outputSuffix}{21}{subsubsection.4.8.3.18}%
+\contentsline {subsubsection}{\numberline {4.8.3.19}pricingAlgorithm}{22}{subsubsection.4.8.3.19}%
+\contentsline {subsubsection}{\numberline {4.8.3.20}RCEpsilon}{22}{subsubsection.4.8.3.20}%
+\contentsline {subsubsection}{\numberline {4.8.3.21}route\_gen\_seed}{22}{subsubsection.4.8.3.21}%
+\contentsline {subsubsection}{\numberline {4.8.3.22}seed}{22}{subsubsection.4.8.3.22}%
+\contentsline {subsubsection}{\numberline {4.8.3.23}solveRelaxedProblem}{22}{subsubsection.4.8.3.23}%
+\contentsline {subsubsection}{\numberline {4.8.3.24}timeout}{22}{subsubsection.4.8.3.24}%
+\contentsline {subsubsection}{\numberline {4.8.3.25}useBranchingOnEdges}{22}{subsubsection.4.8.3.25}%
+\contentsline {subsubsection}{\numberline {4.8.3.26}useBranchingOnVehicles}{23}{subsubsection.4.8.3.26}%
+\contentsline {section}{\numberline {4.9}Position Struct Reference}{23}{section.4.9}%
+\contentsline {subsection}{\numberline {4.9.1}Member Data Documentation}{23}{subsection.4.9.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.1}x}{23}{subsubsection.4.9.1.1}%
+\contentsline {subsubsection}{\numberline {4.9.1.2}y}{23}{subsubsection.4.9.1.2}%
+\contentsline {section}{\numberline {4.10}Spaced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bellman\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}::Pricing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Label Class Reference}{24}{section.4.10}%
+\contentsline {subsection}{\numberline {4.10.1}Member Data Documentation}{24}{subsection.4.10.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.1}alreadyExpanded}{24}{subsubsection.4.10.1.1}%
+\contentsline {subsubsection}{\numberline {4.10.1.2}intermediatePosition}{25}{subsubsection.4.10.1.2}%
+\contentsline {subsubsection}{\numberline {4.10.1.3}lastLabel}{25}{subsubsection.4.10.1.3}%
+\contentsline {subsubsection}{\numberline {4.10.1.4}lastWaitingStation}{25}{subsubsection.4.10.1.4}%
+\contentsline {subsubsection}{\numberline {4.10.1.5}reducedCost}{25}{subsubsection.4.10.1.5}%
+\contentsline {subsubsection}{\numberline {4.10.1.6}referenced}{25}{subsubsection.4.10.1.6}%
+\contentsline {subsubsection}{\numberline {4.10.1.7}reqId}{25}{subsubsection.4.10.1.7}%
+\contentsline {subsubsection}{\numberline {4.10.1.8}time}{25}{subsubsection.4.10.1.8}%
+\contentsline {section}{\numberline {4.11}Pricing\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Return Struct Reference}{26}{section.4.11}%
+\contentsline {subsection}{\numberline {4.11.1}Member Data Documentation}{26}{subsection.4.11.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.1}labelsDeleted}{26}{subsubsection.4.11.1.1}%
+\contentsline {subsubsection}{\numberline {4.11.1.2}labelsPriced}{26}{subsubsection.4.11.1.2}%
+\contentsline {subsubsection}{\numberline {4.11.1.3}labelsStored}{27}{subsubsection.4.11.1.3}%
+\contentsline {subsubsection}{\numberline {4.11.1.4}maxLabelsStoredSimultaneously}{27}{subsubsection.4.11.1.4}%
+\contentsline {subsubsection}{\numberline {4.11.1.5}mostLabelsInRequest}{27}{subsubsection.4.11.1.5}%
+\contentsline {subsubsection}{\numberline {4.11.1.6}nbConsideredRequests}{27}{subsubsection.4.11.1.6}%
+\contentsline {subsubsection}{\numberline {4.11.1.7}reducedCostPerRoute}{27}{subsubsection.4.11.1.7}%
+\contentsline {subsubsection}{\numberline {4.11.1.8}status}{27}{subsubsection.4.11.1.8}%
+\contentsline {subsubsection}{\numberline {4.11.1.9}timeout}{27}{subsubsection.4.11.1.9}%
+\contentsline {section}{\numberline {4.12}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Class Reference}{28}{section.4.12}%
+\contentsline {subsection}{\numberline {4.12.1}Constructor \& Destructor Documentation}{30}{subsection.4.12.1}%
+\contentsline {subsubsection}{\numberline {4.12.1.1}ProblemData()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{30}{subsubsection.4.12.1.1}%
+\contentsline {subsubsection}{\numberline {4.12.1.2}ProblemData()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{30}{subsubsection.4.12.1.2}%
+\contentsline {subsubsection}{\numberline {4.12.1.3}$\sim $ProblemData()}{30}{subsubsection.4.12.1.3}%
+\contentsline {subsection}{\numberline {4.12.2}Member Function Documentation}{30}{subsection.4.12.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.1}calculateDistance()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{30}{subsubsection.4.12.2.1}%
+\contentsline {subsubsection}{\numberline {4.12.2.2}calculateDistance()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{31}{subsubsection.4.12.2.2}%
+\contentsline {subsubsection}{\numberline {4.12.2.3}CalculateDistanceMatrix()}{31}{subsubsection.4.12.2.3}%
+\contentsline {subsubsection}{\numberline {4.12.2.4}DestinationIdToIndex()}{31}{subsubsection.4.12.2.4}%
+\contentsline {subsubsection}{\numberline {4.12.2.5}Distance()}{31}{subsubsection.4.12.2.5}%
+\contentsline {subsubsection}{\numberline {4.12.2.6}euclidianDistance()}{31}{subsubsection.4.12.2.6}%
+\contentsline {subsubsection}{\numberline {4.12.2.7}exampleInstance()}{31}{subsubsection.4.12.2.7}%
+\contentsline {subsubsection}{\numberline {4.12.2.8}geodesicDistance()}{32}{subsubsection.4.12.2.8}%
+\contentsline {subsubsection}{\numberline {4.12.2.9}GetClosestDestination()}{32}{subsubsection.4.12.2.9}%
+\contentsline {subsubsection}{\numberline {4.12.2.10}GetClosestWaitingStation()}{32}{subsubsection.4.12.2.10}%
+\contentsline {subsubsection}{\numberline {4.12.2.11}GetDestination()}{32}{subsubsection.4.12.2.11}%
+\contentsline {subsubsection}{\numberline {4.12.2.12}GetDestinationByIndex()}{32}{subsubsection.4.12.2.12}%
+\contentsline {subsubsection}{\numberline {4.12.2.13}GetInitialPosition()}{32}{subsubsection.4.12.2.13}%
+\contentsline {subsubsection}{\numberline {4.12.2.14}GetInitialPositionByIndex()}{32}{subsubsection.4.12.2.14}%
+\contentsline {subsubsection}{\numberline {4.12.2.15}GetIntermediatePosition()}{33}{subsubsection.4.12.2.15}%
+\contentsline {subsubsection}{\numberline {4.12.2.16}GetIntermediatePosition2()}{33}{subsubsection.4.12.2.16}%
+\contentsline {subsubsection}{\numberline {4.12.2.17}GetRequest()}{33}{subsubsection.4.12.2.17}%
+\contentsline {subsubsection}{\numberline {4.12.2.18}GetRequestByIndex()}{33}{subsubsection.4.12.2.18}%
+\contentsline {subsubsection}{\numberline {4.12.2.19}getVehicle()}{33}{subsubsection.4.12.2.19}%
+\contentsline {subsubsection}{\numberline {4.12.2.20}GetVertex()}{33}{subsubsection.4.12.2.20}%
+\contentsline {subsubsection}{\numberline {4.12.2.21}GetWaitingStation()}{34}{subsubsection.4.12.2.21}%
+\contentsline {subsubsection}{\numberline {4.12.2.22}GetWaitingStationByIndex()}{34}{subsubsection.4.12.2.22}%
+\contentsline {subsubsection}{\numberline {4.12.2.23}IndexToDestinationId()}{34}{subsubsection.4.12.2.23}%
+\contentsline {subsubsection}{\numberline {4.12.2.24}IndexToRequestId()}{34}{subsubsection.4.12.2.24}%
+\contentsline {subsubsection}{\numberline {4.12.2.25}IndexToWaitingStationId()}{34}{subsubsection.4.12.2.25}%
+\contentsline {subsubsection}{\numberline {4.12.2.26}InitialPositionIdToIndex()}{34}{subsubsection.4.12.2.26}%
+\contentsline {subsubsection}{\numberline {4.12.2.27}InitialPositionIndexToId()}{34}{subsubsection.4.12.2.27}%
+\contentsline {subsubsection}{\numberline {4.12.2.28}IsCompatible()}{35}{subsubsection.4.12.2.28}%
+\contentsline {subsubsection}{\numberline {4.12.2.29}IsDestination()}{35}{subsubsection.4.12.2.29}%
+\contentsline {subsubsection}{\numberline {4.12.2.30}IsInitialPosition()}{35}{subsubsection.4.12.2.30}%
+\contentsline {subsubsection}{\numberline {4.12.2.31}IsIntermediateVertex()}{35}{subsubsection.4.12.2.31}%
+\contentsline {subsubsection}{\numberline {4.12.2.32}IsRequest()}{35}{subsubsection.4.12.2.32}%
+\contentsline {subsubsection}{\numberline {4.12.2.33}IsWaitingStation()}{35}{subsubsection.4.12.2.33}%
+\contentsline {subsubsection}{\numberline {4.12.2.34}NbRequests()}{35}{subsubsection.4.12.2.34}%
+\contentsline {subsubsection}{\numberline {4.12.2.35}NbVehicles()}{36}{subsubsection.4.12.2.35}%
+\contentsline {subsubsection}{\numberline {4.12.2.36}NbVertices()}{36}{subsubsection.4.12.2.36}%
+\contentsline {subsubsection}{\numberline {4.12.2.37}NbWaitingStations()}{36}{subsubsection.4.12.2.37}%
+\contentsline {subsubsection}{\numberline {4.12.2.38}OmmitedDistance()}{36}{subsubsection.4.12.2.38}%
+\contentsline {subsubsection}{\numberline {4.12.2.39}PrecomputeClosestWSs()}{36}{subsubsection.4.12.2.39}%
+\contentsline {subsubsection}{\numberline {4.12.2.40}readPDPTWInstance()}{36}{subsubsection.4.12.2.40}%
+\contentsline {subsubsection}{\numberline {4.12.2.41}readSDVRPTWInstance()}{36}{subsubsection.4.12.2.41}%
+\contentsline {subsubsection}{\numberline {4.12.2.42}readVincentInstance()}{37}{subsubsection.4.12.2.42}%
+\contentsline {subsubsection}{\numberline {4.12.2.43}RequestIdToIndex()}{37}{subsubsection.4.12.2.43}%
+\contentsline {subsubsection}{\numberline {4.12.2.44}ResetNumberOfVehicles()}{37}{subsubsection.4.12.2.44}%
+\contentsline {subsubsection}{\numberline {4.12.2.45}SetVehicleAvailability()}{37}{subsubsection.4.12.2.45}%
+\contentsline {subsubsection}{\numberline {4.12.2.46}SetVehiclePositions()}{37}{subsubsection.4.12.2.46}%
+\contentsline {subsubsection}{\numberline {4.12.2.47}Validate()}{37}{subsubsection.4.12.2.47}%
+\contentsline {subsubsection}{\numberline {4.12.2.48}VehicleSpeed()}{38}{subsubsection.4.12.2.48}%
+\contentsline {subsubsection}{\numberline {4.12.2.49}WaitingStationIdToIndex()}{38}{subsubsection.4.12.2.49}%
+\contentsline {subsubsection}{\numberline {4.12.2.50}weighted\_lateness()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{38}{subsubsection.4.12.2.50}%
+\contentsline {subsubsection}{\numberline {4.12.2.51}weighted\_lateness()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{38}{subsubsection.4.12.2.51}%
+\contentsline {subsection}{\numberline {4.12.3}Member Data Documentation}{38}{subsection.4.12.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.1}allowRerouting}{38}{subsubsection.4.12.3.1}%
+\contentsline {subsubsection}{\numberline {4.12.3.2}computeTimeHorizon}{38}{subsubsection.4.12.3.2}%
+\contentsline {subsubsection}{\numberline {4.12.3.3}destinations}{39}{subsubsection.4.12.3.3}%
+\contentsline {subsubsection}{\numberline {4.12.3.4}distances}{39}{subsubsection.4.12.3.4}%
+\contentsline {subsubsection}{\numberline {4.12.3.5}distanceType}{39}{subsubsection.4.12.3.5}%
+\contentsline {subsubsection}{\numberline {4.12.3.6}initialPositions}{39}{subsubsection.4.12.3.6}%
+\contentsline {subsubsection}{\numberline {4.12.3.7}name}{39}{subsubsection.4.12.3.7}%
+\contentsline {subsubsection}{\numberline {4.12.3.8}requests}{39}{subsubsection.4.12.3.8}%
+\contentsline {subsubsection}{\numberline {4.12.3.9}target\_times\_per\_weight}{39}{subsubsection.4.12.3.9}%
+\contentsline {subsubsection}{\numberline {4.12.3.10}timeHorizon}{40}{subsubsection.4.12.3.10}%
+\contentsline {subsubsection}{\numberline {4.12.3.11}useTargetWaitTimeObjective}{40}{subsubsection.4.12.3.11}%
+\contentsline {subsubsection}{\numberline {4.12.3.12}vehicles}{40}{subsubsection.4.12.3.12}%
+\contentsline {subsubsection}{\numberline {4.12.3.13}waitingStationPolicy}{40}{subsubsection.4.12.3.13}%
+\contentsline {subsubsection}{\numberline {4.12.3.14}waitingStations}{40}{subsubsection.4.12.3.14}%
+\contentsline {section}{\numberline {4.13}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solution Class Reference}{40}{section.4.13}%
+\contentsline {subsection}{\numberline {4.13.1}Constructor \& Destructor Documentation}{41}{subsection.4.13.1}%
+\contentsline {subsubsection}{\numberline {4.13.1.1}ProblemSolution()}{41}{subsubsection.4.13.1.1}%
+\contentsline {subsection}{\numberline {4.13.2}Member Function Documentation}{41}{subsection.4.13.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.1}AllOneSizedRoutesSolution()}{41}{subsubsection.4.13.2.1}%
+\contentsline {subsubsection}{\numberline {4.13.2.2}AnySolution()}{42}{subsubsection.4.13.2.2}%
+\contentsline {subsubsection}{\numberline {4.13.2.3}ClosestAvailableVehicleSolution()}{42}{subsubsection.4.13.2.3}%
+\contentsline {subsubsection}{\numberline {4.13.2.4}FastestArrivingVehicleSolution()}{42}{subsubsection.4.13.2.4}%
+\contentsline {subsubsection}{\numberline {4.13.2.5}GetResponseSummary()}{42}{subsubsection.4.13.2.5}%
+\contentsline {subsubsection}{\numberline {4.13.2.6}PrintSolution()}{42}{subsubsection.4.13.2.6}%
+\contentsline {subsubsection}{\numberline {4.13.2.7}RandomRoutes()}{42}{subsubsection.4.13.2.7}%
+\contentsline {subsubsection}{\numberline {4.13.2.8}SetToInitialSolution()}{43}{subsubsection.4.13.2.8}%
+\contentsline {subsubsection}{\numberline {4.13.2.9}UpdateCost()}{43}{subsubsection.4.13.2.9}%
+\contentsline {subsubsection}{\numberline {4.13.2.10}WriteRequestsOutput()}{43}{subsubsection.4.13.2.10}%
+\contentsline {subsubsection}{\numberline {4.13.2.11}WriteSolution()}{43}{subsubsection.4.13.2.11}%
+\contentsline {subsection}{\numberline {4.13.3}Member Data Documentation}{43}{subsection.4.13.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.1}coeffs}{43}{subsubsection.4.13.3.1}%
+\contentsline {subsubsection}{\numberline {4.13.3.2}cost}{43}{subsubsection.4.13.3.2}%
+\contentsline {subsubsection}{\numberline {4.13.3.3}penalty\_cost}{44}{subsubsection.4.13.3.3}%
+\contentsline {subsubsection}{\numberline {4.13.3.4}problemData}{44}{subsubsection.4.13.3.4}%
+\contentsline {subsubsection}{\numberline {4.13.3.5}relaxed}{44}{subsubsection.4.13.3.5}%
+\contentsline {subsubsection}{\numberline {4.13.3.6}route\_cost}{44}{subsubsection.4.13.3.6}%
+\contentsline {subsubsection}{\numberline {4.13.3.7}routes}{44}{subsubsection.4.13.3.7}%
+\contentsline {section}{\numberline {4.14}Request Struct Reference}{45}{section.4.14}%
+\contentsline {subsection}{\numberline {4.14.1}Member Data Documentation}{46}{subsection.4.14.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.1}arrival\_time}{46}{subsubsection.4.14.1.1}%
+\contentsline {subsubsection}{\numberline {4.14.1.2}destination}{46}{subsubsection.4.14.1.2}%
+\contentsline {subsubsection}{\numberline {4.14.1.3}non\_service\_penalty}{46}{subsubsection.4.14.1.3}%
+\contentsline {subsubsection}{\numberline {4.14.1.4}projected}{46}{subsubsection.4.14.1.4}%
+\contentsline {subsubsection}{\numberline {4.14.1.5}service\_time}{46}{subsubsection.4.14.1.5}%
+\contentsline {subsubsection}{\numberline {4.14.1.6}type}{46}{subsubsection.4.14.1.6}%
+\contentsline {subsubsection}{\numberline {4.14.1.7}weight}{47}{subsubsection.4.14.1.7}%
+\contentsline {section}{\numberline {4.15}Response\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Summary Struct Reference}{47}{section.4.15}%
+\contentsline {subsection}{\numberline {4.15.1}Member Data Documentation}{47}{subsection.4.15.1}%
+\contentsline {subsubsection}{\numberline {4.15.1.1}maxNonServicePenalty}{47}{subsubsection.4.15.1.1}%
+\contentsline {subsubsection}{\numberline {4.15.1.2}maxResponseTime}{47}{subsubsection.4.15.1.2}%
+\contentsline {subsubsection}{\numberline {4.15.1.3}maxWeightedResponseTime}{47}{subsubsection.4.15.1.3}%
+\contentsline {subsubsection}{\numberline {4.15.1.4}meanNonServicePenalty}{48}{subsubsection.4.15.1.4}%
+\contentsline {subsubsection}{\numberline {4.15.1.5}meanResponseTime}{48}{subsubsection.4.15.1.5}%
+\contentsline {subsubsection}{\numberline {4.15.1.6}meanWeightedResponseTime}{48}{subsubsection.4.15.1.6}%
+\contentsline {subsubsection}{\numberline {4.15.1.7}nNotServiced}{48}{subsubsection.4.15.1.7}%
+\contentsline {subsubsection}{\numberline {4.15.1.8}nServiced}{48}{subsubsection.4.15.1.8}%
+\contentsline {section}{\numberline {4.16}Route Class Reference}{48}{section.4.16}%
+\contentsline {subsection}{\numberline {4.16.1}Constructor \& Destructor Documentation}{49}{subsection.4.16.1}%
+\contentsline {subsubsection}{\numberline {4.16.1.1}Route()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{49}{subsubsection.4.16.1.1}%
+\contentsline {subsubsection}{\numberline {4.16.1.2}Route()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{49}{subsubsection.4.16.1.2}%
+\contentsline {subsection}{\numberline {4.16.2}Member Function Documentation}{49}{subsection.4.16.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.1}GetEdgeUsage()}{49}{subsubsection.4.16.2.1}%
+\contentsline {subsubsection}{\numberline {4.16.2.2}GetHash()}{50}{subsubsection.4.16.2.2}%
+\contentsline {subsubsection}{\numberline {4.16.2.3}GetRequestCount()}{50}{subsubsection.4.16.2.3}%
+\contentsline {subsubsection}{\numberline {4.16.2.4}operator==()}{50}{subsubsection.4.16.2.4}%
+\contentsline {subsubsection}{\numberline {4.16.2.5}SetArrivalsAndDepartures()}{50}{subsubsection.4.16.2.5}%
+\contentsline {subsubsection}{\numberline {4.16.2.6}UpdateCost()}{50}{subsubsection.4.16.2.6}%
+\contentsline {subsection}{\numberline {4.16.3}Member Data Documentation}{50}{subsection.4.16.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.1}arrival\_times}{50}{subsubsection.4.16.3.1}%
+\contentsline {subsubsection}{\numberline {4.16.3.2}departure\_times}{51}{subsubsection.4.16.3.2}%
+\contentsline {subsubsection}{\numberline {4.16.3.3}end\_time}{51}{subsubsection.4.16.3.3}%
+\contentsline {subsubsection}{\numberline {4.16.3.4}has\_cycles}{51}{subsubsection.4.16.3.4}%
+\contentsline {subsubsection}{\numberline {4.16.3.5}intermediates}{51}{subsubsection.4.16.3.5}%
+\contentsline {subsubsection}{\numberline {4.16.3.6}total\_lateness}{51}{subsubsection.4.16.3.6}%
+\contentsline {subsubsection}{\numberline {4.16.3.7}veh\_index}{51}{subsubsection.4.16.3.7}%
+\contentsline {subsubsection}{\numberline {4.16.3.8}vertices}{51}{subsubsection.4.16.3.8}%
+\contentsline {section}{\numberline {4.17}Route\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expander Class Reference}{52}{section.4.17}%
+\contentsline {subsection}{\numberline {4.17.1}Constructor \& Destructor Documentation}{52}{subsection.4.17.1}%
+\contentsline {subsubsection}{\numberline {4.17.1.1}RouteExpander()}{52}{subsubsection.4.17.1.1}%
+\contentsline {subsection}{\numberline {4.17.2}Member Function Documentation}{53}{subsection.4.17.2}%
+\contentsline {subsubsection}{\numberline {4.17.2.1}checkRouteExpansion()\hspace {0.1cm}{\footnotesize \ttfamily [1/2]}}{53}{subsubsection.4.17.2.1}%
+\contentsline {subsubsection}{\numberline {4.17.2.2}checkRouteExpansion()\hspace {0.1cm}{\footnotesize \ttfamily [2/2]}}{53}{subsubsection.4.17.2.2}%
+\contentsline {subsection}{\numberline {4.17.3}Member Data Documentation}{53}{subsection.4.17.3}%
+\contentsline {subsubsection}{\numberline {4.17.3.1}params}{53}{subsubsection.4.17.3.1}%
+\contentsline {section}{\numberline {4.18}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{54}{section.4.18}%
+\contentsline {subsection}{\numberline {4.18.1}Detailed Description}{55}{subsection.4.18.1}%
+\contentsline {subsection}{\numberline {4.18.2}Member Data Documentation}{55}{subsection.4.18.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.1}conshdlr}{55}{subsubsection.4.18.2.1}%
+\contentsline {subsubsection}{\numberline {4.18.2.2}conss}{55}{subsubsection.4.18.2.2}%
+\contentsline {subsubsection}{\numberline {4.18.2.3}heuristicPricing}{55}{subsubsection.4.18.2.3}%
+\contentsline {subsubsection}{\numberline {4.18.2.4}labelsDeleted}{55}{subsubsection.4.18.2.4}%
+\contentsline {subsubsection}{\numberline {4.18.2.5}labelsPriced}{55}{subsubsection.4.18.2.5}%
+\contentsline {subsubsection}{\numberline {4.18.2.6}labelsStored}{55}{subsubsection.4.18.2.6}%
+\contentsline {subsubsection}{\numberline {4.18.2.7}lastSuccessfullVehicle}{56}{subsubsection.4.18.2.7}%
+\contentsline {subsubsection}{\numberline {4.18.2.8}params}{56}{subsubsection.4.18.2.8}%
+\contentsline {subsubsection}{\numberline {4.18.2.9}pricingAlgo}{56}{subsubsection.4.18.2.9}%
+\contentsline {subsubsection}{\numberline {4.18.2.10}problemData}{56}{subsubsection.4.18.2.10}%
+\contentsline {subsubsection}{\numberline {4.18.2.11}sumOfMaxLabelsStoredSimultaneously}{56}{subsubsection.4.18.2.11}%
+\contentsline {subsubsection}{\numberline {4.18.2.12}sumOfMostLabelsInRequest}{56}{subsubsection.4.18.2.12}%
+\contentsline {subsubsection}{\numberline {4.18.2.13}sumOfNbConsideredRequests}{56}{subsubsection.4.18.2.13}%
+\contentsline {subsubsection}{\numberline {4.18.2.14}total\_pricing\_calls}{56}{subsubsection.4.18.2.14}%
+\contentsline {subsubsection}{\numberline {4.18.2.15}total\_pricing\_fails}{57}{subsubsection.4.18.2.15}%
+\contentsline {subsubsection}{\numberline {4.18.2.16}total\_pricing\_time}{57}{subsubsection.4.18.2.16}%
+\contentsline {subsubsection}{\numberline {4.18.2.17}total\_pricing\_timeouts}{57}{subsubsection.4.18.2.17}%
+\contentsline {section}{\numberline {4.19}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Prob\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{57}{section.4.19}%
+\contentsline {subsection}{\numberline {4.19.1}Detailed Description}{58}{subsection.4.19.1}%
+\contentsline {subsection}{\numberline {4.19.2}Member Data Documentation}{58}{subsection.4.19.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.1}conss}{58}{subsubsection.4.19.2.1}%
+\contentsline {subsubsection}{\numberline {4.19.2.2}constrainedVehicles}{58}{subsubsection.4.19.2.2}%
+\contentsline {subsubsection}{\numberline {4.19.2.3}constraintedEdges}{58}{subsubsection.4.19.2.3}%
+\contentsline {subsubsection}{\numberline {4.19.2.4}edgeBranchingConstraints}{58}{subsubsection.4.19.2.4}%
+\contentsline {subsubsection}{\numberline {4.19.2.5}nvars}{58}{subsubsection.4.19.2.5}%
+\contentsline {subsubsection}{\numberline {4.19.2.6}params}{58}{subsubsection.4.19.2.6}%
+\contentsline {subsubsection}{\numberline {4.19.2.7}problemData}{59}{subsubsection.4.19.2.7}%
+\contentsline {subsubsection}{\numberline {4.19.2.8}repeatedRoutesTotalReducedCost}{59}{subsubsection.4.19.2.8}%
+\contentsline {subsubsection}{\numberline {4.19.2.9}RouteToVarMap}{59}{subsubsection.4.19.2.9}%
+\contentsline {subsubsection}{\numberline {4.19.2.10}timesBranchedWithRule}{59}{subsubsection.4.19.2.10}%
+\contentsline {subsubsection}{\numberline {4.19.2.11}timesRepeatedRouteWasPriced}{59}{subsubsection.4.19.2.11}%
+\contentsline {subsubsection}{\numberline {4.19.2.12}vars}{59}{subsubsection.4.19.2.12}%
+\contentsline {subsubsection}{\numberline {4.19.2.13}varssize}{59}{subsubsection.4.19.2.13}%
+\contentsline {subsubsection}{\numberline {4.19.2.14}vehicleBranchingConstraints}{60}{subsubsection.4.19.2.14}%
+\contentsline {section}{\numberline {4.20}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Var\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data Struct Reference}{60}{section.4.20}%
+\contentsline {subsection}{\numberline {4.20.1}Detailed Description}{60}{subsection.4.20.1}%
+\contentsline {subsection}{\numberline {4.20.2}Member Data Documentation}{60}{subsection.4.20.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.1}conscoeffs}{61}{subsubsection.4.20.2.1}%
+\contentsline {subsubsection}{\numberline {4.20.2.2}consids}{61}{subsubsection.4.20.2.2}%
+\contentsline {subsubsection}{\numberline {4.20.2.3}nconsids}{61}{subsubsection.4.20.2.3}%
+\contentsline {subsubsection}{\numberline {4.20.2.4}route}{61}{subsubsection.4.20.2.4}%
+\contentsline {section}{\numberline {4.21}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solver Class Reference}{61}{section.4.21}%
+\contentsline {subsection}{\numberline {4.21.1}Constructor \& Destructor Documentation}{62}{subsection.4.21.1}%
+\contentsline {subsubsection}{\numberline {4.21.1.1}SCIPSolver()}{62}{subsubsection.4.21.1.1}%
+\contentsline {subsection}{\numberline {4.21.2}Member Function Documentation}{62}{subsection.4.21.2}%
+\contentsline {subsubsection}{\numberline {4.21.2.1}solve()}{62}{subsubsection.4.21.2.1}%
+\contentsline {subsection}{\numberline {4.21.3}Member Data Documentation}{62}{subsection.4.21.3}%
+\contentsline {subsubsection}{\numberline {4.21.3.1}params}{62}{subsubsection.4.21.3.1}%
+\contentsline {subsubsection}{\numberline {4.21.3.2}problemData}{62}{subsubsection.4.21.3.2}%
+\contentsline {section}{\numberline {4.22}Spaced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bellman\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing Class Reference}{63}{section.4.22}%
+\contentsline {subsection}{\numberline {4.22.1}Constructor \& Destructor Documentation}{64}{subsection.4.22.1}%
+\contentsline {subsubsection}{\numberline {4.22.1.1}SpacedBellmanPricing()}{64}{subsubsection.4.22.1.1}%
+\contentsline {subsubsection}{\numberline {4.22.1.2}$\sim $SpacedBellmanPricing()}{65}{subsubsection.4.22.1.2}%
+\contentsline {subsection}{\numberline {4.22.2}Member Function Documentation}{65}{subsection.4.22.2}%
+\contentsline {subsubsection}{\numberline {4.22.2.1}Cleanup()}{65}{subsubsection.4.22.2.1}%
+\contentsline {subsubsection}{\numberline {4.22.2.2}comp()}{65}{subsubsection.4.22.2.2}%
+\contentsline {subsubsection}{\numberline {4.22.2.3}comp2()}{65}{subsubsection.4.22.2.3}%
+\contentsline {subsubsection}{\numberline {4.22.2.4}comp3()}{65}{subsubsection.4.22.2.4}%
+\contentsline {subsubsection}{\numberline {4.22.2.5}compGRC()}{65}{subsubsection.4.22.2.5}%
+\contentsline {subsubsection}{\numberline {4.22.2.6}compGTime()}{66}{subsubsection.4.22.2.6}%
+\contentsline {subsubsection}{\numberline {4.22.2.7}compLRC()}{66}{subsubsection.4.22.2.7}%
+\contentsline {subsubsection}{\numberline {4.22.2.8}compLRCRef()}{66}{subsubsection.4.22.2.8}%
+\contentsline {subsubsection}{\numberline {4.22.2.9}compLTime()}{66}{subsubsection.4.22.2.9}%
+\contentsline {subsubsection}{\numberline {4.22.2.10}compLTimeRef()}{66}{subsubsection.4.22.2.10}%
+\contentsline {subsubsection}{\numberline {4.22.2.11}FilterLabels()}{66}{subsubsection.4.22.2.11}%
+\contentsline {subsubsection}{\numberline {4.22.2.12}Price()}{67}{subsubsection.4.22.2.12}%
+\contentsline {subsubsection}{\numberline {4.22.2.13}SetHeuristicPricing()}{67}{subsubsection.4.22.2.13}%
+\contentsline {subsubsection}{\numberline {4.22.2.14}TryAddLabel()}{67}{subsubsection.4.22.2.14}%
+\contentsline {subsubsection}{\numberline {4.22.2.15}TryAddToBestLabelsHeap()}{67}{subsubsection.4.22.2.15}%
+\contentsline {subsection}{\numberline {4.22.3}Member Data Documentation}{67}{subsection.4.22.3}%
+\contentsline {subsubsection}{\numberline {4.22.3.1}bestLabelsHeap}{67}{subsubsection.4.22.3.1}%
+\contentsline {subsubsection}{\numberline {4.22.3.2}heuristicPricing}{68}{subsubsection.4.22.3.2}%
+\contentsline {subsubsection}{\numberline {4.22.3.3}intermediatePositions}{68}{subsubsection.4.22.3.3}%
+\contentsline {subsubsection}{\numberline {4.22.3.4}ItrNextExpansion}{68}{subsubsection.4.22.3.4}%
+\contentsline {subsubsection}{\numberline {4.22.3.5}ItrNextExpansion\_IsValid}{68}{subsubsection.4.22.3.5}%
+\contentsline {subsubsection}{\numberline {4.22.3.6}labels}{68}{subsubsection.4.22.3.6}%
+\contentsline {subsubsection}{\numberline {4.22.3.7}limitNbLabels}{68}{subsubsection.4.22.3.7}%
+\contentsline {subsubsection}{\numberline {4.22.3.8}maxLabels}{68}{subsubsection.4.22.3.8}%
+\contentsline {subsubsection}{\numberline {4.22.3.9}n\_desired\_routes}{69}{subsubsection.4.22.3.9}%
+\contentsline {subsubsection}{\numberline {4.22.3.10}pricing\_ret}{69}{subsubsection.4.22.3.10}%
+\contentsline {subsubsection}{\numberline {4.22.3.11}total\_labels}{69}{subsubsection.4.22.3.11}%
+\contentsline {subsubsection}{\numberline {4.22.3.12}useRepeatedSetVerification}{69}{subsubsection.4.22.3.12}%
+\contentsline {section}{\numberline {4.23}Stochastic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info Class Reference}{69}{section.4.23}%
+\contentsline {subsection}{\numberline {4.23.1}Constructor \& Destructor Documentation}{70}{subsection.4.23.1}%
+\contentsline {subsubsection}{\numberline {4.23.1.1}StochasticInfo()}{70}{subsubsection.4.23.1.1}%
+\contentsline {subsection}{\numberline {4.23.2}Member Function Documentation}{70}{subsection.4.23.2}%
+\contentsline {subsubsection}{\numberline {4.23.2.1}GenerateScenarios()}{70}{subsubsection.4.23.2.1}%
+\contentsline {subsubsection}{\numberline {4.23.2.2}SetupGrid()}{70}{subsubsection.4.23.2.2}%
+\contentsline {subsection}{\numberline {4.23.3}Member Data Documentation}{71}{subsection.4.23.3}%
+\contentsline {subsubsection}{\numberline {4.23.3.1}bernoulliCoefficients}{71}{subsubsection.4.23.3.1}%
+\contentsline {subsubsection}{\numberline {4.23.3.2}lx}{71}{subsubsection.4.23.3.2}%
+\contentsline {subsubsection}{\numberline {4.23.3.3}ly}{71}{subsubsection.4.23.3.3}%
+\contentsline {subsubsection}{\numberline {4.23.3.4}nbHorizontal}{71}{subsubsection.4.23.3.4}%
+\contentsline {subsubsection}{\numberline {4.23.3.5}nbVertical}{71}{subsubsection.4.23.3.5}%
+\contentsline {subsubsection}{\numberline {4.23.3.6}ux}{71}{subsubsection.4.23.3.6}%
+\contentsline {subsubsection}{\numberline {4.23.3.7}uy}{71}{subsubsection.4.23.3.7}%
+\contentsline {section}{\numberline {4.24}Vehicle Struct Reference}{72}{section.4.24}%
+\contentsline {subsection}{\numberline {4.24.1}Member Data Documentation}{72}{subsection.4.24.1}%
+\contentsline {subsubsection}{\numberline {4.24.1.1}preferredWaitingStation}{72}{subsubsection.4.24.1.1}%
+\contentsline {subsubsection}{\numberline {4.24.1.2}timeAvailable}{72}{subsubsection.4.24.1.2}%
+\contentsline {subsubsection}{\numberline {4.24.1.3}type}{72}{subsubsection.4.24.1.3}%
+\contentsline {section}{\numberline {4.25}Vertex Struct Reference}{73}{section.4.25}%
+\contentsline {subsection}{\numberline {4.25.1}Member Function Documentation}{73}{subsection.4.25.1}%
+\contentsline {subsubsection}{\numberline {4.25.1.1}operator==()}{74}{subsubsection.4.25.1.1}%
+\contentsline {subsection}{\numberline {4.25.2}Member Data Documentation}{74}{subsection.4.25.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.1}closestWaitingStation}{74}{subsubsection.4.25.2.1}%
+\contentsline {subsubsection}{\numberline {4.25.2.2}id}{74}{subsubsection.4.25.2.2}%
+\contentsline {subsubsection}{\numberline {4.25.2.3}identifier}{74}{subsubsection.4.25.2.3}%
+\contentsline {subsubsection}{\numberline {4.25.2.4}position}{74}{subsubsection.4.25.2.4}%
+\contentsline {section}{\numberline {4.26}Waiting\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Station Struct Reference}{75}{section.4.26}%
+\contentsline {subsection}{\numberline {4.26.1}Member Data Documentation}{75}{subsection.4.26.1}%
+\contentsline {subsubsection}{\numberline {4.26.1.1}capacity}{76}{subsubsection.4.26.1.1}%
+\contentsline {chapter}{\numberline {5}File Documentation}{77}{chapter.5}%
+\contentsline {section}{\numberline {5.1}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Base\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing.h File Reference}{77}{section.5.1}%
+\contentsline {subsection}{\numberline {5.1.1}Enumeration Type Documentation}{78}{subsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.1.1}PricingReturnStatus}{78}{subsubsection.5.1.1.1}%
+\contentsline {section}{\numberline {5.2}include/branching.h File Reference}{78}{section.5.2}%
+\contentsline {subsection}{\numberline {5.2.1}Detailed Description}{79}{subsection.5.2.1}%
+\contentsline {subsection}{\numberline {5.2.2}Function Documentation}{79}{subsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.2.1}SCIPincludeCustomBranchingRule()}{79}{subsubsection.5.2.2.1}%
+\contentsline {section}{\numberline {5.3}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Helper.h File Reference}{80}{section.5.3}%
+\contentsline {subsection}{\numberline {5.3.1}Detailed Description}{80}{subsection.5.3.1}%
+\contentsline {section}{\numberline {5.4}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Params.h File Reference}{81}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}Enumeration Type Documentation}{81}{subsection.5.4.1}%
+\contentsline {subsubsection}{\numberline {5.4.1.1}PricingAlgorithm}{82}{subsubsection.5.4.1.1}%
+\contentsline {section}{\numberline {5.5}include/pricer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.h File Reference}{82}{section.5.5}%
+\contentsline {subsection}{\numberline {5.5.1}Function Documentation}{83}{subsection.5.5.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.1}createRouteVariable()}{83}{subsubsection.5.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.5.1.2}SCIPincludePricerSPwCG()}{83}{subsubsection.5.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.5.1.3}SCIPpricerSPwCGActivate()}{84}{subsubsection.5.5.1.3}%
+\contentsline {section}{\numberline {5.6}include/probdata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.h File Reference}{84}{section.5.6}%
+\contentsline {section}{\numberline {5.7}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data.h File Reference}{84}{section.5.7}%
+\contentsline {subsection}{\numberline {5.7.1}Enumeration Type Documentation}{85}{subsection.5.7.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.1}DistanceType}{85}{subsubsection.5.7.1.1}%
+\contentsline {subsubsection}{\numberline {5.7.1.2}WaitingStationPolicy}{86}{subsubsection.5.7.1.2}%
+\contentsline {section}{\numberline {5.8}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solution.h File Reference}{86}{section.5.8}%
+\contentsline {subsection}{\numberline {5.8.1}Macro Definition Documentation}{87}{subsection.5.8.1}%
+\contentsline {subsubsection}{\numberline {5.8.1.1}GIT\_COMMIT\_HASH}{87}{subsubsection.5.8.1.1}%
+\contentsline {section}{\numberline {5.9}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Route\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expander.h File Reference}{87}{section.5.9}%
+\contentsline {subsection}{\numberline {5.9.1}Enumeration Type Documentation}{88}{subsection.5.9.1}%
+\contentsline {subsubsection}{\numberline {5.9.1.1}WhichStation}{88}{subsubsection.5.9.1.1}%
+\contentsline {section}{\numberline {5.10}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solver.h File Reference}{88}{section.5.10}%
+\contentsline {section}{\numberline {5.11}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spaced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bellman\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing.h File Reference}{89}{section.5.11}%
+\contentsline {section}{\numberline {5.12}include/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stochastic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.h File Reference}{90}{section.5.12}%
+\contentsline {section}{\numberline {5.13}include/vardata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.h File Reference}{91}{section.5.13}%
+\contentsline {subsection}{\numberline {5.13.1}Function Documentation}{92}{subsection.5.13.1}%
+\contentsline {subsubsection}{\numberline {5.13.1.1}SCIPcreateVarBinpacking()}{92}{subsubsection.5.13.1.1}%
+\contentsline {subsubsection}{\numberline {5.13.1.2}SCIPvardataCreateBinpacking()}{92}{subsubsection.5.13.1.2}%
+\contentsline {subsubsection}{\numberline {5.13.1.3}SCIPvardataGetConsids()}{92}{subsubsection.5.13.1.3}%
+\contentsline {subsubsection}{\numberline {5.13.1.4}SCIPvardataGetNConsids()}{92}{subsubsection.5.13.1.4}%
+\contentsline {subsubsection}{\numberline {5.13.1.5}SCIPvardataGetRoute()}{92}{subsubsection.5.13.1.5}%
+\contentsline {subsubsection}{\numberline {5.13.1.6}SCIPvardataPrint()}{93}{subsubsection.5.13.1.6}%
+\contentsline {section}{\numberline {5.14}src/branching.cpp File Reference}{93}{section.5.14}%
+\contentsline {subsection}{\numberline {5.14.1}Detailed Description}{94}{subsection.5.14.1}%
+\contentsline {subsection}{\numberline {5.14.2}Macro Definition Documentation}{94}{subsection.5.14.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.1}BRANCHRULE\_DESC}{94}{subsubsection.5.14.2.1}%
+\contentsline {subsubsection}{\numberline {5.14.2.2}BRANCHRULE\_MAXBOUNDDIST}{95}{subsubsection.5.14.2.2}%
+\contentsline {subsubsection}{\numberline {5.14.2.3}BRANCHRULE\_MAXDEPTH}{95}{subsubsection.5.14.2.3}%
+\contentsline {subsubsection}{\numberline {5.14.2.4}BRANCHRULE\_NAME}{95}{subsubsection.5.14.2.4}%
+\contentsline {subsubsection}{\numberline {5.14.2.5}BRANCHRULE\_PRIORITY}{95}{subsubsection.5.14.2.5}%
+\contentsline {subsection}{\numberline {5.14.3}Function Documentation}{95}{subsection.5.14.3}%
+\contentsline {subsubsection}{\numberline {5.14.3.1}branchExeclpBranchingRules()}{95}{subsubsection.5.14.3.1}%
+\contentsline {subsubsection}{\numberline {5.14.3.2}IsEdgeBranchingRepeated()}{95}{subsubsection.5.14.3.2}%
+\contentsline {subsubsection}{\numberline {5.14.3.3}IsSimpleBranchingRepeated()}{96}{subsubsection.5.14.3.3}%
+\contentsline {subsubsection}{\numberline {5.14.3.4}IsVehicleBranchingRepeated()}{96}{subsubsection.5.14.3.4}%
+\contentsline {subsubsection}{\numberline {5.14.3.5}PrintConstraintValues()}{96}{subsubsection.5.14.3.5}%
+\contentsline {subsubsection}{\numberline {5.14.3.6}SCIPcreateConsSumEdge()}{96}{subsubsection.5.14.3.6}%
+\contentsline {subsubsection}{\numberline {5.14.3.7}SCIPcreateConsSumVehicle()}{97}{subsubsection.5.14.3.7}%
+\contentsline {subsubsection}{\numberline {5.14.3.8}SCIPincludeCustomBranchingRule()}{97}{subsubsection.5.14.3.8}%
+\contentsline {section}{\numberline {5.15}src/cppmain.cpp File Reference}{97}{section.5.15}%
+\contentsline {subsection}{\numberline {5.15.1}Function Documentation}{98}{subsection.5.15.1}%
+\contentsline {subsubsection}{\numberline {5.15.1.1}ComputingCanadaMain()}{98}{subsubsection.5.15.1.1}%
+\contentsline {subsubsection}{\numberline {5.15.1.2}FindVInstanceByIndex()}{98}{subsubsection.5.15.1.2}%
+\contentsline {subsubsection}{\numberline {5.15.1.3}main()}{99}{subsubsection.5.15.1.3}%
+\contentsline {subsubsection}{\numberline {5.15.1.4}ParseCommandLine()}{99}{subsubsection.5.15.1.4}%
+\contentsline {section}{\numberline {5.16}src/cutstock.cpp File Reference}{99}{section.5.16}%
+\contentsline {subsection}{\numberline {5.16.1}Macro Definition Documentation}{100}{subsection.5.16.1}%
+\contentsline {subsubsection}{\numberline {5.16.1.1}IL\_STD}{100}{subsubsection.5.16.1.1}%
+\contentsline {subsubsection}{\numberline {5.16.1.2}RC\_EPS}{100}{subsubsection.5.16.1.2}%
+\contentsline {subsection}{\numberline {5.16.2}Function Documentation}{100}{subsection.5.16.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.1}cutstock\_main()}{100}{subsubsection.5.16.2.1}%
+\contentsline {subsubsection}{\numberline {5.16.2.2}readData()}{101}{subsubsection.5.16.2.2}%
+\contentsline {subsubsection}{\numberline {5.16.2.3}report1()}{101}{subsubsection.5.16.2.3}%
+\contentsline {subsubsection}{\numberline {5.16.2.4}report2()}{101}{subsubsection.5.16.2.4}%
+\contentsline {subsubsection}{\numberline {5.16.2.5}report3()}{101}{subsubsection.5.16.2.5}%
+\contentsline {section}{\numberline {5.17}src/main.cpp File Reference}{101}{section.5.17}%
+\contentsline {subsection}{\numberline {5.17.1}Macro Definition Documentation}{102}{subsection.5.17.1}%
+\contentsline {subsubsection}{\numberline {5.17.1.1}RC\_EPS}{102}{subsubsection.5.17.1.1}%
+\contentsline {subsection}{\numberline {5.17.2}Function Documentation}{102}{subsection.5.17.2}%
+\contentsline {subsubsection}{\numberline {5.17.2.1}main()}{102}{subsubsection.5.17.2.1}%
+\contentsline {subsubsection}{\numberline {5.17.2.2}run\_tests()}{103}{subsubsection.5.17.2.2}%
+\contentsline {subsubsection}{\numberline {5.17.2.3}simulateOperation()}{103}{subsubsection.5.17.2.3}%
+\contentsline {section}{\numberline {5.18}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}O\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}R\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}M\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Helper.cpp File Reference}{103}{section.5.18}%
+\contentsline {subsection}{\numberline {5.18.1}Detailed Description}{103}{subsection.5.18.1}%
+\contentsline {section}{\numberline {5.19}src/pricer\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.cpp File Reference}{104}{section.5.19}%
+\contentsline {subsection}{\numberline {5.19.1}Macro Definition Documentation}{105}{subsection.5.19.1}%
+\contentsline {subsubsection}{\numberline {5.19.1.1}PRICER\_DELAY}{105}{subsubsection.5.19.1.1}%
+\contentsline {subsubsection}{\numberline {5.19.1.2}PRICER\_DESC}{105}{subsubsection.5.19.1.2}%
+\contentsline {subsubsection}{\numberline {5.19.1.3}PRICER\_NAME}{105}{subsubsection.5.19.1.3}%
+\contentsline {subsubsection}{\numberline {5.19.1.4}PRICER\_PRIORITY}{105}{subsubsection.5.19.1.4}%
+\contentsline {subsection}{\numberline {5.19.2}Function Documentation}{105}{subsection.5.19.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.1}buildConsideredRequestsVector()}{105}{subsubsection.5.19.2.1}%
+\contentsline {subsubsection}{\numberline {5.19.2.2}buildForbiddenEdges()}{106}{subsubsection.5.19.2.2}%
+\contentsline {subsubsection}{\numberline {5.19.2.3}checkForVarRedCosts()}{106}{subsubsection.5.19.2.3}%
+\contentsline {subsubsection}{\numberline {5.19.2.4}compareArrays()}{106}{subsubsection.5.19.2.4}%
+\contentsline {subsubsection}{\numberline {5.19.2.5}createRouteVariable()}{106}{subsubsection.5.19.2.5}%
+\contentsline {subsubsection}{\numberline {5.19.2.6}DoesRouteViolateBranching()}{106}{subsubsection.5.19.2.6}%
+\contentsline {subsubsection}{\numberline {5.19.2.7}DoPricing()}{106}{subsubsection.5.19.2.7}%
+\contentsline {subsubsection}{\numberline {5.19.2.8}ncons()}{107}{subsubsection.5.19.2.8}%
+\contentsline {subsubsection}{\numberline {5.19.2.9}routeContainsRequest()}{107}{subsubsection.5.19.2.9}%
+\contentsline {subsubsection}{\numberline {5.19.2.10}SCIP\_DECL\_PRICEREXITSOL()}{107}{subsubsection.5.19.2.10}%
+\contentsline {subsubsection}{\numberline {5.19.2.11}SCIP\_DECL\_PRICERFARKAS()}{107}{subsubsection.5.19.2.11}%
+\contentsline {subsubsection}{\numberline {5.19.2.12}SCIP\_DECL\_PRICERFREE()}{107}{subsubsection.5.19.2.12}%
+\contentsline {subsubsection}{\numberline {5.19.2.13}SCIP\_DECL\_PRICERINIT()}{108}{subsubsection.5.19.2.13}%
+\contentsline {subsubsection}{\numberline {5.19.2.14}SCIP\_DECL\_PRICERREDCOST()}{108}{subsubsection.5.19.2.14}%
+\contentsline {subsubsection}{\numberline {5.19.2.15}SCIPincludePricerSPwCG()}{108}{subsubsection.5.19.2.15}%
+\contentsline {subsubsection}{\numberline {5.19.2.16}SCIPpricerSPwCGActivate()}{108}{subsubsection.5.19.2.16}%
+\contentsline {section}{\numberline {5.20}src/probdata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.cpp File Reference}{108}{section.5.20}%
+\contentsline {subsection}{\numberline {5.20.1}Macro Definition Documentation}{110}{subsection.5.20.1}%
+\contentsline {subsubsection}{\numberline {5.20.1.1}EVENTHDLR\_DESC}{110}{subsubsection.5.20.1.1}%
+\contentsline {subsubsection}{\numberline {5.20.1.2}EVENTHDLR\_NAME}{110}{subsubsection.5.20.1.2}%
+\contentsline {subsection}{\numberline {5.20.2}Function Documentation}{110}{subsection.5.20.2}%
+\contentsline {subsubsection}{\numberline {5.20.2.1}AddEdgeBranchingCons()}{111}{subsubsection.5.20.2.1}%
+\contentsline {subsubsection}{\numberline {5.20.2.2}AddVehicleBranchingCons()}{111}{subsubsection.5.20.2.2}%
+\contentsline {subsubsection}{\numberline {5.20.2.3}GetConstrainedEdges()}{111}{subsubsection.5.20.2.3}%
+\contentsline {subsubsection}{\numberline {5.20.2.4}GetConstrainedVehicles()}{111}{subsubsection.5.20.2.4}%
+\contentsline {subsubsection}{\numberline {5.20.2.5}GetEdgeBranchingConstraints()}{111}{subsubsection.5.20.2.5}%
+\contentsline {subsubsection}{\numberline {5.20.2.6}GetExecutionSummary()}{111}{subsubsection.5.20.2.6}%
+\contentsline {subsubsection}{\numberline {5.20.2.7}GetParams()}{112}{subsubsection.5.20.2.7}%
+\contentsline {subsubsection}{\numberline {5.20.2.8}GetProblemData()}{112}{subsubsection.5.20.2.8}%
+\contentsline {subsubsection}{\numberline {5.20.2.9}GetVehicleBranchingConstraints()}{112}{subsubsection.5.20.2.9}%
+\contentsline {subsubsection}{\numberline {5.20.2.10}IncrementUsedBranchingRule()}{112}{subsubsection.5.20.2.10}%
+\contentsline {subsubsection}{\numberline {5.20.2.11}IsVarRepeated()}{112}{subsubsection.5.20.2.11}%
+\contentsline {subsubsection}{\numberline {5.20.2.12}loadProblem()}{112}{subsubsection.5.20.2.12}%
+\contentsline {subsubsection}{\numberline {5.20.2.13}LogRepeatedRoute()}{113}{subsubsection.5.20.2.13}%
+\contentsline {subsubsection}{\numberline {5.20.2.14}ncons()}{113}{subsubsection.5.20.2.14}%
+\contentsline {subsubsection}{\numberline {5.20.2.15}OutputDuals()}{113}{subsubsection.5.20.2.15}%
+\contentsline {subsubsection}{\numberline {5.20.2.16}probdataCreate()}{113}{subsubsection.5.20.2.16}%
+\contentsline {subsubsection}{\numberline {5.20.2.17}probdataFree()}{114}{subsubsection.5.20.2.17}%
+\contentsline {subsubsection}{\numberline {5.20.2.18}QuerySolution()}{114}{subsubsection.5.20.2.18}%
+\contentsline {subsubsection}{\numberline {5.20.2.19}SCIP\_DECL\_EVENTEXEC()}{114}{subsubsection.5.20.2.19}%
+\contentsline {subsubsection}{\numberline {5.20.2.20}SCIP\_DECL\_PROBDELORIG()}{114}{subsubsection.5.20.2.20}%
+\contentsline {subsubsection}{\numberline {5.20.2.21}SCIP\_DECL\_PROBDELTRANS()}{114}{subsubsection.5.20.2.21}%
+\contentsline {subsubsection}{\numberline {5.20.2.22}SCIP\_DECL\_PROBEXITSOL()}{115}{subsubsection.5.20.2.22}%
+\contentsline {subsubsection}{\numberline {5.20.2.23}SCIP\_DECL\_PROBINITSOL()}{115}{subsubsection.5.20.2.23}%
+\contentsline {subsubsection}{\numberline {5.20.2.24}SCIP\_DECL\_PROBTRANS()}{115}{subsubsection.5.20.2.24}%
+\contentsline {subsubsection}{\numberline {5.20.2.25}SCIPprobdataAddVar()}{115}{subsubsection.5.20.2.25}%
+\contentsline {subsubsection}{\numberline {5.20.2.26}SCIPprobdataGetCons()}{115}{subsubsection.5.20.2.26}%
+\contentsline {subsubsection}{\numberline {5.20.2.27}SCIPprobdataGetNCons()}{116}{subsubsection.5.20.2.27}%
+\contentsline {subsubsection}{\numberline {5.20.2.28}SCIPprobdataGetNVars()}{116}{subsubsection.5.20.2.28}%
+\contentsline {subsubsection}{\numberline {5.20.2.29}SCIPprobdataGetVars()}{116}{subsubsection.5.20.2.29}%
+\contentsline {section}{\numberline {5.21}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Data.cpp File Reference}{116}{section.5.21}%
+\contentsline {subsection}{\numberline {5.21.1}Macro Definition Documentation}{117}{subsection.5.21.1}%
+\contentsline {subsubsection}{\numberline {5.21.1.1}RC\_EPS}{117}{subsubsection.5.21.1.1}%
+\contentsline {subsection}{\numberline {5.21.2}Function Documentation}{117}{subsection.5.21.2}%
+\contentsline {subsubsection}{\numberline {5.21.2.1}norm()}{117}{subsubsection.5.21.2.1}%
+\contentsline {section}{\numberline {5.22}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Problem\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solution.cpp File Reference}{118}{section.5.22}%
+\contentsline {subsection}{\numberline {5.22.1}Macro Definition Documentation}{118}{subsection.5.22.1}%
+\contentsline {subsubsection}{\numberline {5.22.1.1}RC\_EPS}{118}{subsubsection.5.22.1.1}%
+\contentsline {section}{\numberline {5.23}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Route\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Expander.cpp File Reference}{118}{section.5.23}%
+\contentsline {subsection}{\numberline {5.23.1}Macro Definition Documentation}{119}{subsection.5.23.1}%
+\contentsline {subsubsection}{\numberline {5.23.1.1}RC\_EPS}{119}{subsubsection.5.23.1.1}%
+\contentsline {section}{\numberline {5.24}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}C\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}I\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}P\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Solver.cpp File Reference}{119}{section.5.24}%
+\contentsline {subsection}{\numberline {5.24.1}Macro Definition Documentation}{120}{subsection.5.24.1}%
+\contentsline {subsubsection}{\numberline {5.24.1.1}GIT\_COMMIT\_HASH}{120}{subsubsection.5.24.1.1}%
+\contentsline {subsection}{\numberline {5.24.2}Function Documentation}{120}{subsection.5.24.2}%
+\contentsline {subsubsection}{\numberline {5.24.2.1}runSCIP()}{120}{subsubsection.5.24.2.1}%
+\contentsline {section}{\numberline {5.25}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Spaced\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Bellman\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pricing.cpp File Reference}{121}{section.5.25}%
+\contentsline {section}{\numberline {5.26}src/\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Stochastic\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Info.cpp File Reference}{121}{section.5.26}%
+\contentsline {section}{\numberline {5.27}src/vardata\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\_\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}S\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}Pw\discretionary {\mbox {\scriptsize $\hookleftarrow $}}{}{}CG.cpp File Reference}{121}{section.5.27}%
+\contentsline {subsection}{\numberline {5.27.1}Function Documentation}{122}{subsection.5.27.1}%
+\contentsline {subsubsection}{\numberline {5.27.1.1}SCIP\_DECL\_VARDELTRANS()}{122}{subsubsection.5.27.1.1}%
+\contentsline {subsubsection}{\numberline {5.27.1.2}SCIPcreateVarBinpacking()}{123}{subsubsection.5.27.1.2}%
+\contentsline {subsubsection}{\numberline {5.27.1.3}SCIPvardataCreateBinpacking()}{123}{subsubsection.5.27.1.3}%
+\contentsline {subsubsection}{\numberline {5.27.1.4}SCIPvardataGetConsCoeffs()}{123}{subsubsection.5.27.1.4}%
+\contentsline {subsubsection}{\numberline {5.27.1.5}SCIPvardataGetConsids()}{124}{subsubsection.5.27.1.5}%
+\contentsline {subsubsection}{\numberline {5.27.1.6}SCIPvardataGetNConsids()}{124}{subsubsection.5.27.1.6}%
+\contentsline {subsubsection}{\numberline {5.27.1.7}SCIPvardataGetRoute()}{124}{subsubsection.5.27.1.7}%
+\contentsline {subsubsection}{\numberline {5.27.1.8}SCIPvardataPrint()}{125}{subsubsection.5.27.1.8}%
+\contentsline {subsubsection}{\numberline {5.27.1.9}vardataCreate()}{125}{subsubsection.5.27.1.9}%
+\contentsline {subsubsection}{\numberline {5.27.1.10}vardataDelete()}{125}{subsubsection.5.27.1.10}%
+\contentsline {chapter}{Index}{127}{section*.161}%

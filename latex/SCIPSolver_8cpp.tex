@@ -1,0 +1,52 @@
+\hypertarget{SCIPSolver_8cpp}{}\doxysection{src/\+S\+C\+I\+P\+Solver.cpp File Reference}
+\label{SCIPSolver_8cpp}\index{src/SCIPSolver.cpp@{src/SCIPSolver.cpp}}
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}S\+C\+I\+P\+Solver.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scipshell.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scipdefplugins.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}objscip/objscip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}objscip/objscipdefplugins.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}branching.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pricer\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}probdata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+Include dependency graph for S\+C\+I\+P\+Solver.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{SCIPSolver_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{SCIPSolver_8cpp_af4763d53e5a3f37642797fac3ee14564}{G\+I\+T\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+H\+A\+SH}}~\char`\"{}?\char`\"{}
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{SCIPSolver_8cpp_adb77850090fe850b84dca6b916aee8a3}{run\+S\+C\+IP}} (\mbox{\hyperlink{classParams}{Params}} $\ast$params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, \mbox{\hyperlink{classProblemSolution}{Problem\+Solution}} \&solution)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{SCIPSolver_8cpp_af4763d53e5a3f37642797fac3ee14564}\label{SCIPSolver_8cpp_af4763d53e5a3f37642797fac3ee14564}} 
+\index{SCIPSolver.cpp@{SCIPSolver.cpp}!GIT\_COMMIT\_HASH@{GIT\_COMMIT\_HASH}}
+\index{GIT\_COMMIT\_HASH@{GIT\_COMMIT\_HASH}!SCIPSolver.cpp@{SCIPSolver.cpp}}
+\doxysubsubsection{\texorpdfstring{GIT\_COMMIT\_HASH}{GIT\_COMMIT\_HASH}}
+{\footnotesize\ttfamily \#define G\+I\+T\+\_\+\+C\+O\+M\+M\+I\+T\+\_\+\+H\+A\+SH~\char`\"{}?\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{SCIPSolver_8cpp_adb77850090fe850b84dca6b916aee8a3}\label{SCIPSolver_8cpp_adb77850090fe850b84dca6b916aee8a3}} 
+\index{SCIPSolver.cpp@{SCIPSolver.cpp}!runSCIP@{runSCIP}}
+\index{runSCIP@{runSCIP}!SCIPSolver.cpp@{SCIPSolver.cpp}}
+\doxysubsubsection{\texorpdfstring{runSCIP()}{runSCIP()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE run\+S\+C\+IP (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classProblemSolution}{Problem\+Solution}} \&}]{solution }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+scip execution\+: creates a S\+C\+IP instance with default plugins, loads rules, callbacks etc. 

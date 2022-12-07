@@ -1,0 +1,92 @@
+\hypertarget{cutstock_8cpp}{}\doxysection{src/cutstock.cpp File Reference}
+\label{cutstock_8cpp}\index{src/cutstock.cpp@{src/cutstock.cpp}}
+{\ttfamily \#include $<$ilcplex/ilocplex.\+h$>$}\newline
+Include dependency graph for cutstock.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=179pt]{cutstock_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{cutstock_8cpp_ae52fd5f01516c87c8466e60a2f627aee}{I\+L\+\_\+\+S\+TD}}
+\item 
+\#define \mbox{\hyperlink{cutstock_8cpp_a04ff86e189818b4422d29b182d3b1d2e}{R\+C\+\_\+\+E\+PS}}~1.\+0e-\/6
+\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{cutstock_8cpp_ac02eff57a215d897f9fb9a293006a0da}{read\+Data}} (const char $\ast$filename, Ilo\+Num \&roll\+Width, Ilo\+Num\+Array \&size, Ilo\+Num\+Array \&amount)
+\item 
+static void \mbox{\hyperlink{cutstock_8cpp_a4ab904a6453cc10ce3eac0c9558e8482}{report1}} (Ilo\+Cplex \&cut\+Solver, Ilo\+Num\+Var\+Array Cut, Ilo\+Range\+Array Fill)
+\item 
+static void \mbox{\hyperlink{cutstock_8cpp_a78bb91f9b480b3f337a6ed0c29fb6dd7}{report2}} (Ilo\+Algorithm \&pat\+Solver, Ilo\+Num\+Var\+Array Use, Ilo\+Objective obj)
+\item 
+static void \mbox{\hyperlink{cutstock_8cpp_aed8fbd301be097718b90ad90bf2fa6b1}{report3}} (Ilo\+Cplex \&cut\+Solver, Ilo\+Num\+Var\+Array Cut)
+\item 
+int \mbox{\hyperlink{cutstock_8cpp_a19c0b2d6dcd56a5c5c4502e4e08f1edb}{cutstock\+\_\+main}} (int argc, char $\ast$$\ast$argv)
+\begin{DoxyCompactList}\small\item\em M\+A\+IN P\+R\+O\+G\+R\+AM ///. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{cutstock_8cpp_ae52fd5f01516c87c8466e60a2f627aee}\label{cutstock_8cpp_ae52fd5f01516c87c8466e60a2f627aee}} 
+\index{cutstock.cpp@{cutstock.cpp}!IL\_STD@{IL\_STD}}
+\index{IL\_STD@{IL\_STD}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{IL\_STD}{IL\_STD}}
+{\footnotesize\ttfamily \#define I\+L\+\_\+\+S\+TD}
+
+\mbox{\Hypertarget{cutstock_8cpp_a04ff86e189818b4422d29b182d3b1d2e}\label{cutstock_8cpp_a04ff86e189818b4422d29b182d3b1d2e}} 
+\index{cutstock.cpp@{cutstock.cpp}!RC\_EPS@{RC\_EPS}}
+\index{RC\_EPS@{RC\_EPS}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{RC\_EPS}{RC\_EPS}}
+{\footnotesize\ttfamily \#define R\+C\+\_\+\+E\+PS~1.\+0e-\/6}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cutstock_8cpp_a19c0b2d6dcd56a5c5c4502e4e08f1edb}\label{cutstock_8cpp_a19c0b2d6dcd56a5c5c4502e4e08f1edb}} 
+\index{cutstock.cpp@{cutstock.cpp}!cutstock\_main@{cutstock\_main}}
+\index{cutstock\_main@{cutstock\_main}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{cutstock\_main()}{cutstock\_main()}}
+{\footnotesize\ttfamily int cutstock\+\_\+main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+
+M\+A\+IN P\+R\+O\+G\+R\+AM ///. 
+
+C\+U\+T\+T\+I\+N\+G-\/\+O\+P\+T\+I\+M\+I\+Z\+A\+T\+I\+ON P\+R\+O\+B\+L\+EM ///
+
+P\+A\+T\+T\+E\+R\+N-\/\+G\+E\+N\+E\+R\+A\+T\+I\+ON P\+R\+O\+B\+L\+EM ///
+
+C\+O\+L\+U\+M\+N-\/\+G\+E\+N\+E\+R\+A\+T\+I\+ON P\+R\+O\+C\+E\+D\+U\+RE ///
+
+C\+O\+L\+U\+M\+N-\/\+G\+E\+N\+E\+R\+A\+T\+I\+ON P\+R\+O\+C\+E\+D\+U\+RE ///
+
+O\+P\+T\+I\+M\+I\+ZE O\+V\+ER C\+U\+R\+R\+E\+NT P\+A\+T\+T\+E\+R\+NS ///
+
+F\+I\+ND A\+ND A\+DD A N\+EW P\+A\+T\+T\+E\+RN ///\mbox{\Hypertarget{cutstock_8cpp_ac02eff57a215d897f9fb9a293006a0da}\label{cutstock_8cpp_ac02eff57a215d897f9fb9a293006a0da}} 
+\index{cutstock.cpp@{cutstock.cpp}!readData@{readData}}
+\index{readData@{readData}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{readData()}{readData()}}
+{\footnotesize\ttfamily static void read\+Data (\begin{DoxyParamCaption}\item[{const char $\ast$}]{filename,  }\item[{Ilo\+Num \&}]{roll\+Width,  }\item[{Ilo\+Num\+Array \&}]{size,  }\item[{Ilo\+Num\+Array \&}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{cutstock_8cpp_a4ab904a6453cc10ce3eac0c9558e8482}\label{cutstock_8cpp_a4ab904a6453cc10ce3eac0c9558e8482}} 
+\index{cutstock.cpp@{cutstock.cpp}!report1@{report1}}
+\index{report1@{report1}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{report1()}{report1()}}
+{\footnotesize\ttfamily static void report1 (\begin{DoxyParamCaption}\item[{Ilo\+Cplex \&}]{cut\+Solver,  }\item[{Ilo\+Num\+Var\+Array}]{Cut,  }\item[{Ilo\+Range\+Array}]{Fill }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{cutstock_8cpp_a78bb91f9b480b3f337a6ed0c29fb6dd7}\label{cutstock_8cpp_a78bb91f9b480b3f337a6ed0c29fb6dd7}} 
+\index{cutstock.cpp@{cutstock.cpp}!report2@{report2}}
+\index{report2@{report2}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{report2()}{report2()}}
+{\footnotesize\ttfamily static void report2 (\begin{DoxyParamCaption}\item[{Ilo\+Algorithm \&}]{pat\+Solver,  }\item[{Ilo\+Num\+Var\+Array}]{Use,  }\item[{Ilo\+Objective}]{obj }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{cutstock_8cpp_aed8fbd301be097718b90ad90bf2fa6b1}\label{cutstock_8cpp_aed8fbd301be097718b90ad90bf2fa6b1}} 
+\index{cutstock.cpp@{cutstock.cpp}!report3@{report3}}
+\index{report3@{report3}!cutstock.cpp@{cutstock.cpp}}
+\doxysubsubsection{\texorpdfstring{report3()}{report3()}}
+{\footnotesize\ttfamily static void report3 (\begin{DoxyParamCaption}\item[{Ilo\+Cplex \&}]{cut\+Solver,  }\item[{Ilo\+Num\+Var\+Array}]{Cut }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+

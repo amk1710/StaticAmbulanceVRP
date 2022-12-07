@@ -1,0 +1,10 @@
+<map id="SCIP_ProbData" name="SCIP_ProbData">
+<area shape="rect" id="node1" title="Problem data which is accessible in all places." alt="" coords="341,243,459,269"/>
+<area shape="rect" id="node2" href="$classProblemData.html" title=" " alt="" coords="112,131,219,158"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,5,213,32"/>
+<area shape="rect" id="node4" title=" " alt="" coords="243,5,301,32"/>
+<area shape="rect" id="node6" href="$classParams.html" title=" " alt="" coords="243,131,314,158"/>
+<area shape="rect" id="node5" title=" " alt="" coords="338,131,515,158"/>
+<area shape="rect" id="node7" title=" " alt="" coords="566,131,677,158"/>
+<area shape="rect" id="node8" title=" " alt="" coords="717,124,856,165"/>
+</map>

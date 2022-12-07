@@ -1,0 +1,116 @@
+\hypertarget{classStochasticInfo}{}\doxysection{Stochastic\+Info Class Reference}
+\label{classStochasticInfo}\index{StochasticInfo@{StochasticInfo}}
+
+
+{\ttfamily \#include $<$Stochastic\+Info.\+h$>$}
+
+
+
+Collaboration diagram for Stochastic\+Info\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classStochasticInfo__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classStochasticInfo_ac2012be38b750c53d214f5adaaac6b3b}{Setup\+Grid}} (double \mbox{\hyperlink{classStochasticInfo_aed1d9cb58a1d48da47dd1cba677b996b}{lx}}, double \mbox{\hyperlink{classStochasticInfo_a4db6abe875cbafc758b302fb0c0d64d1}{ux}}, double \mbox{\hyperlink{classStochasticInfo_af621d107ce4a6657b3a9d7954e602188}{ly}}, double \mbox{\hyperlink{classStochasticInfo_a3580498ecd3979d853e2cbce39d03974}{uy}}, int \mbox{\hyperlink{classStochasticInfo_a8a21be800e7c49275b939730e929cb2c}{nb\+Vertical}}, int \mbox{\hyperlink{classStochasticInfo_a1519e4bd3e7db42171f0170d9839abb7}{nb\+Horizontal}}, double bernoulli\+Coefficient)
+\item 
+\mbox{\hyperlink{classStochasticInfo_a6c685b2dd440fba2c24892f28246c809}{Stochastic\+Info}} ()
+\item 
+void \mbox{\hyperlink{classStochasticInfo_a0972b3165443642c72a234402720e6ae}{Generate\+Scenarios}} (const \mbox{\hyperlink{classProblemData}{Problem\+Data}} \&base, int n\+\_\+scenarios, vector$<$ \mbox{\hyperlink{classProblemData}{Problem\+Data}} $>$ \&out\+Scenarios)
+\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classStochasticInfo_a3065221efe885299f14196e668b98d5f}{bernoulli\+Coefficients}}
+\item 
+double \mbox{\hyperlink{classStochasticInfo_aed1d9cb58a1d48da47dd1cba677b996b}{lx}}
+\item 
+double \mbox{\hyperlink{classStochasticInfo_a4db6abe875cbafc758b302fb0c0d64d1}{ux}}
+\item 
+double \mbox{\hyperlink{classStochasticInfo_af621d107ce4a6657b3a9d7954e602188}{ly}}
+\item 
+double \mbox{\hyperlink{classStochasticInfo_a3580498ecd3979d853e2cbce39d03974}{uy}}
+\item 
+int \mbox{\hyperlink{classStochasticInfo_a8a21be800e7c49275b939730e929cb2c}{nb\+Vertical}}
+\item 
+int \mbox{\hyperlink{classStochasticInfo_a1519e4bd3e7db42171f0170d9839abb7}{nb\+Horizontal}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classStochasticInfo_a6c685b2dd440fba2c24892f28246c809}\label{classStochasticInfo_a6c685b2dd440fba2c24892f28246c809}} 
+\index{StochasticInfo@{StochasticInfo}!StochasticInfo@{StochasticInfo}}
+\index{StochasticInfo@{StochasticInfo}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{StochasticInfo()}{StochasticInfo()}}
+{\footnotesize\ttfamily Stochastic\+Info\+::\+Stochastic\+Info (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classStochasticInfo_a0972b3165443642c72a234402720e6ae}\label{classStochasticInfo_a0972b3165443642c72a234402720e6ae}} 
+\index{StochasticInfo@{StochasticInfo}!GenerateScenarios@{GenerateScenarios}}
+\index{GenerateScenarios@{GenerateScenarios}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{GenerateScenarios()}{GenerateScenarios()}}
+{\footnotesize\ttfamily void Stochastic\+Info\+::\+Generate\+Scenarios (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classProblemData}{Problem\+Data}} \&}]{base,  }\item[{int}]{n\+\_\+scenarios,  }\item[{vector$<$ \mbox{\hyperlink{classProblemData}{Problem\+Data}} $>$ \&}]{out\+Scenarios }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classStochasticInfo_ac2012be38b750c53d214f5adaaac6b3b}\label{classStochasticInfo_ac2012be38b750c53d214f5adaaac6b3b}} 
+\index{StochasticInfo@{StochasticInfo}!SetupGrid@{SetupGrid}}
+\index{SetupGrid@{SetupGrid}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{SetupGrid()}{SetupGrid()}}
+{\footnotesize\ttfamily void Stochastic\+Info\+::\+Setup\+Grid (\begin{DoxyParamCaption}\item[{double}]{lx,  }\item[{double}]{ux,  }\item[{double}]{ly,  }\item[{double}]{uy,  }\item[{int}]{nb\+Vertical,  }\item[{int}]{nb\+Horizontal,  }\item[{double}]{bernoulli\+Coefficient }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classStochasticInfo_a3065221efe885299f14196e668b98d5f}\label{classStochasticInfo_a3065221efe885299f14196e668b98d5f}} 
+\index{StochasticInfo@{StochasticInfo}!bernoulliCoefficients@{bernoulliCoefficients}}
+\index{bernoulliCoefficients@{bernoulliCoefficients}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{bernoulliCoefficients}{bernoulliCoefficients}}
+{\footnotesize\ttfamily vector$<$double$>$ Stochastic\+Info\+::bernoulli\+Coefficients\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_aed1d9cb58a1d48da47dd1cba677b996b}\label{classStochasticInfo_aed1d9cb58a1d48da47dd1cba677b996b}} 
+\index{StochasticInfo@{StochasticInfo}!lx@{lx}}
+\index{lx@{lx}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{lx}{lx}}
+{\footnotesize\ttfamily double Stochastic\+Info\+::lx\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_af621d107ce4a6657b3a9d7954e602188}\label{classStochasticInfo_af621d107ce4a6657b3a9d7954e602188}} 
+\index{StochasticInfo@{StochasticInfo}!ly@{ly}}
+\index{ly@{ly}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{ly}{ly}}
+{\footnotesize\ttfamily double Stochastic\+Info\+::ly\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_a1519e4bd3e7db42171f0170d9839abb7}\label{classStochasticInfo_a1519e4bd3e7db42171f0170d9839abb7}} 
+\index{StochasticInfo@{StochasticInfo}!nbHorizontal@{nbHorizontal}}
+\index{nbHorizontal@{nbHorizontal}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{nbHorizontal}{nbHorizontal}}
+{\footnotesize\ttfamily int Stochastic\+Info\+::nb\+Horizontal\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_a8a21be800e7c49275b939730e929cb2c}\label{classStochasticInfo_a8a21be800e7c49275b939730e929cb2c}} 
+\index{StochasticInfo@{StochasticInfo}!nbVertical@{nbVertical}}
+\index{nbVertical@{nbVertical}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{nbVertical}{nbVertical}}
+{\footnotesize\ttfamily int Stochastic\+Info\+::nb\+Vertical\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_a4db6abe875cbafc758b302fb0c0d64d1}\label{classStochasticInfo_a4db6abe875cbafc758b302fb0c0d64d1}} 
+\index{StochasticInfo@{StochasticInfo}!ux@{ux}}
+\index{ux@{ux}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{ux}{ux}}
+{\footnotesize\ttfamily double Stochastic\+Info\+::ux\hspace{0.3cm}{\ttfamily [private]}}
+
+\mbox{\Hypertarget{classStochasticInfo_a3580498ecd3979d853e2cbce39d03974}\label{classStochasticInfo_a3580498ecd3979d853e2cbce39d03974}} 
+\index{StochasticInfo@{StochasticInfo}!uy@{uy}}
+\index{uy@{uy}!StochasticInfo@{StochasticInfo}}
+\doxysubsubsection{\texorpdfstring{uy}{uy}}
+{\footnotesize\ttfamily double Stochastic\+Info\+::uy\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{StochasticInfo_8h}{Stochastic\+Info.\+h}}\item 
+src/\mbox{\hyperlink{StochasticInfo_8cpp}{Stochastic\+Info.\+cpp}}\end{DoxyCompactItemize}

@@ -1,0 +1,32 @@
+<map id="src/branching.cpp" name="src/branching.cpp">
+<area shape="rect" id="node1" title="Implementation of custom branching rules." alt="" coords="775,5,911,32"/>
+<area shape="rect" id="node2" title=" " alt="" coords="755,393,829,420"/>
+<area shape="rect" id="node3" title=" " alt="" coords="1609,80,1679,107"/>
+<area shape="rect" id="node4" title=" " alt="" coords="1703,80,1771,107"/>
+<area shape="rect" id="node5" title=" " alt="" coords="1439,237,1499,263"/>
+<area shape="rect" id="node6" title=" " alt="" coords="1795,80,1866,107"/>
+<area shape="rect" id="node7" href="$branching_8h.html" title="Implementation of Custom Branching Rules." alt="" coords="221,80,320,107"/>
+<area shape="rect" id="node8" title=" " alt="" coords="139,155,229,181"/>
+<area shape="rect" id="node9" href="$probdata__SPwCG_8h.html" title=" " alt="" coords="770,80,915,107"/>
+<area shape="rect" id="node15" href="$ProblemData_8h.html" title=" " alt="" coords="413,319,531,345"/>
+<area shape="rect" id="node24" href="$ProblemSolution_8h.html" title=" " alt="" coords="343,155,484,181"/>
+<area shape="rect" id="node30" href="$vardata__SPwCG_8h.html" title=" " alt="" coords="345,80,482,107"/>
+<area shape="rect" id="node10" title=" " alt="" coords="1317,155,1432,181"/>
+<area shape="rect" id="node11" title=" " alt="" coords="559,155,681,181"/>
+<area shape="rect" id="node12" title=" " alt="" coords="705,155,863,181"/>
+<area shape="rect" id="node13" title=" " alt="" coords="939,155,1069,181"/>
+<area shape="rect" id="node14" title=" " alt="" coords="1094,155,1293,181"/>
+<area shape="rect" id="node25" href="$Params_8h.html" title=" " alt="" coords="724,237,807,263"/>
+<area shape="rect" id="node16" title=" " alt="" coords="563,393,643,420"/>
+<area shape="rect" id="node17" title=" " alt="" coords="5,393,83,420"/>
+<area shape="rect" id="node18" title=" " alt="" coords="667,393,730,420"/>
+<area shape="rect" id="node19" title=" " alt="" coords="107,393,165,420"/>
+<area shape="rect" id="node20" title=" " alt="" coords="190,393,277,420"/>
+<area shape="rect" id="node21" title=" " alt="" coords="301,393,373,420"/>
+<area shape="rect" id="node22" title=" " alt="" coords="397,393,464,420"/>
+<area shape="rect" id="node23" title=" " alt="" coords="488,393,539,420"/>
+<area shape="rect" id="node27" title=" " alt="" coords="455,237,497,263"/>
+<area shape="rect" id="node28" title=" " alt="" coords="86,229,247,271"/>
+<area shape="rect" id="node29" title=" " alt="" coords="271,237,430,263"/>
+<area shape="rect" id="node26" title=" " alt="" coords="736,319,795,345"/>
+</map>

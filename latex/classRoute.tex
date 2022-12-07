@@ -1,0 +1,164 @@
+\hypertarget{classRoute}{}\doxysection{Route Class Reference}
+\label{classRoute}\index{Route@{Route}}
+
+
+{\ttfamily \#include $<$Problem\+Solution.\+h$>$}
+
+
+
+Collaboration diagram for Route\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classRoute__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classRoute_aa23cddc6ab0d029d38639f748ef5c375}{Update\+Cost}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+void \mbox{\hyperlink{classRoute_a241dec20eee7884ce6e6915e62057a94}{Set\+Arrivals\+And\+Departures}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+\mbox{\hyperlink{classRoute_a1aa9340cc2461d752e8294b421050981}{Route}} ()=default
+\item 
+\mbox{\hyperlink{classRoute_adb14977c31bf6933f6aaca062b1a940c}{Route}} (const \mbox{\hyperlink{classRoute}{Route}} \&)=default
+\item 
+bool \mbox{\hyperlink{classRoute_aad05c8bae2243cc1704a071a5dff4511}{operator==}} (const \mbox{\hyperlink{classRoute}{Route}} \&other\+Route) const
+\item 
+size\+\_\+t \mbox{\hyperlink{classRoute_a2dec4f9da59d077314f9c6942c914a00}{Get\+Hash}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+int \mbox{\hyperlink{classRoute_a102d0e37fe1ca2c38cd6ad33206a5944}{Get\+Request\+Count}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, int req\+\_\+id)
+\item 
+std\+::map$<$ pair$<$ int, int $>$, int $>$ \mbox{\hyperlink{classRoute_a63f09a5bbcddbba1200bbf5dad8eebdb}{Get\+Edge\+Usage}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classRoute_aecc7f62b0df4baf97b94cf3f8edc8e37}{veh\+\_\+index}}
+\item 
+vector$<$ \mbox{\hyperlink{structIntermediateVertex}{Intermediate\+Vertex}} $>$ \mbox{\hyperlink{classRoute_affaff2e77caa8ba8bd1587cce0fdd28c}{intermediates}}
+\item 
+vector$<$ \mbox{\hyperlink{structVertex}{Vertex}} $>$ \mbox{\hyperlink{classRoute_ac20c378a0a19274e503d662fde1307a0}{vertices}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classRoute_ab85621cd44cb37e1d098192570f2482d}{arrival\+\_\+times}}
+\item 
+vector$<$ double $>$ \mbox{\hyperlink{classRoute_a6ebadbf4e776c5175b8a49d530f79582}{departure\+\_\+times}}
+\item 
+bool \mbox{\hyperlink{classRoute_a66b76d716f690f3bb312df9339debdce}{has\+\_\+cycles}}
+\item 
+double \mbox{\hyperlink{classRoute_ad5ef53b77c6cc704d6ffff28c6036451}{total\+\_\+lateness}}
+\item 
+double \mbox{\hyperlink{classRoute_a8cedcab500370adc8a95c00a8dd915ff}{end\+\_\+time}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classRoute_a1aa9340cc2461d752e8294b421050981}\label{classRoute_a1aa9340cc2461d752e8294b421050981}} 
+\index{Route@{Route}!Route@{Route}}
+\index{Route@{Route}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{Route()}{Route()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Route\+::\+Route (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+\mbox{\Hypertarget{classRoute_adb14977c31bf6933f6aaca062b1a940c}\label{classRoute_adb14977c31bf6933f6aaca062b1a940c}} 
+\index{Route@{Route}!Route@{Route}}
+\index{Route@{Route}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{Route()}{Route()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Route\+::\+Route (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRoute}{Route}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [default]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classRoute_a63f09a5bbcddbba1200bbf5dad8eebdb}\label{classRoute_a63f09a5bbcddbba1200bbf5dad8eebdb}} 
+\index{Route@{Route}!GetEdgeUsage@{GetEdgeUsage}}
+\index{GetEdgeUsage@{GetEdgeUsage}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetEdgeUsage()}{GetEdgeUsage()}}
+{\footnotesize\ttfamily std\+::map$<$ pair$<$ int, int $>$, int $>$ Route\+::\+Get\+Edge\+Usage (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoute_a2dec4f9da59d077314f9c6942c914a00}\label{classRoute_a2dec4f9da59d077314f9c6942c914a00}} 
+\index{Route@{Route}!GetHash@{GetHash}}
+\index{GetHash@{GetHash}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetHash()}{GetHash()}}
+{\footnotesize\ttfamily size\+\_\+t Route\+::\+Get\+Hash (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRoute_a102d0e37fe1ca2c38cd6ad33206a5944}\label{classRoute_a102d0e37fe1ca2c38cd6ad33206a5944}} 
+\index{Route@{Route}!GetRequestCount@{GetRequestCount}}
+\index{GetRequestCount@{GetRequestCount}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{GetRequestCount()}{GetRequestCount()}}
+{\footnotesize\ttfamily int Route\+::\+Get\+Request\+Count (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{int}]{req\+\_\+id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRoute_aad05c8bae2243cc1704a071a5dff4511}\label{classRoute_aad05c8bae2243cc1704a071a5dff4511}} 
+\index{Route@{Route}!operator==@{operator==}}
+\index{operator==@{operator==}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Route\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classRoute}{Route}} \&}]{other\+Route }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classRoute_a241dec20eee7884ce6e6915e62057a94}\label{classRoute_a241dec20eee7884ce6e6915e62057a94}} 
+\index{Route@{Route}!SetArrivalsAndDepartures@{SetArrivalsAndDepartures}}
+\index{SetArrivalsAndDepartures@{SetArrivalsAndDepartures}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{SetArrivalsAndDepartures()}{SetArrivalsAndDepartures()}}
+{\footnotesize\ttfamily void Route\+::\+Set\+Arrivals\+And\+Departures (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{classRoute_aa23cddc6ab0d029d38639f748ef5c375}\label{classRoute_aa23cddc6ab0d029d38639f748ef5c375}} 
+\index{Route@{Route}!UpdateCost@{UpdateCost}}
+\index{UpdateCost@{UpdateCost}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{UpdateCost()}{UpdateCost()}}
+{\footnotesize\ttfamily void Route\+::\+Update\+Cost (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classRoute_ab85621cd44cb37e1d098192570f2482d}\label{classRoute_ab85621cd44cb37e1d098192570f2482d}} 
+\index{Route@{Route}!arrival\_times@{arrival\_times}}
+\index{arrival\_times@{arrival\_times}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{arrival\_times}{arrival\_times}}
+{\footnotesize\ttfamily vector$<$double$>$ Route\+::arrival\+\_\+times}
+
+\mbox{\Hypertarget{classRoute_a6ebadbf4e776c5175b8a49d530f79582}\label{classRoute_a6ebadbf4e776c5175b8a49d530f79582}} 
+\index{Route@{Route}!departure\_times@{departure\_times}}
+\index{departure\_times@{departure\_times}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{departure\_times}{departure\_times}}
+{\footnotesize\ttfamily vector$<$double$>$ Route\+::departure\+\_\+times}
+
+\mbox{\Hypertarget{classRoute_a8cedcab500370adc8a95c00a8dd915ff}\label{classRoute_a8cedcab500370adc8a95c00a8dd915ff}} 
+\index{Route@{Route}!end\_time@{end\_time}}
+\index{end\_time@{end\_time}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{end\_time}{end\_time}}
+{\footnotesize\ttfamily double Route\+::end\+\_\+time}
+
+\mbox{\Hypertarget{classRoute_a66b76d716f690f3bb312df9339debdce}\label{classRoute_a66b76d716f690f3bb312df9339debdce}} 
+\index{Route@{Route}!has\_cycles@{has\_cycles}}
+\index{has\_cycles@{has\_cycles}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{has\_cycles}{has\_cycles}}
+{\footnotesize\ttfamily bool Route\+::has\+\_\+cycles}
+
+\mbox{\Hypertarget{classRoute_affaff2e77caa8ba8bd1587cce0fdd28c}\label{classRoute_affaff2e77caa8ba8bd1587cce0fdd28c}} 
+\index{Route@{Route}!intermediates@{intermediates}}
+\index{intermediates@{intermediates}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{intermediates}{intermediates}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structIntermediateVertex}{Intermediate\+Vertex}}$>$ Route\+::intermediates}
+
+\mbox{\Hypertarget{classRoute_ad5ef53b77c6cc704d6ffff28c6036451}\label{classRoute_ad5ef53b77c6cc704d6ffff28c6036451}} 
+\index{Route@{Route}!total\_lateness@{total\_lateness}}
+\index{total\_lateness@{total\_lateness}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{total\_lateness}{total\_lateness}}
+{\footnotesize\ttfamily double Route\+::total\+\_\+lateness}
+
+\mbox{\Hypertarget{classRoute_aecc7f62b0df4baf97b94cf3f8edc8e37}\label{classRoute_aecc7f62b0df4baf97b94cf3f8edc8e37}} 
+\index{Route@{Route}!veh\_index@{veh\_index}}
+\index{veh\_index@{veh\_index}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{veh\_index}{veh\_index}}
+{\footnotesize\ttfamily int Route\+::veh\+\_\+index}
+
+\mbox{\Hypertarget{classRoute_ac20c378a0a19274e503d662fde1307a0}\label{classRoute_ac20c378a0a19274e503d662fde1307a0}} 
+\index{Route@{Route}!vertices@{vertices}}
+\index{vertices@{vertices}!Route@{Route}}
+\doxysubsubsection{\texorpdfstring{vertices}{vertices}}
+{\footnotesize\ttfamily vector$<$\mbox{\hyperlink{structVertex}{Vertex}}$>$ Route\+::vertices}
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{ProblemSolution_8h}{Problem\+Solution.\+h}}\item 
+src/\mbox{\hyperlink{ProblemSolution_8cpp}{Problem\+Solution.\+cpp}}\end{DoxyCompactItemize}

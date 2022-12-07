@@ -1,0 +1,220 @@
+\hypertarget{pricer__SPwCG_8cpp}{}\doxysection{src/pricer\+\_\+\+S\+Pw\+CG.cpp File Reference}
+\label{pricer__SPwCG_8cpp}\index{src/pricer\_SPwCG.cpp@{src/pricer\_SPwCG.cpp}}
+{\ttfamily \#include \char`\"{}pricer\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$ctime$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include \char`\"{}scip/cons\+\_\+knapsack.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/cons\+\_\+logicor.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/cons\+\_\+setppc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/cons\+\_\+varbound.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scipdefplugins.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vardata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}probdata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Base\+Pricing.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Spaced\+Bellman\+Pricing.\+h\char`\"{}}\newline
+Include dependency graph for pricer\+\_\+\+S\+Pw\+C\+G.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{pricer__SPwCG_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{pricer__SPwCG_8cpp_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}{S\+C\+I\+Pinclude\+Pricer\+S\+Pw\+CG}} (S\+C\+IP $\ast$scip)
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{pricer__SPwCG_8cpp_ae07dce396d8253d26af844872b5798cc}{S\+C\+I\+Ppricer\+S\+Pw\+C\+G\+Activate}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$conss, \mbox{\hyperlink{classParams}{Params}} $\ast$params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{pricer__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}{ncons}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+static \mbox{\hyperlink{pricer__SPwCG_8cpp_adebe3b83b2ad97aa054c7ab39280dd35}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+F\+R\+EE}} (pricer\+Free\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{pricer__SPwCG_8cpp_a7b8e31557748a8639f146cac6e3db694}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+I\+N\+IT}} (pricer\+Init\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{pricer__SPwCG_8cpp_a02a5764ca36807615be9f31e59fae1de}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+E\+X\+I\+T\+S\+OL}} (pricer\+Exitsol\+S\+Pw\+CG)
+\item 
+static bool \mbox{\hyperlink{pricer__SPwCG_8cpp_a5ef41db3612c6c3a871fb64a49ca6e5b}{compare\+Arrays}} (int $\ast$arr1, int size1, int $\ast$arr2, int size2)
+\item 
+static bool \mbox{\hyperlink{pricer__SPwCG_8cpp_a3303ce7f5d5da20663bba633a4b604c7}{route\+Contains\+Request}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, \mbox{\hyperlink{classRoute}{Route}} $\ast$route, int req\+Id)
+\item 
+static bool \mbox{\hyperlink{pricer__SPwCG_8cpp_aeab72c41f5b8f67a63bb3e199f840f01}{Does\+Route\+Violate\+Branching}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, \mbox{\hyperlink{classRoute}{Route}} $\ast$route)
+\item 
+static void \mbox{\hyperlink{pricer__SPwCG_8cpp_aa4a6df24b0c5919abbf7eb5f84fa4080}{build\+Considered\+Requests\+Vector}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, std\+::vector$<$ int $>$ \&out\+Vec)
+\item 
+static void \mbox{\hyperlink{pricer__SPwCG_8cpp_a5972757cf0cc4777e3474325c210eabe}{build\+Forbidden\+Edges}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, std\+::set$<$ pair$<$ int, int $>$$>$ \&out\+Set)
+\item 
+bool \mbox{\hyperlink{pricer__SPwCG_8cpp_a7d63974b62a50ed403b04f790985eda2}{create\+Route\+Variable}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classParams}{Params}} $\ast$params, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$all\+\_\+cons, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, \mbox{\hyperlink{classRoute}{Route}} $\ast$route, S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$ret\+Var, bool initial\+\_\+var, double reduced\+Cost)
+\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{pricer__SPwCG_8cpp_a9aadd98524bb2cfdced16fb682b6fb88}{Do\+Pricing}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+I\+C\+ER $\ast$pricer, S\+C\+I\+P\+\_\+\+Bool farkas, S\+C\+I\+P\+\_\+\+R\+E\+S\+U\+LT $\ast$result)
+\item 
+static \mbox{\hyperlink{pricer__SPwCG_8cpp_a6d1e57205bc1df496c092a67a064039a}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+R\+E\+D\+C\+O\+ST}} (pricer\+Redcost\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{pricer__SPwCG_8cpp_a51b21ac15bd41d80d194434c5b066bc8}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+F\+A\+R\+K\+AS}} (pricer\+Farkas\+Binpacking)
+\end{DoxyCompactItemize}
+
+\doxysubsection*{Pricer properties}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{pricer__SPwCG_8cpp_a74d63b1c63b592317f472ac8e41cf37e}{P\+R\+I\+C\+E\+R\+\_\+\+N\+A\+ME}}~\char`\"{}S\+Pw\+CG\char`\"{}
+\item 
+\#define \mbox{\hyperlink{pricer__SPwCG_8cpp_ae10a0b0df9a969891e5a6bed362ebf31}{P\+R\+I\+C\+E\+R\+\_\+\+D\+E\+SC}}~\char`\"{}pricer for pricing new routes\char`\"{}
+\item 
+\#define \mbox{\hyperlink{pricer__SPwCG_8cpp_a683d11010388d2254c4b8c484f1bf140}{P\+R\+I\+C\+E\+R\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~0
+\item 
+\#define \mbox{\hyperlink{pricer__SPwCG_8cpp_aaf3c8601e5cb51b84df93502cf6fa01f}{P\+R\+I\+C\+E\+R\+\_\+\+D\+E\+L\+AY}}~T\+R\+UE     /$\ast$ only call pricer if all problem variables have non-\/negative reduced costs $\ast$/
+\item 
+static void \mbox{\hyperlink{pricer__SPwCG_8cpp_a49647ac3188b139cd6cc193acc6fe006}{check\+For\+Var\+Red\+Costs}} (S\+C\+IP $\ast$scip)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_aaf3c8601e5cb51b84df93502cf6fa01f}\label{pricer__SPwCG_8cpp_aaf3c8601e5cb51b84df93502cf6fa01f}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!PRICER\_DELAY@{PRICER\_DELAY}}
+\index{PRICER\_DELAY@{PRICER\_DELAY}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{PRICER\_DELAY}{PRICER\_DELAY}}
+{\footnotesize\ttfamily \#define P\+R\+I\+C\+E\+R\+\_\+\+D\+E\+L\+AY~T\+R\+UE     /$\ast$ only call pricer if all problem variables have non-\/negative reduced costs $\ast$/}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_ae10a0b0df9a969891e5a6bed362ebf31}\label{pricer__SPwCG_8cpp_ae10a0b0df9a969891e5a6bed362ebf31}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!PRICER\_DESC@{PRICER\_DESC}}
+\index{PRICER\_DESC@{PRICER\_DESC}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{PRICER\_DESC}{PRICER\_DESC}}
+{\footnotesize\ttfamily \#define P\+R\+I\+C\+E\+R\+\_\+\+D\+E\+SC~\char`\"{}pricer for pricing new routes\char`\"{}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a74d63b1c63b592317f472ac8e41cf37e}\label{pricer__SPwCG_8cpp_a74d63b1c63b592317f472ac8e41cf37e}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!PRICER\_NAME@{PRICER\_NAME}}
+\index{PRICER\_NAME@{PRICER\_NAME}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{PRICER\_NAME}{PRICER\_NAME}}
+{\footnotesize\ttfamily \#define P\+R\+I\+C\+E\+R\+\_\+\+N\+A\+ME~\char`\"{}S\+Pw\+CG\char`\"{}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a683d11010388d2254c4b8c484f1bf140}\label{pricer__SPwCG_8cpp_a683d11010388d2254c4b8c484f1bf140}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!PRICER\_PRIORITY@{PRICER\_PRIORITY}}
+\index{PRICER\_PRIORITY@{PRICER\_PRIORITY}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{PRICER\_PRIORITY}{PRICER\_PRIORITY}}
+{\footnotesize\ttfamily \#define P\+R\+I\+C\+E\+R\+\_\+\+P\+R\+I\+O\+R\+I\+TY~0}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_aa4a6df24b0c5919abbf7eb5f84fa4080}\label{pricer__SPwCG_8cpp_aa4a6df24b0c5919abbf7eb5f84fa4080}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!buildConsideredRequestsVector@{buildConsideredRequestsVector}}
+\index{buildConsideredRequestsVector@{buildConsideredRequestsVector}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{buildConsideredRequestsVector()}{buildConsideredRequestsVector()}}
+{\footnotesize\ttfamily static void build\+Considered\+Requests\+Vector (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{std\+::vector$<$ int $>$ \&}]{out\+Vec }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a5972757cf0cc4777e3474325c210eabe}\label{pricer__SPwCG_8cpp_a5972757cf0cc4777e3474325c210eabe}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!buildForbiddenEdges@{buildForbiddenEdges}}
+\index{buildForbiddenEdges@{buildForbiddenEdges}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{buildForbiddenEdges()}{buildForbiddenEdges()}}
+{\footnotesize\ttfamily static void build\+Forbidden\+Edges (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{std\+::set$<$ pair$<$ int, int $>$$>$ \&}]{out\+Set }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a49647ac3188b139cd6cc193acc6fe006}\label{pricer__SPwCG_8cpp_a49647ac3188b139cd6cc193acc6fe006}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!checkForVarRedCosts@{checkForVarRedCosts}}
+\index{checkForVarRedCosts@{checkForVarRedCosts}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{checkForVarRedCosts()}{checkForVarRedCosts()}}
+{\footnotesize\ttfamily static void check\+For\+Var\+Red\+Costs (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a5ef41db3612c6c3a871fb64a49ca6e5b}\label{pricer__SPwCG_8cpp_a5ef41db3612c6c3a871fb64a49ca6e5b}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!compareArrays@{compareArrays}}
+\index{compareArrays@{compareArrays}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{compareArrays()}{compareArrays()}}
+{\footnotesize\ttfamily static bool compare\+Arrays (\begin{DoxyParamCaption}\item[{int $\ast$}]{arr1,  }\item[{int}]{size1,  }\item[{int $\ast$}]{arr2,  }\item[{int}]{size2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a7d63974b62a50ed403b04f790985eda2}\label{pricer__SPwCG_8cpp_a7d63974b62a50ed403b04f790985eda2}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!createRouteVariable@{createRouteVariable}}
+\index{createRouteVariable@{createRouteVariable}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{createRouteVariable()}{createRouteVariable()}}
+{\footnotesize\ttfamily bool create\+Route\+Variable (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{all\+\_\+cons,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$}]{ret\+Var,  }\item[{bool}]{initial\+\_\+var,  }\item[{double}]{reduced\+Cost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_aeab72c41f5b8f67a63bb3e199f840f01}\label{pricer__SPwCG_8cpp_aeab72c41f5b8f67a63bb3e199f840f01}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!DoesRouteViolateBranching@{DoesRouteViolateBranching}}
+\index{DoesRouteViolateBranching@{DoesRouteViolateBranching}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{DoesRouteViolateBranching()}{DoesRouteViolateBranching()}}
+{\footnotesize\ttfamily static bool Does\+Route\+Violate\+Branching (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a9aadd98524bb2cfdced16fb682b6fb88}\label{pricer__SPwCG_8cpp_a9aadd98524bb2cfdced16fb682b6fb88}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!DoPricing@{DoPricing}}
+\index{DoPricing@{DoPricing}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{DoPricing()}{DoPricing()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE Do\+Pricing (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+I\+C\+ER $\ast$}]{pricer,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{farkas,  }\item[{S\+C\+I\+P\+\_\+\+R\+E\+S\+U\+LT $\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em pricer} & pricer \\
+\hline
+{\em farkas} & T\+R\+UE\+: Farkas pricing; F\+A\+L\+SE\+: Redcost pricing \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}\label{pricer__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!ncons@{ncons}}
+\index{ncons@{ncons}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{ncons()}{ncons()}}
+{\footnotesize\ttfamily static int ncons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+name Callback methods \mbox{\Hypertarget{pricer__SPwCG_8cpp_a3303ce7f5d5da20663bba633a4b604c7}\label{pricer__SPwCG_8cpp_a3303ce7f5d5da20663bba633a4b604c7}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!routeContainsRequest@{routeContainsRequest}}
+\index{routeContainsRequest@{routeContainsRequest}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{routeContainsRequest()}{routeContainsRequest()}}
+{\footnotesize\ttfamily static bool route\+Contains\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route,  }\item[{int}]{req\+Id }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_a02a5764ca36807615be9f31e59fae1de}\label{pricer__SPwCG_8cpp_a02a5764ca36807615be9f31e59fae1de}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIP\_DECL\_PRICEREXITSOL@{SCIP\_DECL\_PRICEREXITSOL}}
+\index{SCIP\_DECL\_PRICEREXITSOL@{SCIP\_DECL\_PRICEREXITSOL}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PRICEREXITSOL()}{SCIP\_DECL\_PRICEREXITSOL()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+E\+X\+I\+T\+S\+OL (\begin{DoxyParamCaption}\item[{pricer\+Exitsol\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+solving process deinitialization method of variable pricer (called before branch and bound process data is freed) \mbox{\Hypertarget{pricer__SPwCG_8cpp_a51b21ac15bd41d80d194434c5b066bc8}\label{pricer__SPwCG_8cpp_a51b21ac15bd41d80d194434c5b066bc8}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIP\_DECL\_PRICERFARKAS@{SCIP\_DECL\_PRICERFARKAS}}
+\index{SCIP\_DECL\_PRICERFARKAS@{SCIP\_DECL\_PRICERFARKAS}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PRICERFARKAS()}{SCIP\_DECL\_PRICERFARKAS()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+F\+A\+R\+K\+AS (\begin{DoxyParamCaption}\item[{pricer\+Farkas\+Binpacking}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+farkas pricing method of variable pricer for infeasible L\+Ps \mbox{\Hypertarget{pricer__SPwCG_8cpp_adebe3b83b2ad97aa054c7ab39280dd35}\label{pricer__SPwCG_8cpp_adebe3b83b2ad97aa054c7ab39280dd35}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIP\_DECL\_PRICERFREE@{SCIP\_DECL\_PRICERFREE}}
+\index{SCIP\_DECL\_PRICERFREE@{SCIP\_DECL\_PRICERFREE}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PRICERFREE()}{SCIP\_DECL\_PRICERFREE()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+F\+R\+EE (\begin{DoxyParamCaption}\item[{pricer\+Free\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+destructor of variable pricer to free user data (called when S\+C\+IP is exiting) \mbox{\Hypertarget{pricer__SPwCG_8cpp_a7b8e31557748a8639f146cac6e3db694}\label{pricer__SPwCG_8cpp_a7b8e31557748a8639f146cac6e3db694}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIP\_DECL\_PRICERINIT@{SCIP\_DECL\_PRICERINIT}}
+\index{SCIP\_DECL\_PRICERINIT@{SCIP\_DECL\_PRICERINIT}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PRICERINIT()}{SCIP\_DECL\_PRICERINIT()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+I\+N\+IT (\begin{DoxyParamCaption}\item[{pricer\+Init\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+initialization method of variable pricer (called after problem was transformed) \mbox{\Hypertarget{pricer__SPwCG_8cpp_a6d1e57205bc1df496c092a67a064039a}\label{pricer__SPwCG_8cpp_a6d1e57205bc1df496c092a67a064039a}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIP\_DECL\_PRICERREDCOST@{SCIP\_DECL\_PRICERREDCOST}}
+\index{SCIP\_DECL\_PRICERREDCOST@{SCIP\_DECL\_PRICERREDCOST}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PRICERREDCOST()}{SCIP\_DECL\_PRICERREDCOST()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+I\+C\+E\+R\+R\+E\+D\+C\+O\+ST (\begin{DoxyParamCaption}\item[{pricer\+Redcost\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+reduced cost pricing method of variable pricer for feasible L\+Ps \mbox{\Hypertarget{pricer__SPwCG_8cpp_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}\label{pricer__SPwCG_8cpp_a7e1ba1cca0c8ebfbbe7efb9881b5b4c7}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIPincludePricerSPwCG@{SCIPincludePricerSPwCG}}
+\index{SCIPincludePricerSPwCG@{SCIPincludePricerSPwCG}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPincludePricerSPwCG()}{SCIPincludePricerSPwCG()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pinclude\+Pricer\+S\+Pw\+CG (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})}
+
+creates the binpacking variable pricer and includes it in S\+C\+IP 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{pricer__SPwCG_8cpp_ae07dce396d8253d26af844872b5798cc}\label{pricer__SPwCG_8cpp_ae07dce396d8253d26af844872b5798cc}} 
+\index{pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}!SCIPpricerSPwCGActivate@{SCIPpricerSPwCGActivate}}
+\index{SCIPpricerSPwCGActivate@{SCIPpricerSPwCGActivate}!pricer\_SPwCG.cpp@{pricer\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPpricerSPwCGActivate()}{SCIPpricerSPwCGActivate()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Ppricer\+S\+Pw\+C\+G\+Activate (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{conss,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+added problem specific data to pricer and activates pricer 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em conss} & set covering constraints for the items \\
+\hline
+\end{DoxyParams}

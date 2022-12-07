@@ -1,0 +1,219 @@
+\hypertarget{branching_8cpp}{}\doxysection{src/branching.cpp File Reference}
+\label{branching_8cpp}\index{src/branching.cpp@{src/branching.cpp}}
+
+
+Implementation of custom branching rules.  
+
+
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$math.\+h$>$}\newline
+{\ttfamily \#include $<$utility$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include \char`\"{}branching.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}probdata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vardata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Solution.\+h\char`\"{}}\newline
+Include dependency graph for branching.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{branching_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Macros}
+\begin{Indent}\textbf{ Branching rule properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{branching_8cpp_a6b89615e8ad2abbd5b5c27602222c6fc}{B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+N\+A\+ME}}~\char`\"{}Custom\+Rules\char`\"{}
+\item 
+\#define \mbox{\hyperlink{branching_8cpp_a0015ff6ddd790ebf1866b927efac31cc}{B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+D\+E\+SC}}~\char`\"{}Custom made branching rule\char`\"{}
+\item 
+\#define \mbox{\hyperlink{branching_8cpp_a1d1f9f436fbaa0aea36753d939676136}{B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY}}~50000
+\item 
+\#define \mbox{\hyperlink{branching_8cpp_af08aa66417e943bd29d62dd08a4dc1cf}{B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+M\+A\+X\+D\+E\+P\+TH}}~-\/1
+\item 
+\#define \mbox{\hyperlink{branching_8cpp_af78a3288e197ea2c7ac89b2ad2ecfbaa}{B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+M\+A\+X\+B\+O\+U\+N\+D\+D\+I\+ST}}~1.\+0
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Functions}
+\begin{Indent}\textbf{ Helper methods}\par
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{branching_8cpp_a2281136fd03a2bf150402aa1aeac7062}{S\+C\+I\+Pcreate\+Cons\+Sum\+Vehicle}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$cons, const char $\ast$name, int vehicle\+\_\+id, double desired\+\_\+sum, S\+C\+I\+P\+\_\+\+N\+O\+DE $\ast$node, S\+C\+I\+P\+\_\+\+Bool local)
+\begin{DoxyCompactList}\small\item\em Creates a new branching constraint constraining the usage of a vehicle to a certain value (0/1) \end{DoxyCompactList}\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{branching_8cpp_a9ff09dfa152ef6a76827deb2bdbc07cf}{S\+C\+I\+Pcreate\+Cons\+Sum\+Edge}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$cons, const char $\ast$name, pair$<$ int, int $>$ edge, double desired\+\_\+sum, S\+C\+I\+P\+\_\+\+N\+O\+DE $\ast$node, S\+C\+I\+P\+\_\+\+Bool local)
+\begin{DoxyCompactList}\small\item\em Creates a new branching constraint constraining the usage of an edge to a certain value (0/1) \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{branching_8cpp_ad58c49faf9fa2031fc0194489c2847f7}{Is\+Simple\+Branching\+Repeated}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, S\+C\+I\+P\+\_\+\+V\+AR $\ast$var)
+\begin{DoxyCompactList}\small\item\em Checks if variable has already been branched at for the current node. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{branching_8cpp_a09a8ef862777ec37302fe041ddcb182d}{Is\+Vehicle\+Branching\+Repeated}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, int chosen\+Vehicle)
+\begin{DoxyCompactList}\small\item\em Checks if vehicle branching rule has already been applied for a given vehicle at the current node. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{branching_8cpp_a9437a44d69f635a82185b85870f86c35}{Is\+Edge\+Branching\+Repeated}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data, pair$<$ int, int $>$ chosen\+Edge)
+\begin{DoxyCompactList}\small\item\em Checks if edge branching rule has already been applied for a given edge at the current node. \end{DoxyCompactList}\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{branching_8cpp_a8825b3d9dac4263ddc91227f77bc52ec}{Print\+Constraint\+Values}} (S\+C\+IP $\ast$scip, std\+::map$<$ S\+C\+I\+P\+\_\+\+V\+AR $\ast$, double $>$ \&var\+\_\+solution\+Value)
+\begin{DoxyCompactList}\small\item\em Debug function for printing out branching constraints for a given value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Callback methods}\par
+\begin{DoxyCompactItemize}
+\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{branching_8cpp_a85badf6b49c22c8b249e5757c5b38d1c}{branch\+Execlp\+Branching\+Rules}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+B\+R\+A\+N\+C\+H\+R\+U\+LE $\ast$branchrule, S\+C\+I\+P\+\_\+\+Bool allowaddcons, S\+C\+I\+P\+\_\+\+R\+E\+S\+U\+LT $\ast$result)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Interface methods}\par
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{branching_8cpp_a09268a214a1696a60188af1c86f79f6e}{S\+C\+I\+Pinclude\+Custom\+Branching\+Rule}} (S\+C\+IP $\ast$scip)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Detailed Description}
+Implementation of custom branching rules. 
+
+\begin{DoxyAuthor}{Author}
+André Mazal Krauss
+\end{DoxyAuthor}
+This file implements branching rules for the problem. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{branching_8cpp_a0015ff6ddd790ebf1866b927efac31cc}\label{branching_8cpp_a0015ff6ddd790ebf1866b927efac31cc}} 
+\index{branching.cpp@{branching.cpp}!BRANCHRULE\_DESC@{BRANCHRULE\_DESC}}
+\index{BRANCHRULE\_DESC@{BRANCHRULE\_DESC}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{BRANCHRULE\_DESC}{BRANCHRULE\_DESC}}
+{\footnotesize\ttfamily \#define B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+D\+E\+SC~\char`\"{}Custom made branching rule\char`\"{}}
+
+\mbox{\Hypertarget{branching_8cpp_af78a3288e197ea2c7ac89b2ad2ecfbaa}\label{branching_8cpp_af78a3288e197ea2c7ac89b2ad2ecfbaa}} 
+\index{branching.cpp@{branching.cpp}!BRANCHRULE\_MAXBOUNDDIST@{BRANCHRULE\_MAXBOUNDDIST}}
+\index{BRANCHRULE\_MAXBOUNDDIST@{BRANCHRULE\_MAXBOUNDDIST}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{BRANCHRULE\_MAXBOUNDDIST}{BRANCHRULE\_MAXBOUNDDIST}}
+{\footnotesize\ttfamily \#define B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+M\+A\+X\+B\+O\+U\+N\+D\+D\+I\+ST~1.\+0}
+
+\mbox{\Hypertarget{branching_8cpp_af08aa66417e943bd29d62dd08a4dc1cf}\label{branching_8cpp_af08aa66417e943bd29d62dd08a4dc1cf}} 
+\index{branching.cpp@{branching.cpp}!BRANCHRULE\_MAXDEPTH@{BRANCHRULE\_MAXDEPTH}}
+\index{BRANCHRULE\_MAXDEPTH@{BRANCHRULE\_MAXDEPTH}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{BRANCHRULE\_MAXDEPTH}{BRANCHRULE\_MAXDEPTH}}
+{\footnotesize\ttfamily \#define B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+M\+A\+X\+D\+E\+P\+TH~-\/1}
+
+\mbox{\Hypertarget{branching_8cpp_a6b89615e8ad2abbd5b5c27602222c6fc}\label{branching_8cpp_a6b89615e8ad2abbd5b5c27602222c6fc}} 
+\index{branching.cpp@{branching.cpp}!BRANCHRULE\_NAME@{BRANCHRULE\_NAME}}
+\index{BRANCHRULE\_NAME@{BRANCHRULE\_NAME}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{BRANCHRULE\_NAME}{BRANCHRULE\_NAME}}
+{\footnotesize\ttfamily \#define B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+N\+A\+ME~\char`\"{}Custom\+Rules\char`\"{}}
+
+\mbox{\Hypertarget{branching_8cpp_a1d1f9f436fbaa0aea36753d939676136}\label{branching_8cpp_a1d1f9f436fbaa0aea36753d939676136}} 
+\index{branching.cpp@{branching.cpp}!BRANCHRULE\_PRIORITY@{BRANCHRULE\_PRIORITY}}
+\index{BRANCHRULE\_PRIORITY@{BRANCHRULE\_PRIORITY}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{BRANCHRULE\_PRIORITY}{BRANCHRULE\_PRIORITY}}
+{\footnotesize\ttfamily \#define B\+R\+A\+N\+C\+H\+R\+U\+L\+E\+\_\+\+P\+R\+I\+O\+R\+I\+TY~50000}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{branching_8cpp_a85badf6b49c22c8b249e5757c5b38d1c}\label{branching_8cpp_a85badf6b49c22c8b249e5757c5b38d1c}} 
+\index{branching.cpp@{branching.cpp}!branchExeclpBranchingRules@{branchExeclpBranchingRules}}
+\index{branchExeclpBranchingRules@{branchExeclpBranchingRules}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{branchExeclpBranchingRules()}{branchExeclpBranchingRules()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE branch\+Execlp\+Branching\+Rules (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+B\+R\+A\+N\+C\+H\+R\+U\+LE $\ast$}]{branchrule,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{allowaddcons,  }\item[{S\+C\+I\+P\+\_\+\+R\+E\+S\+U\+LT $\ast$}]{result }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Branching execution method for fractional LP solutions. This method is called by S\+C\+IP when it is needs to perform branching In our implementation, this single function inspects the variables at the current node, decides on the best of the 3 branching rules to apply, and applies it. If branching options have been exhausted, it reports this to scip
+
+Its definition must be exactly so to dialogue correctly with S\+C\+IP. We refer to S\+C\+IP\textquotesingle{}s documentation for S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+B\+R\+A\+N\+C\+H\+E\+X\+E\+C\+LP \mbox{\Hypertarget{branching_8cpp_a9437a44d69f635a82185b85870f86c35}\label{branching_8cpp_a9437a44d69f635a82185b85870f86c35}} 
+\index{branching.cpp@{branching.cpp}!IsEdgeBranchingRepeated@{IsEdgeBranchingRepeated}}
+\index{IsEdgeBranchingRepeated@{IsEdgeBranchingRepeated}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{IsEdgeBranchingRepeated()}{IsEdgeBranchingRepeated()}}
+{\footnotesize\ttfamily static bool Is\+Edge\+Branching\+Repeated (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{pair$<$ int, int $>$}]{chosen\+Edge }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if edge branching rule has already been applied for a given edge at the current node. 
+
+\mbox{\Hypertarget{branching_8cpp_ad58c49faf9fa2031fc0194489c2847f7}\label{branching_8cpp_ad58c49faf9fa2031fc0194489c2847f7}} 
+\index{branching.cpp@{branching.cpp}!IsSimpleBranchingRepeated@{IsSimpleBranchingRepeated}}
+\index{IsSimpleBranchingRepeated@{IsSimpleBranchingRepeated}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{IsSimpleBranchingRepeated()}{IsSimpleBranchingRepeated()}}
+{\footnotesize\ttfamily static bool Is\+Simple\+Branching\+Repeated (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$}]{var }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if variable has already been branched at for the current node. 
+
+\mbox{\Hypertarget{branching_8cpp_a09a8ef862777ec37302fe041ddcb182d}\label{branching_8cpp_a09a8ef862777ec37302fe041ddcb182d}} 
+\index{branching.cpp@{branching.cpp}!IsVehicleBranchingRepeated@{IsVehicleBranchingRepeated}}
+\index{IsVehicleBranchingRepeated@{IsVehicleBranchingRepeated}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{IsVehicleBranchingRepeated()}{IsVehicleBranchingRepeated()}}
+{\footnotesize\ttfamily static bool Is\+Vehicle\+Branching\+Repeated (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data,  }\item[{int}]{chosen\+Vehicle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Checks if vehicle branching rule has already been applied for a given vehicle at the current node. 
+
+\mbox{\Hypertarget{branching_8cpp_a8825b3d9dac4263ddc91227f77bc52ec}\label{branching_8cpp_a8825b3d9dac4263ddc91227f77bc52ec}} 
+\index{branching.cpp@{branching.cpp}!PrintConstraintValues@{PrintConstraintValues}}
+\index{PrintConstraintValues@{PrintConstraintValues}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{PrintConstraintValues()}{PrintConstraintValues()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE Print\+Constraint\+Values (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{std\+::map$<$ S\+C\+I\+P\+\_\+\+V\+AR $\ast$, double $>$ \&}]{var\+\_\+solution\+Value }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Debug function for printing out branching constraints for a given value. 
+
+\mbox{\Hypertarget{branching_8cpp_a9ff09dfa152ef6a76827deb2bdbc07cf}\label{branching_8cpp_a9ff09dfa152ef6a76827deb2bdbc07cf}} 
+\index{branching.cpp@{branching.cpp}!SCIPcreateConsSumEdge@{SCIPcreateConsSumEdge}}
+\index{SCIPcreateConsSumEdge@{SCIPcreateConsSumEdge}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPcreateConsSumEdge()}{SCIPcreateConsSumEdge()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pcreate\+Cons\+Sum\+Edge (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{cons,  }\item[{const char $\ast$}]{name,  }\item[{pair$<$ int, int $>$}]{edge,  }\item[{double}]{desired\+\_\+sum,  }\item[{S\+C\+I\+P\+\_\+\+N\+O\+DE $\ast$}]{node,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{local }\end{DoxyParamCaption})}
+
+
+
+Creates a new branching constraint constraining the usage of an edge to a certain value (0/1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em cons} & pointer to hold the created constraint \\
+\hline
+{\em name} & name of constraint \\
+\hline
+{\em node} & the node in the B\&B-\/tree at which the cons is sticking \\
+\hline
+{\em local} & is constraint only valid locally? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{branching_8cpp_a2281136fd03a2bf150402aa1aeac7062}\label{branching_8cpp_a2281136fd03a2bf150402aa1aeac7062}} 
+\index{branching.cpp@{branching.cpp}!SCIPcreateConsSumVehicle@{SCIPcreateConsSumVehicle}}
+\index{SCIPcreateConsSumVehicle@{SCIPcreateConsSumVehicle}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPcreateConsSumVehicle()}{SCIPcreateConsSumVehicle()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pcreate\+Cons\+Sum\+Vehicle (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{cons,  }\item[{const char $\ast$}]{name,  }\item[{int}]{vehicle\+\_\+id,  }\item[{double}]{desired\+\_\+sum,  }\item[{S\+C\+I\+P\+\_\+\+N\+O\+DE $\ast$}]{node,  }\item[{S\+C\+I\+P\+\_\+\+Bool}]{local }\end{DoxyParamCaption})}
+
+
+
+Creates a new branching constraint constraining the usage of a vehicle to a certain value (0/1) 
+
+
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em cons} & pointer to hold the created constraint \\
+\hline
+{\em name} & name of constraint \\
+\hline
+{\em node} & the node in the B\&B-\/tree at which the cons is sticking \\
+\hline
+{\em local} & is constraint only valid locally? \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{branching_8cpp_a09268a214a1696a60188af1c86f79f6e}\label{branching_8cpp_a09268a214a1696a60188af1c86f79f6e}} 
+\index{branching.cpp@{branching.cpp}!SCIPincludeCustomBranchingRule@{SCIPincludeCustomBranchingRule}}
+\index{SCIPincludeCustomBranchingRule@{SCIPincludeCustomBranchingRule}!branching.cpp@{branching.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPincludeCustomBranchingRule()}{SCIPincludeCustomBranchingRule()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pinclude\+Custom\+Branching\+Rule (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})}
+
+creates the branching rule and includes it in S\+C\+IP 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+\end{DoxyParams}

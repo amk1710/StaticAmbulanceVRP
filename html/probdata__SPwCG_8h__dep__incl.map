@@ -1,0 +1,8 @@
+<map id="include/probdata_SPwCG.h" name="include/probdata_SPwCG.h">
+<area shape="rect" id="node1" title=" " alt="" coords="346,5,542,32"/>
+<area shape="rect" id="node2" href="$branching_8cpp.html" title="Implementation of custom branching rules." alt="" coords="5,80,141,107"/>
+<area shape="rect" id="node3" href="$pricer__SPwCG_8cpp.html" title=" " alt="" coords="165,80,328,107"/>
+<area shape="rect" id="node4" href="$probdata__SPwCG_8cpp.html" title=" " alt="" coords="353,80,535,107"/>
+<area shape="rect" id="node5" href="$SCIPSolver_8cpp.html" title=" " alt="" coords="560,80,701,107"/>
+<area shape="rect" id="node6" href="$vardata__SPwCG_8cpp.html" title=" " alt="" coords="726,80,901,107"/>
+</map>

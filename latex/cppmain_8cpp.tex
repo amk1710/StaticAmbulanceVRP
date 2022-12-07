@@ -1,0 +1,75 @@
+\hypertarget{cppmain_8cpp}{}\doxysection{src/cppmain.cpp File Reference}
+\label{cppmain_8cpp}\index{src/cppmain.cpp@{src/cppmain.cpp}}
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/range/iterator\+\_\+range.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/program\+\_\+options.\+hpp$>$}\newline
+{\ttfamily \#include $<$fmt/core.\+h$>$}\newline
+{\ttfamily \#include $<$fmt/ranges.\+h$>$}\newline
+{\ttfamily \#include $<$string$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+map$>$}\newline
+{\ttfamily \#include $<$boost/geometry.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/geometry/geometries/geometries.\+hpp$>$}\newline
+{\ttfamily \#include $<$boost/multi\+\_\+array.\+hpp$>$}\newline
+{\ttfamily \#include $<$cassert$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$climits$>$}\newline
+{\ttfamily \#include $<$sys/wait.\+h$>$}\newline
+{\ttfamily \#include \char`\"{}Problem\+Data.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Problem\+Solution.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Params.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}S\+C\+I\+P\+Solver.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$chrono$>$}\newline
+Include dependency graph for cppmain.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{cppmain_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{cppmain_8cpp_ab2b11a77d5712ac236142405742714e7}{Find\+V\+Instance\+By\+Index}} (string dir\+Path, int instance\+\_\+index, string osm\+Path, \mbox{\hyperlink{classProblemData}{Problem\+Data}} \&problem\+Data, string time\+Horizon\+Usage, double time\+Horizon, int set\+Nb\+Vehicles)
+\item 
+bool \mbox{\hyperlink{cppmain_8cpp_abe7e0eb794541d28b444b9a2c2b942a4}{Parse\+Command\+Line}} (int argc, char $\ast$$\ast$argv, \mbox{\hyperlink{classParams}{Params}} \&params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} \&problem\+Data)
+\item 
+int \mbox{\hyperlink{cppmain_8cpp_a3d24b13787f20b254cdbbd077f8a1a92}{Computing\+Canada\+Main}} (int argc, char $\ast$$\ast$argv)
+\item 
+int \mbox{\hyperlink{cppmain_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}{main}} (int argc, char $\ast$$\ast$argv)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{cppmain_8cpp_a3d24b13787f20b254cdbbd077f8a1a92}\label{cppmain_8cpp_a3d24b13787f20b254cdbbd077f8a1a92}} 
+\index{cppmain.cpp@{cppmain.cpp}!ComputingCanadaMain@{ComputingCanadaMain}}
+\index{ComputingCanadaMain@{ComputingCanadaMain}!cppmain.cpp@{cppmain.cpp}}
+\doxysubsubsection{\texorpdfstring{ComputingCanadaMain()}{ComputingCanadaMain()}}
+{\footnotesize\ttfamily int Computing\+Canada\+Main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cppmain_8cpp_ab2b11a77d5712ac236142405742714e7}\label{cppmain_8cpp_ab2b11a77d5712ac236142405742714e7}} 
+\index{cppmain.cpp@{cppmain.cpp}!FindVInstanceByIndex@{FindVInstanceByIndex}}
+\index{FindVInstanceByIndex@{FindVInstanceByIndex}!cppmain.cpp@{cppmain.cpp}}
+\doxysubsubsection{\texorpdfstring{FindVInstanceByIndex()}{FindVInstanceByIndex()}}
+{\footnotesize\ttfamily bool Find\+V\+Instance\+By\+Index (\begin{DoxyParamCaption}\item[{string}]{dir\+Path,  }\item[{int}]{instance\+\_\+index,  }\item[{string}]{osm\+Path,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} \&}]{problem\+Data,  }\item[{string}]{time\+Horizon\+Usage,  }\item[{double}]{time\+Horizon,  }\item[{int}]{set\+Nb\+Vehicles }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{cppmain_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}\label{cppmain_8cpp_a3c04138a5bfe5d72780bb7e82a18e627}} 
+\index{cppmain.cpp@{cppmain.cpp}!main@{main}}
+\index{main@{main}!cppmain.cpp@{cppmain.cpp}}
+\doxysubsubsection{\texorpdfstring{main()}{main()}}
+{\footnotesize\ttfamily int main (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv }\end{DoxyParamCaption})}
+
+
+\begin{DoxyParams}{Parameters}
+{\em argc} & number of arguments from the shell \\
+\hline
+{\em argv} & array of shell arguments \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{cppmain_8cpp_abe7e0eb794541d28b444b9a2c2b942a4}\label{cppmain_8cpp_abe7e0eb794541d28b444b9a2c2b942a4}} 
+\index{cppmain.cpp@{cppmain.cpp}!ParseCommandLine@{ParseCommandLine}}
+\index{ParseCommandLine@{ParseCommandLine}!cppmain.cpp@{cppmain.cpp}}
+\doxysubsubsection{\texorpdfstring{ParseCommandLine()}{ParseCommandLine()}}
+{\footnotesize\ttfamily bool Parse\+Command\+Line (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{char $\ast$$\ast$}]{argv,  }\item[{\mbox{\hyperlink{classParams}{Params}} \&}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} \&}]{problem\+Data }\end{DoxyParamCaption})}
+

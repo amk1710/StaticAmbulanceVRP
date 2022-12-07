@@ -1,0 +1,369 @@
+\hypertarget{probdata__SPwCG_8cpp}{}\doxysection{src/probdata\+\_\+\+S\+Pw\+CG.cpp File Reference}
+\label{probdata__SPwCG_8cpp}\index{src/probdata\_SPwCG.cpp@{src/probdata\_SPwCG.cpp}}
+{\ttfamily \#include $<$string.\+h$>$}\newline
+{\ttfamily \#include $<$limits.\+h$>$}\newline
+{\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$fstream$>$}\newline
+{\ttfamily \#include $<$boost/filesystem.\+hpp$>$}\newline
+{\ttfamily \#include \char`\"{}probdata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pricer\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}vardata\+\_\+\+S\+Pw\+C\+G.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/cons\+\_\+setppc.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/scip.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/type\+\_\+var.\+h\char`\"{}}\newline
+{\ttfamily \#include $<$assert.\+h$>$}\newline
+{\ttfamily \#include $<$unordered\+\_\+set$>$}\newline
+{\ttfamily \#include \char`\"{}Problem\+Solution.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}scip/struct\+\_\+pricer.\+h\char`\"{}}\newline
+Include dependency graph for probdata\+\_\+\+S\+Pw\+C\+G.\+cpp\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{probdata__SPwCG_8cpp__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}}
+\begin{DoxyCompactList}\small\item\em Problem data which is accessible in all places. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{Indent}\textbf{ Event handler properties}\par
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{probdata__SPwCG_8cpp_aea7e068fd23523fb86409f7437f49851}{E\+V\+E\+N\+T\+H\+D\+L\+R\+\_\+\+N\+A\+ME}}~\char`\"{}addedvar\char`\"{}
+\item 
+\#define \mbox{\hyperlink{probdata__SPwCG_8cpp_acd6ea343facf9430a46f3d1f3d6c675b}{E\+V\+E\+N\+T\+H\+D\+L\+R\+\_\+\+D\+E\+SC}}~\char`\"{}event handler for catching added variables\char`\"{}
+\end{DoxyCompactItemize}
+\end{Indent}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_ac619d221be46b094e49931340c9cb22b}{Get\+Problem\+Data}} (\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$probdata)
+\item 
+\mbox{\hyperlink{classParams}{Params}} $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_a20267d0ff339cb3736b50d533e95492e}{Get\+Params}} (\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$probdata)
+\item 
+bool \mbox{\hyperlink{probdata__SPwCG_8cpp_a008479df929ff0efce21ca26523c6d3f}{Is\+Var\+Repeated}} (\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$probdata, \mbox{\hyperlink{classRoute}{Route}} $\ast$route, S\+C\+IP $\ast$scip)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_a629da92a89c878596dfaea37723d547c}{Add\+Vehicle\+Branching\+Cons}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$cons, int vehicle\+\_\+id)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_ae8ba3a8f07e56bcfb5919d2010227768}{Add\+Edge\+Branching\+Cons}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$cons, pair$<$ int, int $>$ edge)
+\item 
+const vector$<$ S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$ $>$ $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_a80717d7ac835eef13a5d968275206257}{Get\+Vehicle\+Branching\+Constraints}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+const vector$<$ int $>$ $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_a6fb9f5a919d98b55b669a5d3e469233f}{Get\+Constrained\+Vehicles}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+const vector$<$ S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$ $>$ $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_aed3e32d5b05d39c21f64c1ffd57b9b26}{Get\+Edge\+Branching\+Constraints}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+const vector$<$ pair$<$ int, int $>$ $>$ $\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_a9d46970ba30d62a18a519383b2c51b6f}{Get\+Constrained\+Edges}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_af035e573bfacb4329a190c506b7b3acc}{Increment\+Used\+Branching\+Rule}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata, int rule\+Index)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_a3efc0c9c6a9303fca11d406998700040}{Log\+Repeated\+Route}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata, double reduced\+Cost)
+\item 
+S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_a2b1bb6938bc9153b1e4d63008c004768}{S\+C\+I\+Pprobdata\+Get\+Vars}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+int \mbox{\hyperlink{probdata__SPwCG_8cpp_ac82dac16f33353c41198865b013f4daf}{S\+C\+I\+Pprobdata\+Get\+N\+Vars}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$ \mbox{\hyperlink{probdata__SPwCG_8cpp_ac8ed050ccf63037bb6f9344b063bcf7f}{S\+C\+I\+Pprobdata\+Get\+Cons}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\item 
+int \mbox{\hyperlink{probdata__SPwCG_8cpp_a10720a15898911cdc4d183b39a4c36cd}{S\+C\+I\+Pprobdata\+Get\+N\+Cons}} (S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata)
+\end{DoxyCompactItemize}
+\begin{Indent}\textbf{ Local methods}\par
+\begin{DoxyCompactItemize}
+\item 
+static int \mbox{\hyperlink{probdata__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}{ncons}} (\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{probdata__SPwCG_8cpp_a0a1155208098f32be70bc68fbe4061d3}{probdata\+Create}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$$\ast$probdata, S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$vars, S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$conss, int nvars, \mbox{\hyperlink{classParams}{Params}} $\ast$params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{probdata__SPwCG_8cpp_add6b9c9da26bbb6c0ecf12c95cc2f4eb}{probdata\+Free}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$$\ast$probdata)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Callback methods of event handler}\par
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{probdata__SPwCG_8cpp_a82ed4d5b50403ab960a65c79d4d541a6}{S\+C\+I\+Pprobdata\+Add\+Var}} (S\+C\+IP $\ast$scip, S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$probdata, S\+C\+I\+P\+\_\+\+V\+AR $\ast$var)
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_a3177e22d952469897a97d1e680dce856}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+E\+V\+E\+N\+T\+E\+X\+EC}} (event\+Exec\+Added\+Var)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Callback methods of problem data}\par
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_a2541a3148b766c615287b8f9a06ed2b2}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+D\+E\+L\+O\+R\+IG}} (probdelorig\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_adfbd4a4dbfc127acfd94180745ecf51d}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+D\+E\+L\+T\+R\+A\+NS}} (probdeltrans\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_a8e23ce62d2cfba328ca5e6dc179bb67f}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+T\+R\+A\+NS}} (probtrans\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_a7904424f8b5c8d2bd8f6e6a8f1ffa040}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+I\+N\+I\+T\+S\+OL}} (probinitsol\+S\+Pw\+CG)
+\item 
+static \mbox{\hyperlink{probdata__SPwCG_8cpp_a83f69be1ed2e7a078889a1a402ecd1c8}{S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+E\+X\+I\+T\+S\+OL}} (probexitsol\+S\+Pw\+CG)
+\end{DoxyCompactItemize}
+\end{Indent}
+\begin{Indent}\textbf{ Interface methods}\par
+\begin{DoxyCompactItemize}
+\item 
+S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE \mbox{\hyperlink{probdata__SPwCG_8cpp_aa00f5570951731cb9a7206d0c2b0c98c}{load\+Problem}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classParams}{Params}} $\ast$params, \mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$problem\+Data)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_aa01c21ae38c7d9a1229142bb957a8ff4}{Query\+Solution}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classProblemSolution}{Problem\+Solution}} \&solution)
+\item 
+Execution\+Summary \mbox{\hyperlink{probdata__SPwCG_8cpp_a72e52ef70c14910bfcf9070e5d7d92f3}{Get\+Execution\+Summary}} (S\+C\+IP $\ast$scip)
+\item 
+void \mbox{\hyperlink{probdata__SPwCG_8cpp_a4e9047bfbf52333f17c38639fae216cf}{Output\+Duals}} (S\+C\+IP $\ast$scip, \mbox{\hyperlink{classParams}{Params}} $\ast$params)
+\end{DoxyCompactItemize}
+\end{Indent}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_acd6ea343facf9430a46f3d1f3d6c675b}\label{probdata__SPwCG_8cpp_acd6ea343facf9430a46f3d1f3d6c675b}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!EVENTHDLR\_DESC@{EVENTHDLR\_DESC}}
+\index{EVENTHDLR\_DESC@{EVENTHDLR\_DESC}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{EVENTHDLR\_DESC}{EVENTHDLR\_DESC}}
+{\footnotesize\ttfamily \#define E\+V\+E\+N\+T\+H\+D\+L\+R\+\_\+\+D\+E\+SC~\char`\"{}event handler for catching added variables\char`\"{}}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_aea7e068fd23523fb86409f7437f49851}\label{probdata__SPwCG_8cpp_aea7e068fd23523fb86409f7437f49851}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!EVENTHDLR\_NAME@{EVENTHDLR\_NAME}}
+\index{EVENTHDLR\_NAME@{EVENTHDLR\_NAME}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{EVENTHDLR\_NAME}{EVENTHDLR\_NAME}}
+{\footnotesize\ttfamily \#define E\+V\+E\+N\+T\+H\+D\+L\+R\+\_\+\+N\+A\+ME~\char`\"{}addedvar\char`\"{}}
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_ae8ba3a8f07e56bcfb5919d2010227768}\label{probdata__SPwCG_8cpp_ae8ba3a8f07e56bcfb5919d2010227768}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!AddEdgeBranchingCons@{AddEdgeBranchingCons}}
+\index{AddEdgeBranchingCons@{AddEdgeBranchingCons}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{AddEdgeBranchingCons()}{AddEdgeBranchingCons()}}
+{\footnotesize\ttfamily void Add\+Edge\+Branching\+Cons (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$}]{cons,  }\item[{pair$<$ int, int $>$}]{edge }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a629da92a89c878596dfaea37723d547c}\label{probdata__SPwCG_8cpp_a629da92a89c878596dfaea37723d547c}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!AddVehicleBranchingCons@{AddVehicleBranchingCons}}
+\index{AddVehicleBranchingCons@{AddVehicleBranchingCons}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{AddVehicleBranchingCons()}{AddVehicleBranchingCons()}}
+{\footnotesize\ttfamily void Add\+Vehicle\+Branching\+Cons (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$}]{cons,  }\item[{int}]{vehicle\+\_\+id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a9d46970ba30d62a18a519383b2c51b6f}\label{probdata__SPwCG_8cpp_a9d46970ba30d62a18a519383b2c51b6f}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetConstrainedEdges@{GetConstrainedEdges}}
+\index{GetConstrainedEdges@{GetConstrainedEdges}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetConstrainedEdges()}{GetConstrainedEdges()}}
+{\footnotesize\ttfamily const vector$<$pair$<$int, int$>$ $>$$\ast$ Get\+Constrained\+Edges (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a6fb9f5a919d98b55b669a5d3e469233f}\label{probdata__SPwCG_8cpp_a6fb9f5a919d98b55b669a5d3e469233f}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetConstrainedVehicles@{GetConstrainedVehicles}}
+\index{GetConstrainedVehicles@{GetConstrainedVehicles}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetConstrainedVehicles()}{GetConstrainedVehicles()}}
+{\footnotesize\ttfamily const vector$<$int$>$$\ast$ Get\+Constrained\+Vehicles (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_aed3e32d5b05d39c21f64c1ffd57b9b26}\label{probdata__SPwCG_8cpp_aed3e32d5b05d39c21f64c1ffd57b9b26}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetEdgeBranchingConstraints@{GetEdgeBranchingConstraints}}
+\index{GetEdgeBranchingConstraints@{GetEdgeBranchingConstraints}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetEdgeBranchingConstraints()}{GetEdgeBranchingConstraints()}}
+{\footnotesize\ttfamily const vector$<$S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$>$$\ast$ Get\+Edge\+Branching\+Constraints (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a72e52ef70c14910bfcf9070e5d7d92f3}\label{probdata__SPwCG_8cpp_a72e52ef70c14910bfcf9070e5d7d92f3}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetExecutionSummary@{GetExecutionSummary}}
+\index{GetExecutionSummary@{GetExecutionSummary}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetExecutionSummary()}{GetExecutionSummary()}}
+{\footnotesize\ttfamily Execution\+Summary Get\+Execution\+Summary (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a20267d0ff339cb3736b50d533e95492e}\label{probdata__SPwCG_8cpp_a20267d0ff339cb3736b50d533e95492e}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetParams@{GetParams}}
+\index{GetParams@{GetParams}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetParams()}{GetParams()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classParams}{Params}}$\ast$ Get\+Params (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_ac619d221be46b094e49931340c9cb22b}\label{probdata__SPwCG_8cpp_ac619d221be46b094e49931340c9cb22b}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetProblemData@{GetProblemData}}
+\index{GetProblemData@{GetProblemData}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetProblemData()}{GetProblemData()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classProblemData}{Problem\+Data}}$\ast$ Get\+Problem\+Data (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a80717d7ac835eef13a5d968275206257}\label{probdata__SPwCG_8cpp_a80717d7ac835eef13a5d968275206257}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!GetVehicleBranchingConstraints@{GetVehicleBranchingConstraints}}
+\index{GetVehicleBranchingConstraints@{GetVehicleBranchingConstraints}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{GetVehicleBranchingConstraints()}{GetVehicleBranchingConstraints()}}
+{\footnotesize\ttfamily const vector$<$S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$>$$\ast$ Get\+Vehicle\+Branching\+Constraints (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_af035e573bfacb4329a190c506b7b3acc}\label{probdata__SPwCG_8cpp_af035e573bfacb4329a190c506b7b3acc}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!IncrementUsedBranchingRule@{IncrementUsedBranchingRule}}
+\index{IncrementUsedBranchingRule@{IncrementUsedBranchingRule}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{IncrementUsedBranchingRule()}{IncrementUsedBranchingRule()}}
+{\footnotesize\ttfamily void Increment\+Used\+Branching\+Rule (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata,  }\item[{int}]{rule\+Index }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a008479df929ff0efce21ca26523c6d3f}\label{probdata__SPwCG_8cpp_a008479df929ff0efce21ca26523c6d3f}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!IsVarRepeated@{IsVarRepeated}}
+\index{IsVarRepeated@{IsVarRepeated}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{IsVarRepeated()}{IsVarRepeated()}}
+{\footnotesize\ttfamily bool Is\+Var\+Repeated (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{structSCIP__ProbData}{S\+C\+I\+P\+\_\+\+Prob\+Data}} $\ast$}]{probdata,  }\item[{\mbox{\hyperlink{classRoute}{Route}} $\ast$}]{route,  }\item[{S\+C\+IP $\ast$}]{scip }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_aa00f5570951731cb9a7206d0c2b0c98c}\label{probdata__SPwCG_8cpp_aa00f5570951731cb9a7206d0c2b0c98c}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!loadProblem@{loadProblem}}
+\index{loadProblem@{loadProblem}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{loadProblem()}{loadProblem()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE load\+Problem (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})}
+
+sets up S\+C\+IP execution for a given (my) \mbox{\hyperlink{classProblemData}{Problem\+Data}} structure 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em params} & global params \\
+\hline
+{\em problem\+Data} & my problem\textquotesingle{}s data structure \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a3efc0c9c6a9303fca11d406998700040}\label{probdata__SPwCG_8cpp_a3efc0c9c6a9303fca11d406998700040}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!LogRepeatedRoute@{LogRepeatedRoute}}
+\index{LogRepeatedRoute@{LogRepeatedRoute}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{LogRepeatedRoute()}{LogRepeatedRoute()}}
+{\footnotesize\ttfamily void Log\+Repeated\+Route (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata,  }\item[{double}]{reduced\+Cost }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}\label{probdata__SPwCG_8cpp_ad3c98af6b0cd8b3f604b4da99895d2f2}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!ncons@{ncons}}
+\index{ncons@{ncons}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{ncons()}{ncons()}}
+{\footnotesize\ttfamily static int ncons (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a4e9047bfbf52333f17c38639fae216cf}\label{probdata__SPwCG_8cpp_a4e9047bfbf52333f17c38639fae216cf}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!OutputDuals@{OutputDuals}}
+\index{OutputDuals@{OutputDuals}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{OutputDuals()}{OutputDuals()}}
+{\footnotesize\ttfamily void Output\+Duals (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a0a1155208098f32be70bc68fbe4061d3}\label{probdata__SPwCG_8cpp_a0a1155208098f32be70bc68fbe4061d3}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!probdataCreate@{probdataCreate}}
+\index{probdataCreate@{probdataCreate}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{probdataCreate()}{probdataCreate()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE probdata\+Create (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$$\ast$}]{probdata,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$$\ast$}]{vars,  }\item[{S\+C\+I\+P\+\_\+\+C\+O\+NS $\ast$$\ast$}]{conss,  }\item[{int}]{nvars,  }\item[{\mbox{\hyperlink{classParams}{Params}} $\ast$}]{params,  }\item[{\mbox{\hyperlink{classProblemData}{Problem\+Data}} $\ast$}]{problem\+Data }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+creates problem data 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em probdata} & pointer to problem data \\
+\hline
+{\em vars} & array of A\+LL vars \\
+\hline
+{\em conss} & array of all constraints \\
+\hline
+{\em nvars} & number of route variables \\
+\hline
+{\em params} & global params \\
+\hline
+{\em problem\+Data} & general data of this problem instance \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_add6b9c9da26bbb6c0ecf12c95cc2f4eb}\label{probdata__SPwCG_8cpp_add6b9c9da26bbb6c0ecf12c95cc2f4eb}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!probdataFree@{probdataFree}}
+\index{probdataFree@{probdataFree}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{probdataFree()}{probdataFree()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE probdata\+Free (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$$\ast$}]{probdata }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+frees the memory of the given problem data 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em probdata} & pointer to problem data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_aa01c21ae38c7d9a1229142bb957a8ff4}\label{probdata__SPwCG_8cpp_aa01c21ae38c7d9a1229142bb957a8ff4}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!QuerySolution@{QuerySolution}}
+\index{QuerySolution@{QuerySolution}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{QuerySolution()}{QuerySolution()}}
+{\footnotesize\ttfamily void Query\+Solution (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{\mbox{\hyperlink{classProblemSolution}{Problem\+Solution}} \&}]{solution }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a3177e22d952469897a97d1e680dce856}\label{probdata__SPwCG_8cpp_a3177e22d952469897a97d1e680dce856}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_EVENTEXEC@{SCIP\_DECL\_EVENTEXEC}}
+\index{SCIP\_DECL\_EVENTEXEC@{SCIP\_DECL\_EVENTEXEC}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_EVENTEXEC()}{SCIP\_DECL\_EVENTEXEC()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+E\+V\+E\+N\+T\+E\+X\+EC (\begin{DoxyParamCaption}\item[{event\+Exec\+Added\+Var}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+execution method of event handler \mbox{\Hypertarget{probdata__SPwCG_8cpp_a2541a3148b766c615287b8f9a06ed2b2}\label{probdata__SPwCG_8cpp_a2541a3148b766c615287b8f9a06ed2b2}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_PROBDELORIG@{SCIP\_DECL\_PROBDELORIG}}
+\index{SCIP\_DECL\_PROBDELORIG@{SCIP\_DECL\_PROBDELORIG}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PROBDELORIG()}{SCIP\_DECL\_PROBDELORIG()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+D\+E\+L\+O\+R\+IG (\begin{DoxyParamCaption}\item[{probdelorig\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+frees user data of original problem (called when the original problem is freed) \mbox{\Hypertarget{probdata__SPwCG_8cpp_adfbd4a4dbfc127acfd94180745ecf51d}\label{probdata__SPwCG_8cpp_adfbd4a4dbfc127acfd94180745ecf51d}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_PROBDELTRANS@{SCIP\_DECL\_PROBDELTRANS}}
+\index{SCIP\_DECL\_PROBDELTRANS@{SCIP\_DECL\_PROBDELTRANS}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PROBDELTRANS()}{SCIP\_DECL\_PROBDELTRANS()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+D\+E\+L\+T\+R\+A\+NS (\begin{DoxyParamCaption}\item[{probdeltrans\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+frees user data of transformed problem (called when the transformed problem is freed) \mbox{\Hypertarget{probdata__SPwCG_8cpp_a83f69be1ed2e7a078889a1a402ecd1c8}\label{probdata__SPwCG_8cpp_a83f69be1ed2e7a078889a1a402ecd1c8}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_PROBEXITSOL@{SCIP\_DECL\_PROBEXITSOL}}
+\index{SCIP\_DECL\_PROBEXITSOL@{SCIP\_DECL\_PROBEXITSOL}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PROBEXITSOL()}{SCIP\_DECL\_PROBEXITSOL()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+E\+X\+I\+T\+S\+OL (\begin{DoxyParamCaption}\item[{probexitsol\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+solving process deinitialization method of transformed data (called before the branch and bound data is freed) \mbox{\Hypertarget{probdata__SPwCG_8cpp_a7904424f8b5c8d2bd8f6e6a8f1ffa040}\label{probdata__SPwCG_8cpp_a7904424f8b5c8d2bd8f6e6a8f1ffa040}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_PROBINITSOL@{SCIP\_DECL\_PROBINITSOL}}
+\index{SCIP\_DECL\_PROBINITSOL@{SCIP\_DECL\_PROBINITSOL}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PROBINITSOL()}{SCIP\_DECL\_PROBINITSOL()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+I\+N\+I\+T\+S\+OL (\begin{DoxyParamCaption}\item[{probinitsol\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+solving process initialization method of transformed data (called before the branch and bound process begins) \mbox{\Hypertarget{probdata__SPwCG_8cpp_a8e23ce62d2cfba328ca5e6dc179bb67f}\label{probdata__SPwCG_8cpp_a8e23ce62d2cfba328ca5e6dc179bb67f}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIP\_DECL\_PROBTRANS@{SCIP\_DECL\_PROBTRANS}}
+\index{SCIP\_DECL\_PROBTRANS@{SCIP\_DECL\_PROBTRANS}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIP\_DECL\_PROBTRANS()}{SCIP\_DECL\_PROBTRANS()}}
+{\footnotesize\ttfamily static S\+C\+I\+P\+\_\+\+D\+E\+C\+L\+\_\+\+P\+R\+O\+B\+T\+R\+A\+NS (\begin{DoxyParamCaption}\item[{probtrans\+S\+Pw\+CG}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+creates user data of transformed problem by transforming the original user problem data (called after problem was transformed) \mbox{\Hypertarget{probdata__SPwCG_8cpp_a82ed4d5b50403ab960a65c79d4d541a6}\label{probdata__SPwCG_8cpp_a82ed4d5b50403ab960a65c79d4d541a6}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIPprobdataAddVar@{SCIPprobdataAddVar}}
+\index{SCIPprobdataAddVar@{SCIPprobdataAddVar}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPprobdataAddVar()}{SCIPprobdataAddVar()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+R\+E\+T\+C\+O\+DE S\+C\+I\+Pprobdata\+Add\+Var (\begin{DoxyParamCaption}\item[{S\+C\+IP $\ast$}]{scip,  }\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata,  }\item[{S\+C\+I\+P\+\_\+\+V\+AR $\ast$}]{var }\end{DoxyParamCaption})}
+
+adds given variable to the problem data 
+\begin{DoxyParams}{Parameters}
+{\em scip} & S\+C\+IP data structure \\
+\hline
+{\em probdata} & problem data \\
+\hline
+{\em var} & variables to add \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_ac8ed050ccf63037bb6f9344b063bcf7f}\label{probdata__SPwCG_8cpp_ac8ed050ccf63037bb6f9344b063bcf7f}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIPprobdataGetCons@{SCIPprobdataGetCons}}
+\index{SCIPprobdataGetCons@{SCIPprobdataGetCons}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPprobdataGetCons()}{SCIPprobdataGetCons()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+C\+O\+NS$\ast$$\ast$ S\+C\+I\+Pprobdata\+Get\+Cons (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+returns array of all variables itemed in the way they got generated 
+\begin{DoxyParams}{Parameters}
+{\em probdata} & problem data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a10720a15898911cdc4d183b39a4c36cd}\label{probdata__SPwCG_8cpp_a10720a15898911cdc4d183b39a4c36cd}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIPprobdataGetNCons@{SCIPprobdataGetNCons}}
+\index{SCIPprobdataGetNCons@{SCIPprobdataGetNCons}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPprobdataGetNCons()}{SCIPprobdataGetNCons()}}
+{\footnotesize\ttfamily int S\+C\+I\+Pprobdata\+Get\+N\+Cons (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+returns number of variables 
+\begin{DoxyParams}{Parameters}
+{\em probdata} & problem data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_ac82dac16f33353c41198865b013f4daf}\label{probdata__SPwCG_8cpp_ac82dac16f33353c41198865b013f4daf}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIPprobdataGetNVars@{SCIPprobdataGetNVars}}
+\index{SCIPprobdataGetNVars@{SCIPprobdataGetNVars}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPprobdataGetNVars()}{SCIPprobdataGetNVars()}}
+{\footnotesize\ttfamily int S\+C\+I\+Pprobdata\+Get\+N\+Vars (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+returns number of variables 
+\begin{DoxyParams}{Parameters}
+{\em probdata} & problem data \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{probdata__SPwCG_8cpp_a2b1bb6938bc9153b1e4d63008c004768}\label{probdata__SPwCG_8cpp_a2b1bb6938bc9153b1e4d63008c004768}} 
+\index{probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}!SCIPprobdataGetVars@{SCIPprobdataGetVars}}
+\index{SCIPprobdataGetVars@{SCIPprobdataGetVars}!probdata\_SPwCG.cpp@{probdata\_SPwCG.cpp}}
+\doxysubsubsection{\texorpdfstring{SCIPprobdataGetVars()}{SCIPprobdataGetVars()}}
+{\footnotesize\ttfamily S\+C\+I\+P\+\_\+\+V\+AR$\ast$$\ast$ S\+C\+I\+Pprobdata\+Get\+Vars (\begin{DoxyParamCaption}\item[{S\+C\+I\+P\+\_\+\+P\+R\+O\+B\+D\+A\+TA $\ast$}]{probdata }\end{DoxyParamCaption})}
+
+returns array of all variables itemed in the way they got generated 
+\begin{DoxyParams}{Parameters}
+{\em probdata} & problem data \\
+\hline
+\end{DoxyParams}

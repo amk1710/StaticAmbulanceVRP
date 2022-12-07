@@ -1,0 +1,63 @@
+\hypertarget{classOSRMHelper}{}\doxysection{O\+S\+R\+M\+Helper Class Reference}
+\label{classOSRMHelper}\index{OSRMHelper@{OSRMHelper}}
+
+
+{\ttfamily \#include $<$O\+S\+R\+M\+Helper.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOSRMHelper_a7ab39b81e487cc9b1025a3eb1bd582f5}{O\+S\+R\+M\+Helper}} (std\+::string osm\+Path)
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{classOSRMHelper_a9d428b8d899e620e92f83707c92ec83d}{Table\+Request}} (std\+::vector$<$ const \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ $>$ \&vertices)
+\item 
+std\+::vector$<$ std\+::vector$<$ double $>$ $>$ \mbox{\hyperlink{classOSRMHelper_ae5697b09c7884cc883ceb2b5fee8162b}{Table\+Request}} (std\+::vector$<$ double $>$ \&longitudes, std\+::vector$<$ double $>$ \&latitudes)
+\item 
+double \mbox{\hyperlink{classOSRMHelper_ad821cce1e7ec3e8496d87cc172f35ca9}{Get\+Distance}} (double lon1, double lat1, double lon2, double lat2)
+\item 
+double \mbox{\hyperlink{classOSRMHelper_a0d7a2e2c545fa23fc01758d48ee99322}{Get\+Duration}} (double lon1, double lat1, double lon2, double lat2)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to facilitate interaction with the O\+S\+R\+M-\/backend A\+PI. Requires access to a local O\+SM database preprocessed with O\+S\+RM with the Multi-\/\+Level Dijkstra (M\+LD) configuration (requires extract+partition+customize).See \href{https://github.com/Project-OSRM/osrm-backend}{\texttt{ https\+://github.\+com/\+Project-\/\+O\+S\+R\+M/osrm-\/backend}} for more information 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOSRMHelper_a7ab39b81e487cc9b1025a3eb1bd582f5}\label{classOSRMHelper_a7ab39b81e487cc9b1025a3eb1bd582f5}} 
+\index{OSRMHelper@{OSRMHelper}!OSRMHelper@{OSRMHelper}}
+\index{OSRMHelper@{OSRMHelper}!OSRMHelper@{OSRMHelper}}
+\doxysubsubsection{\texorpdfstring{OSRMHelper()}{OSRMHelper()}}
+{\footnotesize\ttfamily O\+S\+R\+M\+Helper\+::\+O\+S\+R\+M\+Helper (\begin{DoxyParamCaption}\item[{std\+::string}]{osm\+Path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOSRMHelper_ad821cce1e7ec3e8496d87cc172f35ca9}\label{classOSRMHelper_ad821cce1e7ec3e8496d87cc172f35ca9}} 
+\index{OSRMHelper@{OSRMHelper}!GetDistance@{GetDistance}}
+\index{GetDistance@{GetDistance}!OSRMHelper@{OSRMHelper}}
+\doxysubsubsection{\texorpdfstring{GetDistance()}{GetDistance()}}
+{\footnotesize\ttfamily double O\+S\+R\+M\+Helper\+::\+Get\+Distance (\begin{DoxyParamCaption}\item[{double}]{lon1,  }\item[{double}]{lat1,  }\item[{double}]{lon2,  }\item[{double}]{lat2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOSRMHelper_a0d7a2e2c545fa23fc01758d48ee99322}\label{classOSRMHelper_a0d7a2e2c545fa23fc01758d48ee99322}} 
+\index{OSRMHelper@{OSRMHelper}!GetDuration@{GetDuration}}
+\index{GetDuration@{GetDuration}!OSRMHelper@{OSRMHelper}}
+\doxysubsubsection{\texorpdfstring{GetDuration()}{GetDuration()}}
+{\footnotesize\ttfamily double O\+S\+R\+M\+Helper\+::\+Get\+Duration (\begin{DoxyParamCaption}\item[{double}]{lon1,  }\item[{double}]{lat1,  }\item[{double}]{lon2,  }\item[{double}]{lat2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOSRMHelper_a9d428b8d899e620e92f83707c92ec83d}\label{classOSRMHelper_a9d428b8d899e620e92f83707c92ec83d}} 
+\index{OSRMHelper@{OSRMHelper}!TableRequest@{TableRequest}}
+\index{TableRequest@{TableRequest}!OSRMHelper@{OSRMHelper}}
+\doxysubsubsection{\texorpdfstring{TableRequest()}{TableRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$double$>$ $>$ O\+S\+R\+M\+Helper\+::\+Table\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ const \mbox{\hyperlink{structVertex}{Vertex}} $\ast$ $>$ \&}]{vertices }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+\mbox{\Hypertarget{classOSRMHelper_ae5697b09c7884cc883ceb2b5fee8162b}\label{classOSRMHelper_ae5697b09c7884cc883ceb2b5fee8162b}} 
+\index{OSRMHelper@{OSRMHelper}!TableRequest@{TableRequest}}
+\index{TableRequest@{TableRequest}!OSRMHelper@{OSRMHelper}}
+\doxysubsubsection{\texorpdfstring{TableRequest()}{TableRequest()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::vector$<$std\+::vector$<$double$>$ $>$ O\+S\+R\+M\+Helper\+::\+Table\+Request (\begin{DoxyParamCaption}\item[{std\+::vector$<$ double $>$ \&}]{longitudes,  }\item[{std\+::vector$<$ double $>$ \&}]{latitudes }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\mbox{\hyperlink{OSRMHelper_8h}{O\+S\+R\+M\+Helper.\+h}}\end{DoxyCompactItemize}

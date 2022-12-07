@@ -1,0 +1,1300 @@
+\begin{theindex}
+
+  \item {$\sim$BasePricing}
+    \subitem {BasePricing}, \hyperpage{9}
+  \item {$\sim$ProblemData}
+    \subitem {ProblemData}, \hyperpage{30}
+  \item {$\sim$SpacedBellmanPricing}
+    \subitem {SpacedBellmanPricing}, \hyperpage{64}
+
+  \indexspace
+
+  \item {AddEdgeBranchingCons}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{110}
+  \item {AddVehicleBranchingCons}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {AggregatedProblem}, \hyperpage{7}
+    \subitem {baseDate}, \hyperpage{7}
+    \subitem {scenario}, \hyperpage{8}
+  \item {alg\_start}
+    \subitem {Params}, \hyperpage{19}
+  \item {AllOneSizedRoutesSolution}
+    \subitem {ProblemSolution}, \hyperpage{41}
+  \item {allowRerouting}
+    \subitem {ProblemData}, \hyperpage{38}
+  \item {AllowsPositiveRCElimination}
+    \subitem {Params}, \hyperpage{19}
+  \item {alreadyExpanded}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{24}
+  \item {alwaysLoopVehicles}
+    \subitem {Params}, \hyperpage{19}
+  \item {AnySolution}
+    \subitem {ProblemSolution}, \hyperpage{41}
+  \item {arrival\_time}
+    \subitem {Request}, \hyperpage{46}
+  \item {arrival\_times}
+    \subitem {Route}, \hyperpage{50}
+
+  \indexspace
+
+  \item {baseDate}
+    \subitem {AggregatedProblem}, \hyperpage{7}
+  \item {BasePricing}, \hyperpage{8}
+    \subitem {$\sim$BasePricing}, \hyperpage{9}
+    \subitem {BasePricing}, \hyperpage{9}
+    \subitem {max\_memory}, \hyperpage{10}
+    \subitem {max\_time}, \hyperpage{10}
+    \subitem {params}, \hyperpage{10}
+    \subitem {Price}, \hyperpage{9}
+    \subitem {problemData}, \hyperpage{10}
+    \subitem {SetMaxMemory}, \hyperpage{10}
+    \subitem {SetMaxTime}, \hyperpage{10}
+  \item {BasePricing.h}
+    \subitem {FAIL}, \hyperpage{78}
+    \subitem {OK}, \hyperpage{78}
+    \subitem {PricingReturnStatus}, \hyperpage{78}
+  \item {bellman}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {bellmanWSets}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {bernoulliCoefficients}
+    \subitem {StochasticInfo}, \hyperpage{71}
+  \item {best}
+    \subitem {RouteExpander.h}, \hyperpage{88}
+  \item {bestLabelsHeap}
+    \subitem {SpacedBellmanPricing}, \hyperpage{67}
+  \item {bestOptionalStop}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {branchExeclpBranchingRules}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {branching.cpp}
+    \subitem {branchExeclpBranchingRules}, \hyperpage{95}
+    \subitem {BRANCHRULE\_DESC}, \hyperpage{94}
+    \subitem {BRANCHRULE\_MAXBOUNDDIST}, \hyperpage{94}
+    \subitem {BRANCHRULE\_MAXDEPTH}, \hyperpage{95}
+    \subitem {BRANCHRULE\_NAME}, \hyperpage{95}
+    \subitem {BRANCHRULE\_PRIORITY}, \hyperpage{95}
+    \subitem {IsEdgeBranchingRepeated}, \hyperpage{95}
+    \subitem {IsSimpleBranchingRepeated}, \hyperpage{95}
+    \subitem {IsVehicleBranchingRepeated}, \hyperpage{96}
+    \subitem {PrintConstraintValues}, \hyperpage{96}
+    \subitem {SCIPcreateConsSumEdge}, \hyperpage{96}
+    \subitem {SCIPcreateConsSumVehicle}, \hyperpage{97}
+    \subitem {SCIPincludeCustomBranchingRule}, \hyperpage{97}
+  \item {branching.h}
+    \subitem {SCIPincludeCustomBranchingRule}, \hyperpage{79}
+  \item {BRANCHRULE\_DESC}
+    \subitem {branching.cpp}, \hyperpage{94}
+  \item {BRANCHRULE\_MAXBOUNDDIST}
+    \subitem {branching.cpp}, \hyperpage{94}
+  \item {BRANCHRULE\_MAXDEPTH}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {BRANCHRULE\_NAME}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {BRANCHRULE\_PRIORITY}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {buildConsideredRequestsVector}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+  \item {buildForbiddenEdges}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+
+  \indexspace
+
+  \item {calculateDistance}
+    \subitem {ProblemData}, \hyperpage{30}
+  \item {CalculateDistanceMatrix}
+    \subitem {ProblemData}, \hyperpage{31}
+  \item {capacity}
+    \subitem {WaitingStation}, \hyperpage{75}
+  \item {checkForVarRedCosts}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{106}
+  \item {checkRouteExpansion}
+    \subitem {RouteExpander}, \hyperpage{53}
+  \item {Cleanup}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {closest}
+    \subitem {RouteExpander.h}, \hyperpage{88}
+  \item {ClosestAvailableVehicleSolution}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {closestWaitingStation}
+    \subitem {Vertex}, \hyperpage{74}
+  \item {coeffs}
+    \subitem {ProblemSolution}, \hyperpage{43}
+  \item {comp}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {comp2}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {comp3}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {compareArrays}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{106}
+  \item {compGRC}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {compGTime}
+    \subitem {SpacedBellmanPricing}, \hyperpage{65}
+  \item {compLRC}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {compLRCRef}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {compLTime}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {compLTimeRef}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {computeTimeHorizon}
+    \subitem {ProblemData}, \hyperpage{38}
+  \item {ComputingCanadaMain}
+    \subitem {cppmain.cpp}, \hyperpage{98}
+  \item {conscoeffs}
+    \subitem {SCIP\_VarData}, \hyperpage{60}
+  \item {conshdlr}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+  \item {consids}
+    \subitem {SCIP\_VarData}, \hyperpage{61}
+  \item {conss}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+  \item {constrainedVehicles}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+  \item {constraintedEdges}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+  \item {cost}
+    \subitem {ProblemSolution}, \hyperpage{43}
+  \item {cppmain.cpp}
+    \subitem {ComputingCanadaMain}, \hyperpage{98}
+    \subitem {FindVInstanceByIndex}, \hyperpage{98}
+    \subitem {main}, \hyperpage{98}
+    \subitem {ParseCommandLine}, \hyperpage{99}
+  \item {createRouteVariable}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{106}
+    \subitem {pricer\_SPwCG.h}, \hyperpage{83}
+  \item {cutstock.cpp}
+    \subitem {cutstock\_main}, \hyperpage{100}
+    \subitem {IL\_STD}, \hyperpage{100}
+    \subitem {RC\_EPS}, \hyperpage{100}
+    \subitem {readData}, \hyperpage{100}
+    \subitem {report1}, \hyperpage{101}
+    \subitem {report2}, \hyperpage{101}
+    \subitem {report3}, \hyperpage{101}
+  \item {cutstock\_main}
+    \subitem {cutstock.cpp}, \hyperpage{100}
+
+  \indexspace
+
+  \item {DAG}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {DemandScenario}, \hyperpage{11}
+    \subitem {destinations}, \hyperpage{11}
+    \subitem {positions}, \hyperpage{11}
+    \subitem {requests}, \hyperpage{12}
+  \item {departure\_times}
+    \subitem {Route}, \hyperpage{50}
+  \item {descriptiveString}
+    \subitem {Params}, \hyperpage{19}
+  \item {Destination}, \hyperpage{12}
+    \subitem {projected}, \hyperpage{13}
+  \item {destination}
+    \subitem {Request}, \hyperpage{46}
+  \item {DestinationIdToIndex}
+    \subitem {ProblemData}, \hyperpage{31}
+  \item {destinations}
+    \subitem {DemandScenario}, \hyperpage{11}
+    \subitem {ProblemData}, \hyperpage{38}
+  \item {Distance}
+    \subitem {ProblemData}, \hyperpage{31}
+  \item {distances}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {DistanceType}
+    \subitem {ProblemData.h}, \hyperpage{85}
+  \item {distanceType}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {DoesRouteViolateBranching}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{106}
+  \item {DoPricing}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{106}
+  \item {DSFDecrement}
+    \subitem {Params}, \hyperpage{20}
+
+  \indexspace
+
+  \item {edgeBranchingConstraints}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+  \item {end\_time}
+    \subitem {Route}, \hyperpage{51}
+  \item {euclidian}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {euclidianDistance}
+    \subitem {ProblemData}, \hyperpage{31}
+  \item {EVENTHDLR\_DESC}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{110}
+  \item {EVENTHDLR\_NAME}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{110}
+  \item {exampleInstance}
+    \subitem {ProblemData}, \hyperpage{31}
+
+  \indexspace
+
+  \item {FAIL}
+    \subitem {BasePricing.h}, \hyperpage{78}
+  \item {FastestArrivingVehicleSolution}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {FilterLabels}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {FindVInstanceByIndex}
+    \subitem {cppmain.cpp}, \hyperpage{98}
+
+  \indexspace
+
+  \item {GenerateScenarios}
+    \subitem {StochasticInfo}, \hyperpage{70}
+  \item {generator}
+    \subitem {Params}, \hyperpage{20}
+  \item {geodesic}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {geodesicDistance}
+    \subitem {ProblemData}, \hyperpage{31}
+  \item {GetClosestDestination}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetClosestWaitingStation}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetConstrainedEdges}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {GetConstrainedVehicles}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {GetDestination}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetDestinationByIndex}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetDistance}
+    \subitem {OSRMHelper}, \hyperpage{16}
+  \item {GetDuration}
+    \subitem {OSRMHelper}, \hyperpage{16}
+  \item {GetEdgeBranchingConstraints}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {GetEdgeUsage}
+    \subitem {Route}, \hyperpage{49}
+  \item {GetElapsedTime}
+    \subitem {Params}, \hyperpage{19}
+  \item {GetExecutionSummary}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {GetHash}
+    \subitem {Route}, \hyperpage{49}
+  \item {GetInitialPosition}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetInitialPositionByIndex}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetIntermediatePosition}
+    \subitem {ProblemData}, \hyperpage{32}
+  \item {GetIntermediatePosition2}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetParams}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{111}
+  \item {GetProblemData}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{112}
+  \item {GetRequest}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetRequestByIndex}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetRequestCount}
+    \subitem {Route}, \hyperpage{50}
+  \item {GetResponseSummary}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {getVehicle}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetVehicleBranchingConstraints}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{112}
+  \item {GetVertex}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetWaitingStation}
+    \subitem {ProblemData}, \hyperpage{33}
+  \item {GetWaitingStationByIndex}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {GIT\_COMMIT\_HASH}
+    \subitem {ProblemSolution.h}, \hyperpage{87}
+    \subitem {SCIPSolver.cpp}, \hyperpage{120}
+
+  \indexspace
+
+  \item {has\_cycles}
+    \subitem {Route}, \hyperpage{51}
+  \item {heuristic\_run}
+    \subitem {Params}, \hyperpage{20}
+  \item {heuristicPricing}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+    \subitem {SpacedBellmanPricing}, \hyperpage{67}
+  \item {hybrid}
+    \subitem {Params.h}, \hyperpage{82}
+
+  \indexspace
+
+  \item {id}
+    \subitem {Vertex}, \hyperpage{74}
+  \item {identifier}
+    \subitem {Vertex}, \hyperpage{74}
+  \item {IL\_STD}
+    \subitem {cutstock.cpp}, \hyperpage{100}
+  \item {include/BasePricing.h}, \hyperpage{77}
+  \item {include/branching.h}, \hyperpage{78}
+  \item {include/OSRMHelper.h}, \hyperpage{80}
+  \item {include/Params.h}, \hyperpage{81}
+  \item {include/pricer\_SPwCG.h}, \hyperpage{82}
+  \item {include/probdata\_SPwCG.h}, \hyperpage{84}
+  \item {include/ProblemData.h}, \hyperpage{84}
+  \item {include/ProblemSolution.h}, \hyperpage{86}
+  \item {include/RouteExpander.h}, \hyperpage{87}
+  \item {include/SCIPSolver.h}, \hyperpage{88}
+  \item {include/SpacedBellmanPricing.h}, \hyperpage{89}
+  \item {include/StochasticInfo.h}, \hyperpage{90}
+  \item {include/vardata\_SPwCG.h}, \hyperpage{91}
+  \item {IncrementUsedBranchingRule}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{112}
+  \item {IndexToDestinationId}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {IndexToRequestId}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {IndexToWaitingStationId}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {initialDSF}
+    \subitem {Params}, \hyperpage{20}
+  \item {InitialPosition}, \hyperpage{13}
+  \item {InitialPositionIdToIndex}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {InitialPositionIndexToId}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {initialPositions}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {intermediatePosition}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{24}
+  \item {intermediatePositions}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {intermediates}
+    \subitem {Route}, \hyperpage{51}
+  \item {IntermediateVertex}, \hyperpage{14}
+    \subitem {ws\_id}, \hyperpage{15}
+  \item {IsCompatible}
+    \subitem {ProblemData}, \hyperpage{34}
+  \item {IsDestination}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {IsEdgeBranchingRepeated}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {IsInitialPosition}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {IsIntermediateVertex}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {IsRequest}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {IsSimpleBranchingRepeated}
+    \subitem {branching.cpp}, \hyperpage{95}
+  \item {IsVarRepeated}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{112}
+  \item {IsVehicleBranchingRepeated}
+    \subitem {branching.cpp}, \hyperpage{96}
+  \item {IsWaitingStation}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {ItrNextExpansion}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {ItrNextExpansion\_IsValid}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+
+  \indexspace
+
+  \item {labels}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {labelsDeleted}
+    \subitem {PricingReturn}, \hyperpage{26}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+  \item {labelsPriced}
+    \subitem {PricingReturn}, \hyperpage{26}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+  \item {labelsStored}
+    \subitem {PricingReturn}, \hyperpage{26}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+  \item {lastLabel}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {lastSuccessfullVehicle}
+    \subitem {SCIP\_PricerData}, \hyperpage{55}
+  \item {lastWaitingStation}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {limitNbLabels}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {loadProblem}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{112}
+  \item {LogRepeatedRoute}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{113}
+  \item {lx}
+    \subitem {StochasticInfo}, \hyperpage{71}
+  \item {ly}
+    \subitem {StochasticInfo}, \hyperpage{71}
+
+  \indexspace
+
+  \item {main}
+    \subitem {cppmain.cpp}, \hyperpage{98}
+    \subitem {main.cpp}, \hyperpage{102}
+  \item {main.cpp}
+    \subitem {main}, \hyperpage{102}
+    \subitem {RC\_EPS}, \hyperpage{102}
+    \subitem {run\_tests}, \hyperpage{102}
+    \subitem {simulateOperation}, \hyperpage{103}
+  \item {mandatoryStopInFixedStation}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {max\_memory}
+    \subitem {BasePricing}, \hyperpage{10}
+    \subitem {Params}, \hyperpage{20}
+  \item {max\_time}
+    \subitem {BasePricing}, \hyperpage{10}
+    \subitem {Params}, \hyperpage{20}
+  \item {maxLabels}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {maxLabelsStoredSimultaneously}
+    \subitem {PricingReturn}, \hyperpage{27}
+  \item {maxMemorySinglePricing}
+    \subitem {Params}, \hyperpage{20}
+  \item {maxNbRoutes}
+    \subitem {Params}, \hyperpage{20}
+  \item {maxNonServicePenalty}
+    \subitem {ResponseSummary}, \hyperpage{47}
+  \item {maxResponseTime}
+    \subitem {ResponseSummary}, \hyperpage{47}
+  \item {maxSolverIterations}
+    \subitem {Params}, \hyperpage{21}
+  \item {maxTimeSinglePricing}
+    \subitem {Params}, \hyperpage{21}
+  \item {maxWeightedResponseTime}
+    \subitem {ResponseSummary}, \hyperpage{47}
+  \item {meanNonServicePenalty}
+    \subitem {ResponseSummary}, \hyperpage{47}
+  \item {meanResponseTime}
+    \subitem {ResponseSummary}, \hyperpage{48}
+  \item {meanWeightedResponseTime}
+    \subitem {ResponseSummary}, \hyperpage{48}
+  \item {mostLabelsInRequest}
+    \subitem {PricingReturn}, \hyperpage{27}
+
+  \indexspace
+
+  \item {n\_desired\_routes}
+    \subitem {SpacedBellmanPricing}, \hyperpage{68}
+  \item {name}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {nbConsideredRequests}
+    \subitem {PricingReturn}, \hyperpage{27}
+  \item {nbHorizontal}
+    \subitem {StochasticInfo}, \hyperpage{71}
+  \item {nbRandomInitialRoutes}
+    \subitem {Params}, \hyperpage{21}
+  \item {NbRequests}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {NbVehicles}
+    \subitem {ProblemData}, \hyperpage{35}
+  \item {nbVertical}
+    \subitem {StochasticInfo}, \hyperpage{71}
+  \item {NbVertices}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {NbWaitingStations}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {ncons}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{113}
+  \item {nconsids}
+    \subitem {SCIP\_VarData}, \hyperpage{61}
+  \item {newRoutesPerPricing}
+    \subitem {Params}, \hyperpage{21}
+  \item {nNotServiced}
+    \subitem {ResponseSummary}, \hyperpage{48}
+  \item {non\_service\_penalty}
+    \subitem {Request}, \hyperpage{46}
+  \item {norm}
+    \subitem {ProblemData.cpp}, \hyperpage{117}
+  \item {nServiced}
+    \subitem {ResponseSummary}, \hyperpage{48}
+  \item {nvars}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+
+  \indexspace
+
+  \item {OK}
+    \subitem {BasePricing.h}, \hyperpage{78}
+  \item {OmmitedDistance}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {operator==}
+    \subitem {Route}, \hyperpage{50}
+    \subitem {Vertex}, \hyperpage{73}
+  \item {optionalStopInClosestWaitingStation}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {optionalStopInFixedStation}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {osrm}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {OSRMHelper}, \hyperpage{15}
+    \subitem {GetDistance}, \hyperpage{16}
+    \subitem {GetDuration}, \hyperpage{16}
+    \subitem {OSRMHelper}, \hyperpage{16}
+    \subitem {TableRequest}, \hyperpage{16, 17}
+  \item {outputDirectory}
+    \subitem {Params}, \hyperpage{21}
+  \item {OutputDuals}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{113}
+  \item {outputDuals}
+    \subitem {Params}, \hyperpage{21}
+  \item {outputSuffix}
+    \subitem {Params}, \hyperpage{21}
+
+  \indexspace
+
+  \item {Params}, \hyperpage{17}
+    \subitem {alg\_start}, \hyperpage{19}
+    \subitem {AllowsPositiveRCElimination}, \hyperpage{19}
+    \subitem {alwaysLoopVehicles}, \hyperpage{19}
+    \subitem {descriptiveString}, \hyperpage{19}
+    \subitem {DSFDecrement}, \hyperpage{20}
+    \subitem {generator}, \hyperpage{20}
+    \subitem {GetElapsedTime}, \hyperpage{19}
+    \subitem {heuristic\_run}, \hyperpage{20}
+    \subitem {initialDSF}, \hyperpage{20}
+    \subitem {max\_memory}, \hyperpage{20}
+    \subitem {max\_time}, \hyperpage{20}
+    \subitem {maxMemorySinglePricing}, \hyperpage{20}
+    \subitem {maxNbRoutes}, \hyperpage{20}
+    \subitem {maxSolverIterations}, \hyperpage{21}
+    \subitem {maxTimeSinglePricing}, \hyperpage{21}
+    \subitem {nbRandomInitialRoutes}, \hyperpage{21}
+    \subitem {newRoutesPerPricing}, \hyperpage{21}
+    \subitem {outputDirectory}, \hyperpage{21}
+    \subitem {outputDuals}, \hyperpage{21}
+    \subitem {outputSuffix}, \hyperpage{21}
+    \subitem {Params}, \hyperpage{18}
+    \subitem {pricingAlgorithm}, \hyperpage{21}
+    \subitem {RCEpsilon}, \hyperpage{22}
+    \subitem {route\_gen\_seed}, \hyperpage{22}
+    \subitem {seed}, \hyperpage{22}
+    \subitem {solveRelaxedProblem}, \hyperpage{22}
+    \subitem {StartTime}, \hyperpage{19}
+    \subitem {Timeout}, \hyperpage{19}
+    \subitem {timeout}, \hyperpage{22}
+    \subitem {useBranchingOnEdges}, \hyperpage{22}
+    \subitem {useBranchingOnVehicles}, \hyperpage{22}
+  \item {params}
+    \subitem {BasePricing}, \hyperpage{10}
+    \subitem {RouteExpander}, \hyperpage{53}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+    \subitem {SCIPSolver}, \hyperpage{62}
+  \item {Params.h}
+    \subitem {bellman}, \hyperpage{82}
+    \subitem {bellmanWSets}, \hyperpage{82}
+    \subitem {DAG}, \hyperpage{82}
+    \subitem {hybrid}, \hyperpage{82}
+    \subitem {PricerTester}, \hyperpage{82}
+    \subitem {PricingAlgorithm}, \hyperpage{81}
+    \subitem {spacedBellman}, \hyperpage{82}
+    \subitem {spacedBellman2}, \hyperpage{82}
+    \subitem {spacedBellmanWSets}, \hyperpage{82}
+  \item {ParseCommandLine}
+    \subitem {cppmain.cpp}, \hyperpage{99}
+  \item {penalty\_cost}
+    \subitem {ProblemSolution}, \hyperpage{43}
+  \item {Position}, \hyperpage{23}
+    \subitem {x}, \hyperpage{23}
+    \subitem {y}, \hyperpage{23}
+  \item {position}
+    \subitem {Vertex}, \hyperpage{74}
+  \item {positions}
+    \subitem {DemandScenario}, \hyperpage{11}
+  \item {PrecomputeClosestWSs}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {preferred}
+    \subitem {RouteExpander.h}, \hyperpage{88}
+  \item {preferredWaitingStation}
+    \subitem {Vehicle}, \hyperpage{72}
+  \item {Price}
+    \subitem {BasePricing}, \hyperpage{9}
+    \subitem {SpacedBellmanPricing}, \hyperpage{66}
+  \item {PRICER\_DELAY}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+  \item {PRICER\_DESC}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+  \item {PRICER\_NAME}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+  \item {PRICER\_PRIORITY}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{105}
+  \item {pricer\_SPwCG.cpp}
+    \subitem {buildConsideredRequestsVector}, \hyperpage{105}
+    \subitem {buildForbiddenEdges}, \hyperpage{105}
+    \subitem {checkForVarRedCosts}, \hyperpage{106}
+    \subitem {compareArrays}, \hyperpage{106}
+    \subitem {createRouteVariable}, \hyperpage{106}
+    \subitem {DoesRouteViolateBranching}, \hyperpage{106}
+    \subitem {DoPricing}, \hyperpage{106}
+    \subitem {ncons}, \hyperpage{107}
+    \subitem {PRICER\_DELAY}, \hyperpage{105}
+    \subitem {PRICER\_DESC}, \hyperpage{105}
+    \subitem {PRICER\_NAME}, \hyperpage{105}
+    \subitem {PRICER\_PRIORITY}, \hyperpage{105}
+    \subitem {routeContainsRequest}, \hyperpage{107}
+    \subitem {SCIP\_DECL\_PRICEREXITSOL}, \hyperpage{107}
+    \subitem {SCIP\_DECL\_PRICERFARKAS}, \hyperpage{107}
+    \subitem {SCIP\_DECL\_PRICERFREE}, \hyperpage{107}
+    \subitem {SCIP\_DECL\_PRICERINIT}, \hyperpage{107}
+    \subitem {SCIP\_DECL\_PRICERREDCOST}, \hyperpage{108}
+    \subitem {SCIPincludePricerSPwCG}, \hyperpage{108}
+    \subitem {SCIPpricerSPwCGActivate}, \hyperpage{108}
+  \item {pricer\_SPwCG.h}
+    \subitem {createRouteVariable}, \hyperpage{83}
+    \subitem {SCIPincludePricerSPwCG}, \hyperpage{83}
+    \subitem {SCIPpricerSPwCGActivate}, \hyperpage{83}
+  \item {PricerTester}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {pricing\_ret}
+    \subitem {SpacedBellmanPricing}, \hyperpage{69}
+  \item {pricingAlgo}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+  \item {PricingAlgorithm}
+    \subitem {Params.h}, \hyperpage{81}
+  \item {pricingAlgorithm}
+    \subitem {Params}, \hyperpage{21}
+  \item {PricingReturn}, \hyperpage{26}
+    \subitem {labelsDeleted}, \hyperpage{26}
+    \subitem {labelsPriced}, \hyperpage{26}
+    \subitem {labelsStored}, \hyperpage{26}
+    \subitem {maxLabelsStoredSimultaneously}, \hyperpage{27}
+    \subitem {mostLabelsInRequest}, \hyperpage{27}
+    \subitem {nbConsideredRequests}, \hyperpage{27}
+    \subitem {reducedCostPerRoute}, \hyperpage{27}
+    \subitem {status}, \hyperpage{27}
+    \subitem {timeout}, \hyperpage{27}
+  \item {PricingReturnStatus}
+    \subitem {BasePricing.h}, \hyperpage{78}
+  \item {PrintConstraintValues}
+    \subitem {branching.cpp}, \hyperpage{96}
+  \item {PrintSolution}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {probdata\_SPwCG.cpp}
+    \subitem {AddEdgeBranchingCons}, \hyperpage{110}
+    \subitem {AddVehicleBranchingCons}, \hyperpage{111}
+    \subitem {EVENTHDLR\_DESC}, \hyperpage{110}
+    \subitem {EVENTHDLR\_NAME}, \hyperpage{110}
+    \subitem {GetConstrainedEdges}, \hyperpage{111}
+    \subitem {GetConstrainedVehicles}, \hyperpage{111}
+    \subitem {GetEdgeBranchingConstraints}, \hyperpage{111}
+    \subitem {GetExecutionSummary}, \hyperpage{111}
+    \subitem {GetParams}, \hyperpage{111}
+    \subitem {GetProblemData}, \hyperpage{112}
+    \subitem {GetVehicleBranchingConstraints}, \hyperpage{112}
+    \subitem {IncrementUsedBranchingRule}, \hyperpage{112}
+    \subitem {IsVarRepeated}, \hyperpage{112}
+    \subitem {loadProblem}, \hyperpage{112}
+    \subitem {LogRepeatedRoute}, \hyperpage{113}
+    \subitem {ncons}, \hyperpage{113}
+    \subitem {OutputDuals}, \hyperpage{113}
+    \subitem {probdataCreate}, \hyperpage{113}
+    \subitem {probdataFree}, \hyperpage{114}
+    \subitem {QuerySolution}, \hyperpage{114}
+    \subitem {SCIP\_DECL\_EVENTEXEC}, \hyperpage{114}
+    \subitem {SCIP\_DECL\_PROBDELORIG}, \hyperpage{114}
+    \subitem {SCIP\_DECL\_PROBDELTRANS}, \hyperpage{114}
+    \subitem {SCIP\_DECL\_PROBEXITSOL}, \hyperpage{114}
+    \subitem {SCIP\_DECL\_PROBINITSOL}, \hyperpage{115}
+    \subitem {SCIP\_DECL\_PROBTRANS}, \hyperpage{115}
+    \subitem {SCIPprobdataAddVar}, \hyperpage{115}
+    \subitem {SCIPprobdataGetCons}, \hyperpage{115}
+    \subitem {SCIPprobdataGetNCons}, \hyperpage{116}
+    \subitem {SCIPprobdataGetNVars}, \hyperpage{116}
+    \subitem {SCIPprobdataGetVars}, \hyperpage{116}
+  \item {probdataCreate}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{113}
+  \item {probdataFree}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+  \item {ProblemData}, \hyperpage{28}
+    \subitem {$\sim$ProblemData}, \hyperpage{30}
+    \subitem {allowRerouting}, \hyperpage{38}
+    \subitem {calculateDistance}, \hyperpage{30}
+    \subitem {CalculateDistanceMatrix}, \hyperpage{31}
+    \subitem {computeTimeHorizon}, \hyperpage{38}
+    \subitem {DestinationIdToIndex}, \hyperpage{31}
+    \subitem {destinations}, \hyperpage{38}
+    \subitem {Distance}, \hyperpage{31}
+    \subitem {distances}, \hyperpage{39}
+    \subitem {distanceType}, \hyperpage{39}
+    \subitem {euclidianDistance}, \hyperpage{31}
+    \subitem {exampleInstance}, \hyperpage{31}
+    \subitem {geodesicDistance}, \hyperpage{31}
+    \subitem {GetClosestDestination}, \hyperpage{32}
+    \subitem {GetClosestWaitingStation}, \hyperpage{32}
+    \subitem {GetDestination}, \hyperpage{32}
+    \subitem {GetDestinationByIndex}, \hyperpage{32}
+    \subitem {GetInitialPosition}, \hyperpage{32}
+    \subitem {GetInitialPositionByIndex}, \hyperpage{32}
+    \subitem {GetIntermediatePosition}, \hyperpage{32}
+    \subitem {GetIntermediatePosition2}, \hyperpage{33}
+    \subitem {GetRequest}, \hyperpage{33}
+    \subitem {GetRequestByIndex}, \hyperpage{33}
+    \subitem {getVehicle}, \hyperpage{33}
+    \subitem {GetVertex}, \hyperpage{33}
+    \subitem {GetWaitingStation}, \hyperpage{33}
+    \subitem {GetWaitingStationByIndex}, \hyperpage{34}
+    \subitem {IndexToDestinationId}, \hyperpage{34}
+    \subitem {IndexToRequestId}, \hyperpage{34}
+    \subitem {IndexToWaitingStationId}, \hyperpage{34}
+    \subitem {InitialPositionIdToIndex}, \hyperpage{34}
+    \subitem {InitialPositionIndexToId}, \hyperpage{34}
+    \subitem {initialPositions}, \hyperpage{39}
+    \subitem {IsCompatible}, \hyperpage{34}
+    \subitem {IsDestination}, \hyperpage{35}
+    \subitem {IsInitialPosition}, \hyperpage{35}
+    \subitem {IsIntermediateVertex}, \hyperpage{35}
+    \subitem {IsRequest}, \hyperpage{35}
+    \subitem {IsWaitingStation}, \hyperpage{35}
+    \subitem {name}, \hyperpage{39}
+    \subitem {NbRequests}, \hyperpage{35}
+    \subitem {NbVehicles}, \hyperpage{35}
+    \subitem {NbVertices}, \hyperpage{36}
+    \subitem {NbWaitingStations}, \hyperpage{36}
+    \subitem {OmmitedDistance}, \hyperpage{36}
+    \subitem {PrecomputeClosestWSs}, \hyperpage{36}
+    \subitem {ProblemData}, \hyperpage{30}
+    \subitem {readPDPTWInstance}, \hyperpage{36}
+    \subitem {readSDVRPTWInstance}, \hyperpage{36}
+    \subitem {readVincentInstance}, \hyperpage{36}
+    \subitem {RequestIdToIndex}, \hyperpage{37}
+    \subitem {requests}, \hyperpage{39}
+    \subitem {ResetNumberOfVehicles}, \hyperpage{37}
+    \subitem {SetVehicleAvailability}, \hyperpage{37}
+    \subitem {SetVehiclePositions}, \hyperpage{37}
+    \subitem {target\_times\_per\_weight}, \hyperpage{39}
+    \subitem {timeHorizon}, \hyperpage{39}
+    \subitem {useTargetWaitTimeObjective}, \hyperpage{40}
+    \subitem {Validate}, \hyperpage{37}
+    \subitem {vehicles}, \hyperpage{40}
+    \subitem {VehicleSpeed}, \hyperpage{37}
+    \subitem {WaitingStationIdToIndex}, \hyperpage{38}
+    \subitem {waitingStationPolicy}, \hyperpage{40}
+    \subitem {waitingStations}, \hyperpage{40}
+    \subitem {weighted\_lateness}, \hyperpage{38}
+  \item {problemData}
+    \subitem {BasePricing}, \hyperpage{10}
+    \subitem {ProblemSolution}, \hyperpage{44}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+    \subitem {SCIP\_ProbData}, \hyperpage{58}
+    \subitem {SCIPSolver}, \hyperpage{62}
+  \item {ProblemData.cpp}
+    \subitem {norm}, \hyperpage{117}
+    \subitem {RC\_EPS}, \hyperpage{117}
+  \item {ProblemData.h}
+    \subitem {bestOptionalStop}, \hyperpage{86}
+    \subitem {DistanceType}, \hyperpage{85}
+    \subitem {euclidian}, \hyperpage{86}
+    \subitem {geodesic}, \hyperpage{86}
+    \subitem {mandatoryStopInFixedStation}, \hyperpage{86}
+    \subitem {optionalStopInClosestWaitingStation}, \hyperpage{86}
+    \subitem {optionalStopInFixedStation}, \hyperpage{86}
+    \subitem {osrm}, \hyperpage{86}
+    \subitem {WaitingStationPolicy}, \hyperpage{86}
+  \item {ProblemSolution}, \hyperpage{40}
+    \subitem {AllOneSizedRoutesSolution}, \hyperpage{41}
+    \subitem {AnySolution}, \hyperpage{41}
+    \subitem {ClosestAvailableVehicleSolution}, \hyperpage{42}
+    \subitem {coeffs}, \hyperpage{43}
+    \subitem {cost}, \hyperpage{43}
+    \subitem {FastestArrivingVehicleSolution}, \hyperpage{42}
+    \subitem {GetResponseSummary}, \hyperpage{42}
+    \subitem {penalty\_cost}, \hyperpage{43}
+    \subitem {PrintSolution}, \hyperpage{42}
+    \subitem {problemData}, \hyperpage{44}
+    \subitem {ProblemSolution}, \hyperpage{41}
+    \subitem {RandomRoutes}, \hyperpage{42}
+    \subitem {relaxed}, \hyperpage{44}
+    \subitem {route\_cost}, \hyperpage{44}
+    \subitem {routes}, \hyperpage{44}
+    \subitem {SetToInitialSolution}, \hyperpage{42}
+    \subitem {UpdateCost}, \hyperpage{43}
+    \subitem {WriteRequestsOutput}, \hyperpage{43}
+    \subitem {WriteSolution}, \hyperpage{43}
+  \item {ProblemSolution.cpp}
+    \subitem {RC\_EPS}, \hyperpage{118}
+  \item {ProblemSolution.h}
+    \subitem {GIT\_COMMIT\_HASH}, \hyperpage{87}
+  \item {projected}
+    \subitem {Destination}, \hyperpage{13}
+    \subitem {Request}, \hyperpage{46}
+
+  \indexspace
+
+  \item {QuerySolution}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+
+  \indexspace
+
+  \item {RandomRoutes}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {RC\_EPS}
+    \subitem {cutstock.cpp}, \hyperpage{100}
+    \subitem {main.cpp}, \hyperpage{102}
+    \subitem {ProblemData.cpp}, \hyperpage{117}
+    \subitem {ProblemSolution.cpp}, \hyperpage{118}
+    \subitem {RouteExpander.cpp}, \hyperpage{119}
+  \item {RCEpsilon}
+    \subitem {Params}, \hyperpage{22}
+  \item {readData}
+    \subitem {cutstock.cpp}, \hyperpage{100}
+  \item {readPDPTWInstance}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {readSDVRPTWInstance}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {readVincentInstance}
+    \subitem {ProblemData}, \hyperpage{36}
+  \item {reducedCost}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {reducedCostPerRoute}
+    \subitem {PricingReturn}, \hyperpage{27}
+  \item {referenced}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {relaxed}
+    \subitem {ProblemSolution}, \hyperpage{44}
+  \item {repeatedRoutesTotalReducedCost}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {report1}
+    \subitem {cutstock.cpp}, \hyperpage{101}
+  \item {report2}
+    \subitem {cutstock.cpp}, \hyperpage{101}
+  \item {report3}
+    \subitem {cutstock.cpp}, \hyperpage{101}
+  \item {reqId}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {Request}, \hyperpage{45}
+    \subitem {arrival\_time}, \hyperpage{46}
+    \subitem {destination}, \hyperpage{46}
+    \subitem {non\_service\_penalty}, \hyperpage{46}
+    \subitem {projected}, \hyperpage{46}
+    \subitem {service\_time}, \hyperpage{46}
+    \subitem {type}, \hyperpage{46}
+    \subitem {weight}, \hyperpage{46}
+  \item {RequestIdToIndex}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {requests}
+    \subitem {DemandScenario}, \hyperpage{12}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {ResetNumberOfVehicles}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {ResponseSummary}, \hyperpage{47}
+    \subitem {maxNonServicePenalty}, \hyperpage{47}
+    \subitem {maxResponseTime}, \hyperpage{47}
+    \subitem {maxWeightedResponseTime}, \hyperpage{47}
+    \subitem {meanNonServicePenalty}, \hyperpage{47}
+    \subitem {meanResponseTime}, \hyperpage{48}
+    \subitem {meanWeightedResponseTime}, \hyperpage{48}
+    \subitem {nNotServiced}, \hyperpage{48}
+    \subitem {nServiced}, \hyperpage{48}
+  \item {Route}, \hyperpage{48}
+    \subitem {arrival\_times}, \hyperpage{50}
+    \subitem {departure\_times}, \hyperpage{50}
+    \subitem {end\_time}, \hyperpage{51}
+    \subitem {GetEdgeUsage}, \hyperpage{49}
+    \subitem {GetHash}, \hyperpage{49}
+    \subitem {GetRequestCount}, \hyperpage{50}
+    \subitem {has\_cycles}, \hyperpage{51}
+    \subitem {intermediates}, \hyperpage{51}
+    \subitem {operator==}, \hyperpage{50}
+    \subitem {Route}, \hyperpage{49}
+    \subitem {SetArrivalsAndDepartures}, \hyperpage{50}
+    \subitem {total\_lateness}, \hyperpage{51}
+    \subitem {UpdateCost}, \hyperpage{50}
+    \subitem {veh\_index}, \hyperpage{51}
+    \subitem {vertices}, \hyperpage{51}
+  \item {route}
+    \subitem {SCIP\_VarData}, \hyperpage{61}
+  \item {route\_cost}
+    \subitem {ProblemSolution}, \hyperpage{44}
+  \item {route\_gen\_seed}
+    \subitem {Params}, \hyperpage{22}
+  \item {routeContainsRequest}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+  \item {RouteExpander}, \hyperpage{52}
+    \subitem {checkRouteExpansion}, \hyperpage{53}
+    \subitem {params}, \hyperpage{53}
+    \subitem {RouteExpander}, \hyperpage{52}
+  \item {RouteExpander.cpp}
+    \subitem {RC\_EPS}, \hyperpage{119}
+  \item {RouteExpander.h}
+    \subitem {best}, \hyperpage{88}
+    \subitem {closest}, \hyperpage{88}
+    \subitem {preferred}, \hyperpage{88}
+    \subitem {WhichStation}, \hyperpage{88}
+  \item {routes}
+    \subitem {ProblemSolution}, \hyperpage{44}
+  \item {RouteToVarMap}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {run\_tests}
+    \subitem {main.cpp}, \hyperpage{102}
+  \item {runSCIP}
+    \subitem {SCIPSolver.cpp}, \hyperpage{120}
+
+  \indexspace
+
+  \item {scenario}
+    \subitem {AggregatedProblem}, \hyperpage{8}
+  \item {SCIP\_DECL\_EVENTEXEC}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+  \item {SCIP\_DECL\_PRICEREXITSOL}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+  \item {SCIP\_DECL\_PRICERFARKAS}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+  \item {SCIP\_DECL\_PRICERFREE}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+  \item {SCIP\_DECL\_PRICERINIT}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{107}
+  \item {SCIP\_DECL\_PRICERREDCOST}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{108}
+  \item {SCIP\_DECL\_PROBDELORIG}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+  \item {SCIP\_DECL\_PROBDELTRANS}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+  \item {SCIP\_DECL\_PROBEXITSOL}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{114}
+  \item {SCIP\_DECL\_PROBINITSOL}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{115}
+  \item {SCIP\_DECL\_PROBTRANS}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{115}
+  \item {SCIP\_DECL\_VARDELTRANS}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{122}
+  \item {SCIP\_PricerData}, \hyperpage{54}
+    \subitem {conshdlr}, \hyperpage{55}
+    \subitem {conss}, \hyperpage{55}
+    \subitem {heuristicPricing}, \hyperpage{55}
+    \subitem {labelsDeleted}, \hyperpage{55}
+    \subitem {labelsPriced}, \hyperpage{55}
+    \subitem {labelsStored}, \hyperpage{55}
+    \subitem {lastSuccessfullVehicle}, \hyperpage{55}
+    \subitem {params}, \hyperpage{56}
+    \subitem {pricingAlgo}, \hyperpage{56}
+    \subitem {problemData}, \hyperpage{56}
+    \subitem {sumOfMaxLabelsStoredSimultaneously}, \hyperpage{56}
+    \subitem {sumOfMostLabelsInRequest}, \hyperpage{56}
+    \subitem {sumOfNbConsideredRequests}, \hyperpage{56}
+    \subitem {total\_pricing\_calls}, \hyperpage{56}
+    \subitem {total\_pricing\_fails}, \hyperpage{56}
+    \subitem {total\_pricing\_time}, \hyperpage{57}
+    \subitem {total\_pricing\_timeouts}, \hyperpage{57}
+  \item {SCIP\_ProbData}, \hyperpage{57}
+    \subitem {conss}, \hyperpage{58}
+    \subitem {constrainedVehicles}, \hyperpage{58}
+    \subitem {constraintedEdges}, \hyperpage{58}
+    \subitem {edgeBranchingConstraints}, \hyperpage{58}
+    \subitem {nvars}, \hyperpage{58}
+    \subitem {params}, \hyperpage{58}
+    \subitem {problemData}, \hyperpage{58}
+    \subitem {repeatedRoutesTotalReducedCost}, \hyperpage{59}
+    \subitem {RouteToVarMap}, \hyperpage{59}
+    \subitem {timesBranchedWithRule}, \hyperpage{59}
+    \subitem {timesRepeatedRouteWasPriced}, \hyperpage{59}
+    \subitem {vars}, \hyperpage{59}
+    \subitem {varssize}, \hyperpage{59}
+    \subitem {vehicleBranchingConstraints}, \hyperpage{59}
+  \item {SCIP\_VarData}, \hyperpage{60}
+    \subitem {conscoeffs}, \hyperpage{60}
+    \subitem {consids}, \hyperpage{61}
+    \subitem {nconsids}, \hyperpage{61}
+    \subitem {route}, \hyperpage{61}
+  \item {SCIPcreateConsSumEdge}
+    \subitem {branching.cpp}, \hyperpage{96}
+  \item {SCIPcreateConsSumVehicle}
+    \subitem {branching.cpp}, \hyperpage{97}
+  \item {SCIPcreateVarBinpacking}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{122}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {SCIPincludeCustomBranchingRule}
+    \subitem {branching.cpp}, \hyperpage{97}
+    \subitem {branching.h}, \hyperpage{79}
+  \item {SCIPincludePricerSPwCG}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{108}
+    \subitem {pricer\_SPwCG.h}, \hyperpage{83}
+  \item {SCIPpricerSPwCGActivate}
+    \subitem {pricer\_SPwCG.cpp}, \hyperpage{108}
+    \subitem {pricer\_SPwCG.h}, \hyperpage{83}
+  \item {SCIPprobdataAddVar}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{115}
+  \item {SCIPprobdataGetCons}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{115}
+  \item {SCIPprobdataGetNCons}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{116}
+  \item {SCIPprobdataGetNVars}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{116}
+  \item {SCIPprobdataGetVars}
+    \subitem {probdata\_SPwCG.cpp}, \hyperpage{116}
+  \item {SCIPSolver}, \hyperpage{61}
+    \subitem {params}, \hyperpage{62}
+    \subitem {problemData}, \hyperpage{62}
+    \subitem {SCIPSolver}, \hyperpage{62}
+    \subitem {solve}, \hyperpage{62}
+  \item {SCIPSolver.cpp}
+    \subitem {GIT\_COMMIT\_HASH}, \hyperpage{120}
+    \subitem {runSCIP}, \hyperpage{120}
+  \item {SCIPvardataCreateBinpacking}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{123}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {SCIPvardataGetConsCoeffs}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{123}
+  \item {SCIPvardataGetConsids}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{124}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {SCIPvardataGetNConsids}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{124}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {SCIPvardataGetRoute}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{124}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {SCIPvardataPrint}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{124}
+    \subitem {vardata\_SPwCG.h}, \hyperpage{92}
+  \item {seed}
+    \subitem {Params}, \hyperpage{22}
+  \item {service\_time}
+    \subitem {Request}, \hyperpage{46}
+  \item {SetArrivalsAndDepartures}
+    \subitem {Route}, \hyperpage{50}
+  \item {SetHeuristicPricing}
+    \subitem {SpacedBellmanPricing}, \hyperpage{67}
+  \item {SetMaxMemory}
+    \subitem {BasePricing}, \hyperpage{10}
+  \item {SetMaxTime}
+    \subitem {BasePricing}, \hyperpage{10}
+  \item {SetToInitialSolution}
+    \subitem {ProblemSolution}, \hyperpage{42}
+  \item {SetupGrid}
+    \subitem {StochasticInfo}, \hyperpage{70}
+  \item {SetVehicleAvailability}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {SetVehiclePositions}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {simulateOperation}
+    \subitem {main.cpp}, \hyperpage{103}
+  \item {solve}
+    \subitem {SCIPSolver}, \hyperpage{62}
+  \item {solveRelaxedProblem}
+    \subitem {Params}, \hyperpage{22}
+  \item {spacedBellman}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {spacedBellman2}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {SpacedBellmanPricing}, \hyperpage{63}
+    \subitem {$\sim$SpacedBellmanPricing}, \hyperpage{64}
+    \subitem {bestLabelsHeap}, \hyperpage{67}
+    \subitem {Cleanup}, \hyperpage{65}
+    \subitem {comp}, \hyperpage{65}
+    \subitem {comp2}, \hyperpage{65}
+    \subitem {comp3}, \hyperpage{65}
+    \subitem {compGRC}, \hyperpage{65}
+    \subitem {compGTime}, \hyperpage{65}
+    \subitem {compLRC}, \hyperpage{66}
+    \subitem {compLRCRef}, \hyperpage{66}
+    \subitem {compLTime}, \hyperpage{66}
+    \subitem {compLTimeRef}, \hyperpage{66}
+    \subitem {FilterLabels}, \hyperpage{66}
+    \subitem {heuristicPricing}, \hyperpage{67}
+    \subitem {intermediatePositions}, \hyperpage{68}
+    \subitem {ItrNextExpansion}, \hyperpage{68}
+    \subitem {ItrNextExpansion\_IsValid}, \hyperpage{68}
+    \subitem {labels}, \hyperpage{68}
+    \subitem {limitNbLabels}, \hyperpage{68}
+    \subitem {maxLabels}, \hyperpage{68}
+    \subitem {n\_desired\_routes}, \hyperpage{68}
+    \subitem {Price}, \hyperpage{66}
+    \subitem {pricing\_ret}, \hyperpage{69}
+    \subitem {SetHeuristicPricing}, \hyperpage{67}
+    \subitem {SpacedBellmanPricing}, \hyperpage{64}
+    \subitem {total\_labels}, \hyperpage{69}
+    \subitem {TryAddLabel}, \hyperpage{67}
+    \subitem {TryAddToBestLabelsHeap}, \hyperpage{67}
+    \subitem {useRepeatedSetVerification}, \hyperpage{69}
+  \item {SpacedBellmanPricing::PricingLabel}, \hyperpage{24}
+    \subitem {alreadyExpanded}, \hyperpage{24}
+    \subitem {intermediatePosition}, \hyperpage{24}
+    \subitem {lastLabel}, \hyperpage{25}
+    \subitem {lastWaitingStation}, \hyperpage{25}
+    \subitem {reducedCost}, \hyperpage{25}
+    \subitem {referenced}, \hyperpage{25}
+    \subitem {reqId}, \hyperpage{25}
+    \subitem {time}, \hyperpage{25}
+  \item {spacedBellmanWSets}
+    \subitem {Params.h}, \hyperpage{82}
+  \item {src/branching.cpp}, \hyperpage{93}
+  \item {src/cppmain.cpp}, \hyperpage{97}
+  \item {src/cutstock.cpp}, \hyperpage{99}
+  \item {src/main.cpp}, \hyperpage{101}
+  \item {src/OSRMHelper.cpp}, \hyperpage{103}
+  \item {src/pricer\_SPwCG.cpp}, \hyperpage{104}
+  \item {src/probdata\_SPwCG.cpp}, \hyperpage{108}
+  \item {src/ProblemData.cpp}, \hyperpage{116}
+  \item {src/ProblemSolution.cpp}, \hyperpage{118}
+  \item {src/RouteExpander.cpp}, \hyperpage{118}
+  \item {src/SCIPSolver.cpp}, \hyperpage{119}
+  \item {src/SpacedBellmanPricing.cpp}, \hyperpage{121}
+  \item {src/StochasticInfo.cpp}, \hyperpage{121}
+  \item {src/vardata\_SPwCG.cpp}, \hyperpage{121}
+  \item {StartTime}
+    \subitem {Params}, \hyperpage{19}
+  \item {status}
+    \subitem {PricingReturn}, \hyperpage{27}
+  \item {StochasticInfo}, \hyperpage{69}
+    \subitem {bernoulliCoefficients}, \hyperpage{71}
+    \subitem {GenerateScenarios}, \hyperpage{70}
+    \subitem {lx}, \hyperpage{71}
+    \subitem {ly}, \hyperpage{71}
+    \subitem {nbHorizontal}, \hyperpage{71}
+    \subitem {nbVertical}, \hyperpage{71}
+    \subitem {SetupGrid}, \hyperpage{70}
+    \subitem {StochasticInfo}, \hyperpage{70}
+    \subitem {ux}, \hyperpage{71}
+    \subitem {uy}, \hyperpage{71}
+  \item {sumOfMaxLabelsStoredSimultaneously}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+  \item {sumOfMostLabelsInRequest}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+  \item {sumOfNbConsideredRequests}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+
+  \indexspace
+
+  \item {TableRequest}
+    \subitem {OSRMHelper}, \hyperpage{16, 17}
+  \item {target\_times\_per\_weight}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {time}
+    \subitem {SpacedBellmanPricing::PricingLabel}, \hyperpage{25}
+  \item {timeAvailable}
+    \subitem {Vehicle}, \hyperpage{72}
+  \item {timeHorizon}
+    \subitem {ProblemData}, \hyperpage{39}
+  \item {Timeout}
+    \subitem {Params}, \hyperpage{19}
+  \item {timeout}
+    \subitem {Params}, \hyperpage{22}
+    \subitem {PricingReturn}, \hyperpage{27}
+  \item {timesBranchedWithRule}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {timesRepeatedRouteWasPriced}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {total\_labels}
+    \subitem {SpacedBellmanPricing}, \hyperpage{69}
+  \item {total\_lateness}
+    \subitem {Route}, \hyperpage{51}
+  \item {total\_pricing\_calls}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+  \item {total\_pricing\_fails}
+    \subitem {SCIP\_PricerData}, \hyperpage{56}
+  \item {total\_pricing\_time}
+    \subitem {SCIP\_PricerData}, \hyperpage{57}
+  \item {total\_pricing\_timeouts}
+    \subitem {SCIP\_PricerData}, \hyperpage{57}
+  \item {TryAddLabel}
+    \subitem {SpacedBellmanPricing}, \hyperpage{67}
+  \item {TryAddToBestLabelsHeap}
+    \subitem {SpacedBellmanPricing}, \hyperpage{67}
+  \item {type}
+    \subitem {Request}, \hyperpage{46}
+    \subitem {Vehicle}, \hyperpage{72}
+
+  \indexspace
+
+  \item {UpdateCost}
+    \subitem {ProblemSolution}, \hyperpage{43}
+    \subitem {Route}, \hyperpage{50}
+  \item {useBranchingOnEdges}
+    \subitem {Params}, \hyperpage{22}
+  \item {useBranchingOnVehicles}
+    \subitem {Params}, \hyperpage{22}
+  \item {useRepeatedSetVerification}
+    \subitem {SpacedBellmanPricing}, \hyperpage{69}
+  \item {useTargetWaitTimeObjective}
+    \subitem {ProblemData}, \hyperpage{40}
+  \item {ux}
+    \subitem {StochasticInfo}, \hyperpage{71}
+  \item {uy}
+    \subitem {StochasticInfo}, \hyperpage{71}
+
+  \indexspace
+
+  \item {Validate}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {vardata\_SPwCG.cpp}
+    \subitem {SCIP\_DECL\_VARDELTRANS}, \hyperpage{122}
+    \subitem {SCIPcreateVarBinpacking}, \hyperpage{122}
+    \subitem {SCIPvardataCreateBinpacking}, \hyperpage{123}
+    \subitem {SCIPvardataGetConsCoeffs}, \hyperpage{123}
+    \subitem {SCIPvardataGetConsids}, \hyperpage{124}
+    \subitem {SCIPvardataGetNConsids}, \hyperpage{124}
+    \subitem {SCIPvardataGetRoute}, \hyperpage{124}
+    \subitem {SCIPvardataPrint}, \hyperpage{124}
+    \subitem {vardataCreate}, \hyperpage{125}
+    \subitem {vardataDelete}, \hyperpage{125}
+  \item {vardata\_SPwCG.h}
+    \subitem {SCIPcreateVarBinpacking}, \hyperpage{92}
+    \subitem {SCIPvardataCreateBinpacking}, \hyperpage{92}
+    \subitem {SCIPvardataGetConsids}, \hyperpage{92}
+    \subitem {SCIPvardataGetNConsids}, \hyperpage{92}
+    \subitem {SCIPvardataGetRoute}, \hyperpage{92}
+    \subitem {SCIPvardataPrint}, \hyperpage{92}
+  \item {vardataCreate}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{125}
+  \item {vardataDelete}
+    \subitem {vardata\_SPwCG.cpp}, \hyperpage{125}
+  \item {vars}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {varssize}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {veh\_index}
+    \subitem {Route}, \hyperpage{51}
+  \item {Vehicle}, \hyperpage{72}
+    \subitem {preferredWaitingStation}, \hyperpage{72}
+    \subitem {timeAvailable}, \hyperpage{72}
+    \subitem {type}, \hyperpage{72}
+  \item {vehicleBranchingConstraints}
+    \subitem {SCIP\_ProbData}, \hyperpage{59}
+  \item {vehicles}
+    \subitem {ProblemData}, \hyperpage{40}
+  \item {VehicleSpeed}
+    \subitem {ProblemData}, \hyperpage{37}
+  \item {Vertex}, \hyperpage{73}
+    \subitem {closestWaitingStation}, \hyperpage{74}
+    \subitem {id}, \hyperpage{74}
+    \subitem {identifier}, \hyperpage{74}
+    \subitem {operator==}, \hyperpage{73}
+    \subitem {position}, \hyperpage{74}
+  \item {vertices}
+    \subitem {Route}, \hyperpage{51}
+
+  \indexspace
+
+  \item {WaitingStation}, \hyperpage{75}
+    \subitem {capacity}, \hyperpage{75}
+  \item {WaitingStationIdToIndex}
+    \subitem {ProblemData}, \hyperpage{38}
+  \item {WaitingStationPolicy}
+    \subitem {ProblemData.h}, \hyperpage{86}
+  \item {waitingStationPolicy}
+    \subitem {ProblemData}, \hyperpage{40}
+  \item {waitingStations}
+    \subitem {ProblemData}, \hyperpage{40}
+  \item {weight}
+    \subitem {Request}, \hyperpage{46}
+  \item {weighted\_lateness}
+    \subitem {ProblemData}, \hyperpage{38}
+  \item {WhichStation}
+    \subitem {RouteExpander.h}, \hyperpage{88}
+  \item {WriteRequestsOutput}
+    \subitem {ProblemSolution}, \hyperpage{43}
+  \item {WriteSolution}
+    \subitem {ProblemSolution}, \hyperpage{43}
+  \item {ws\_id}
+    \subitem {IntermediateVertex}, \hyperpage{15}
+
+  \indexspace
+
+  \item {x}
+    \subitem {Position}, \hyperpage{23}
+
+  \indexspace
+
+  \item {y}
+    \subitem {Position}, \hyperpage{23}
+
+\end{theindex}

@@ -1,0 +1,59 @@
+\hypertarget{structSCIP__VarData}{}\doxysection{S\+C\+I\+P\+\_\+\+Var\+Data Struct Reference}
+\label{structSCIP__VarData}\index{SCIP\_VarData@{SCIP\_VarData}}
+
+
+Collaboration diagram for S\+C\+I\+P\+\_\+\+Var\+Data\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{structSCIP__VarData__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int $\ast$ \mbox{\hyperlink{structSCIP__VarData_a05d437c88a5d751bf25662ba42f4f4c7}{consids}}
+\item 
+int $\ast$ \mbox{\hyperlink{structSCIP__VarData_a89151bee99c504f3c002ae17d9368caf}{conscoeffs}}
+\item 
+int \mbox{\hyperlink{structSCIP__VarData_a133cbb5ea1ce08929a8e1e3c3545a0da}{nconsids}}
+\item 
+\mbox{\hyperlink{classRoute}{Route}} $\ast$ \mbox{\hyperlink{structSCIP__VarData_a40056323ca2e849a39a05e89b254e9b1}{route}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Variable data which is attached to all variables.
+
+This variable data is used to store in which constraints this variable appears. Therefore, the variable data contains the ids of constraints in which the variable is part of. Hence, that data give us a column view. 
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{structSCIP__VarData_a89151bee99c504f3c002ae17d9368caf}\label{structSCIP__VarData_a89151bee99c504f3c002ae17d9368caf}} 
+\index{SCIP\_VarData@{SCIP\_VarData}!conscoeffs@{conscoeffs}}
+\index{conscoeffs@{conscoeffs}!SCIP\_VarData@{SCIP\_VarData}}
+\doxysubsubsection{\texorpdfstring{conscoeffs}{conscoeffs}}
+{\footnotesize\ttfamily int$\ast$ S\+C\+I\+P\+\_\+\+Var\+Data\+::conscoeffs}
+
+\mbox{\Hypertarget{structSCIP__VarData_a05d437c88a5d751bf25662ba42f4f4c7}\label{structSCIP__VarData_a05d437c88a5d751bf25662ba42f4f4c7}} 
+\index{SCIP\_VarData@{SCIP\_VarData}!consids@{consids}}
+\index{consids@{consids}!SCIP\_VarData@{SCIP\_VarData}}
+\doxysubsubsection{\texorpdfstring{consids}{consids}}
+{\footnotesize\ttfamily int$\ast$ S\+C\+I\+P\+\_\+\+Var\+Data\+::consids}
+
+\mbox{\Hypertarget{structSCIP__VarData_a133cbb5ea1ce08929a8e1e3c3545a0da}\label{structSCIP__VarData_a133cbb5ea1ce08929a8e1e3c3545a0da}} 
+\index{SCIP\_VarData@{SCIP\_VarData}!nconsids@{nconsids}}
+\index{nconsids@{nconsids}!SCIP\_VarData@{SCIP\_VarData}}
+\doxysubsubsection{\texorpdfstring{nconsids}{nconsids}}
+{\footnotesize\ttfamily int S\+C\+I\+P\+\_\+\+Var\+Data\+::nconsids}
+
+\mbox{\Hypertarget{structSCIP__VarData_a40056323ca2e849a39a05e89b254e9b1}\label{structSCIP__VarData_a40056323ca2e849a39a05e89b254e9b1}} 
+\index{SCIP\_VarData@{SCIP\_VarData}!route@{route}}
+\index{route@{route}!SCIP\_VarData@{SCIP\_VarData}}
+\doxysubsubsection{\texorpdfstring{route}{route}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classRoute}{Route}}$\ast$ S\+C\+I\+P\+\_\+\+Var\+Data\+::route}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{vardata__SPwCG_8cpp}{vardata\+\_\+\+S\+Pw\+C\+G.\+cpp}}\end{DoxyCompactItemize}
