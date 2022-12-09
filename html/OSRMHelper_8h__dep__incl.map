@@ -1,5 +1,0 @@
-<map id="include/OSRMHelper.h" name="include/OSRMHelper.h">
-<area shape="rect" id="node1" title="Definition of helper interface to use OSM data via OSRM." alt="" coords="88,5,255,32"/>
-<area shape="rect" id="node2" href="$OSRMHelper_8cpp.html" title="Implementation of a helper interface for OSRM." alt="" coords="5,80,159,107"/>
-<area shape="rect" id="node3" href="$ProblemData_8cpp.html" title=" " alt="" coords="183,80,341,107"/>
-</map>

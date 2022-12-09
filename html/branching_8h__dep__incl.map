@@ -1,5 +1,0 @@
-<map id="include/branching.h" name="include/branching.h">
-<area shape="rect" id="node1" title="Implementation of Custom Branching Rules." alt="" coords="80,5,229,32"/>
-<area shape="rect" id="node2" href="$branching_8cpp.html" title="Implementation of custom branching rules." alt="" coords="5,80,141,107"/>
-<area shape="rect" id="node3" href="$SCIPSolver_8cpp.html" title=" " alt="" coords="165,80,307,107"/>
-</map>
